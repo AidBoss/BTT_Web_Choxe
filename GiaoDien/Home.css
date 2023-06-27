@@ -2,80 +2,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 15px sans-serif;
-    width: 100%;
-    height: 100%;
+    font: 25px sans-serif;
 }
 .box{
     height: auto;
     width: 100%;
     background-color: #f5f5f6;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 1.5;
 }
 .header{
     width: 100%;
-    height: 120px;
+    height: 160px;
     background-color: #f05626;
     position: relative;
     min-height: 3.25rem;
     z-index: 30;
 }
+
 .header_content{
+    height: 100%;
     margin: auto;
     display: block;
-    width: 1200px;
+    width: 80%;
     position: relative;
 }
-.head_logo{
-    height: 60px;
+.head_top{
+    height: 80px;
     display: flex;
     align-items: center;
     text-align: center;
     padding: 1rem 0;
-    margin-bottom: -1rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
-.head_logo a{
+.head_top a{
     margin: 0 15px;
-    width: 140px;
-    
-    height: 30px;
+    width: 13%;
+    height: 60px;
     color: #fff;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
 }
-.head_logo a i{
+.head_top a img {
+    width: 100%;
+}
+.head_top a p {
+    line-height: 2;
+}
+.head_top a i{
     width: 20px;
 }
 #news{
     margin-left: 20px;
 }
 .head_search{
+    height: 80px;
     width: 100%;
-    height: 60px;
-    
+    display: flex;
+    align-items: center;
 }
+    
 .head_search{
-    margin: 16px 0;
+    margin: 10px;
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
 }
+.head_search a{color: #fff;
+    text-decoration: none;}
+
 .sbox {
     position: relative;
-    width: 800px;
+    width: 60%;
     }
 
 .stext {
-    width: 750px;
-    height: 40px;
+    width: 100%;
+    height: 60px;
     background: #FFFFFF;
     border: none;
-    font-size: 10pt;
+    font-size: 15pt;
     float: left;
     color: black;
     padding-left: 45px;
@@ -94,8 +99,20 @@
     color: #333;
 }
 .buttom_login{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.but2{
     width: 200px;
-    height: 40px;
+    border: solid #fff;
+    height: 55px;
+    text-align: center;
+    line-height: 1.8;
 }
 .buttom_login i{
     width: 20px;
@@ -103,10 +120,3 @@
 .buttom_login a{
     margin: 0 7px;
 }
-/* .head_search a{
-    width: 150px;
-    margin-top: 20px;
-}
-.head_search a #login_header{
-    width: 30px;
-} */
