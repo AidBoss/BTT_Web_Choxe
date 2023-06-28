@@ -207,7 +207,7 @@
     position: relative;
 }
 .element_brand{
-    height: 10%;
+    height: 2%;
     width: 100%;
 }
 strong{
@@ -224,6 +224,7 @@ strong{
     margin-top: 20px;
     font-size: 15px;
     font-weight: bold;
+    color: #000;
 }
 .element_brandBox{
     margin-right: -53px;
@@ -255,7 +256,7 @@ strong{
     font-size: 20px;
 }
 .more_brand{
-    display: none;
+    
 }
 .dong-vao{
     height: 70px;
