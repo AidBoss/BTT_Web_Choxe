@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 25px sans-serif;
+    font: 15px sans-serif;
 }
 .box{
     height: auto;
@@ -13,7 +13,7 @@
 }
 .header{
     width: 100%;
-    height: 160px;
+    height: 120px;
     background-color: #f05626;
     position: relative;
     min-height: 3.25rem;
@@ -28,22 +28,20 @@
     position: relative;
 }
 .head_top{
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     padding: 1rem 0;
 }
 .head_top a{
     margin: 0 15px;
     width: 13%;
-    height: 60px;
+    /* height: 40px; */
     color: #fff;
     text-decoration: none;
 }
-.head_top a img {
-    width: 100%;
-}
+
 .head_top a p {
     line-height: 2;
 }
@@ -61,7 +59,6 @@
 }
     
 .head_search{
-    margin: 10px;
     height: 60px;
     width: 100%;
     display: flex;
@@ -72,15 +69,15 @@
 
 .sbox {
     position: relative;
-    width: 60%;
+    width: 90%;
     }
 
 .stext {
     width: 100%;
-    height: 60px;
+    height: 40px;
     background: #FFFFFF;
     border: none;
-    font-size: 15pt;
+    /* font-size: 15pt; */
     float: left;
     color: black;
     padding-left: 45px;
@@ -99,6 +96,7 @@
     color: #333;
 }
 .buttom_login{
+    margin-left: 0px;
     width: 40%;
     height: 100%;
     display: flex;
@@ -107,12 +105,16 @@
     justify-content: space-around;
     align-items: center;
 }
-.but2{
-    width: 200px;
-    border: solid #fff;
-    height: 55px;
+.but{
     text-align: center;
-    line-height: 1.8;
+    width: 190px;
+}
+.but2{
+    width: 180px;
+    border: 1px solid #fff;
+    /* height: 55px; */
+    text-align: center;
+    line-height: 3;
 }
 .buttom_login i{
     width: 20px;
@@ -122,18 +124,18 @@
 }
 /* noi dung phan than */
 .search_price{
-    padding: 0 10px;
     margin: 30px 0;
     width: 100%;
-    height: 160px;
-    background-color: #fff;}
+    height: 100px;
+    background-color: #fff;
+}
 .search_price_contentner{
-    box-shadow: 1px 1px 0px 4px #e9e5e5;
+    box-shadow: 1px 1px 0px 2px #e9e5e5;
     /* border: 0px outset #fff; */
     border-radius: 10px;
     /* border: 1px solid #d8dbe0; */
     width: 80%;
-    height: 160px;
+    height: 100%;
     margin: auto;
 }
 .element{
@@ -142,41 +144,52 @@
     display: flex;
     flex-direction: column;
 }
+
 .element h2{
-    height: 40%;
-    margin-left: 5%;
-    line-height: 3;
-    font-size: 30px;
+    height: 50%;
+    margin: 0 3%;
+    line-height: 4;
+    font-size: 15px;
     font-weight: bold;
 }
 .element_box{
-    height: 60%;
-    margin: 0 5%;
+    height: 50%;
+    margin: 0 3%;
 }
 
 .element_box .tag button{
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 5px;
     border: 1px solid #e2dfdf;
     text-decoration: none;
     color: #333;
     background-color: #fff;
-    margin-right: 30px;
+    margin-right: 5px;
+    height: 30px;
     /* margin:10px 10px */
 }
-/*---------------------------------*/
-.brand{
-    padding: 0 10px;
+.element_box .tag button:hover{
+    text-decoration: underline;
+    color: red;
+}
+/* -------------------------------- */
+.new{
     margin: 30px 0;
     width: 100%;
-    height: 160px;
+    height: 800px;
+    background-color: #fff;
+}
+
+/* -------------------------------- */
+.brand{
+    margin: 30px 0;
+    width: 100%;
+    height: 1200px;
     background-color: #fff;
 }
 .brand_container{
-    box-shadow: 1px 1px 0px 4px #e9e5e5;
-    /* border: 0px outset #fff; */
+    box-shadow: 1px 1px 0px 2px #e9e5e5;
     border-radius: 10px;
-    /* border: 1px solid #d8dbe0; */
     width: 80%;
     height: 1195px;
     margin: auto;
@@ -188,12 +201,13 @@
     border-radius: 0.25rem;
     box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
     color: #4a4a4a;
+    height: 100%;
     max-width: 100%;
     overflow: hidden;
     position: relative;
 }
 .element_brand{
-    height: 100%;
+    height: 10%;
     width: 100%;
 }
 strong{
@@ -206,11 +220,9 @@ strong{
     font-weight: bold;
 }
 .element_brand strong{
-    height: 40%;
-    margin-left: 5%;
-    line-height: 0;
-    margin-top: 40px;
-    font-size: 30px;
+    margin-left: 3%;
+    margin-top: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 .element_brandBox{
