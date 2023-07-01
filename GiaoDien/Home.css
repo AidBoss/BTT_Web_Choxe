@@ -328,3 +328,217 @@ strong{
 #toggleButton{
     display: block;
 }
+/*salon ô tô*/
+.containers {
+    width: 1199px;
+    padding: 10px;
+ }#post {
+    width: 599.5px;
+    height: 160.5px;
+    background: #FFFF;
+    float: left;
+ }
+ #sidebar {
+    width: 599.5px;
+    height: 160.5px;
+    background: #FFFF;
+    float: right;
+   }
+.photo{
+    /* width:160px;
+    height:112px; */
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+}
+.info{
+    /* width:200px;
+    height:200px; */
+    float: right;
+    margin-right:290px;
+    margin-top:15px;
+    line-height:23px;
+}
+.nd{
+    width:600px;
+    height:140px;
+}
+.info2{
+    float: right;
+    margin-right:245px;
+    margin-top:15px;
+    line-height:23px;
+}
+.info3{
+    float: right;
+    margin-right:270px;
+    margin-top:15px;
+    line-height:23px;
+}
+.info4{
+    float: right;
+    width:340.5px;
+    margin-right:55px;
+    margin-top:15px;
+    line-height:23px;
+}
+.iteminfo{
+    font-size:12px;
+}
+.contents{
+    width:1200px;
+    height:409px;
+    background-color:white;
+    margin:auto;
+}
+.salon{
+    height:29px;
+    font-weight:bold;
+    text-decoration:none;
+    color:black;
+}
+.salon:hover{
+    color:#F05626;
+    text-decoration:none;
+}
+/*footer*/
+.footer{
+    height:395px;
+    background-color:#23242A;
+}
+.contenfooter{
+    margin-left:75px;
+}
+.phone{
+    color:white;
+    text-decoration:none;
+    margin-left:5px;
+    font-size:14px;
+}
+.phone:hover{
+    text-decoration:none;
+    color:white;
+}
+.email{
+    color:white;
+    text-decoration:none;
+    margin-left:5px;
+    font-size:14px;
+}
+.email:hover{
+    text-decoration:none;
+    color:white;
+}
+.footerlink{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    display: block;
+    height:76px;
+}
+.footerlink:hover{
+    text-decoration:none;
+    color:white;
+}
+.hotline{
+    text-decoration:none;
+    color:#F05626;
+    font-size:17px;
+    margin-left:10px;
+}
+.hotline:hover{
+    color:white;
+}
+/* .salons1{
+    text-decoration:none;
+    color:white;
+    margin-left:10px;
+    font-size:17px;
+}
+.salons1:hover{
+    color:#333;
+} */
+.phones{
+    border:2px solid #F05626;
+    border-radius:8px;
+    text-align: center;
+    width:320px; height:40px;
+}
+.salons{
+    border: 2px solid #f05626;
+    background-color: #F05626;
+    border-radius:5px;
+    width:320px; height:40px;
+    text-align: center;
+}
+.contentner2{
+    width: 1200px;
+    height:410px;
+    background-color:#FFFFFF;
+    margin-left:75px;
+    border-radius:5px;
+    border: 0.5px outset #e0e0e0;
+    margin-top: 20px;
+}
+.salonname{
+    text-decoration: none; font-weight: bold; color: black;
+}
+/*footer khác*/
+.footer-content-right{
+    width: 440px;
+    height: 120px;
+    text-align: center;
+    margin-top:-185px ;
+    margin-left: 840px;
+}
+.footer-content-right-1{
+    width: 440px;
+    height: 40px;
+    display: flex;
+    border: 1px solid #F05626;
+    border-radius: 5px;
+}
+.footer-content-right-1 img{
+    width:28px;
+    height:28px;
+    margin-left: 140px;
+    margin-top: 5px;
+}
+.footer-content-right-1_1{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer-content-right-1_1 a{
+    color: #F05626;
+    text-decoration: none;
+}
+.footer-content-right-1_1 a:hover{
+    color: #ffffff;
+    text-decoration:none;
+}
+.footer-content-right-2{
+    width: 440px;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #F05626;
+}
+.footer-content-right-2 img{
+    width:28px;
+    height:28px;
+    margin-left: 140px;
+    margin-top: 5px;
+}
+.footer-content-right-2_1{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer-content-right-2_1 a{
+    color:#ffffff;
+    text-decoration: none;
+} 
+.footer-content-right-2_1 a:hover{
+    text-decoration:none;
+    color:white;
+}
