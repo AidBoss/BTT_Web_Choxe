@@ -48,6 +48,10 @@
     align-items: center;
     flex-wrap: nowrap;
 }
+.head_top a:hover{
+    text-decoration: none;
+    color: #fff;
+}
 .head_top #logo_header{
     margin-right: 55%;
 }
@@ -139,6 +143,10 @@
 .buttom_login a{
     margin: 0 7px;
 }
+.buttom_login a:hover{
+    color: #ffff;
+    text-decoration: none;
+}
 /* noi dung phan than */
 .container_web{
     width: 100%;
@@ -193,7 +201,7 @@
     text-decoration: underline;
     color: red;
 }
-/* -------------------------------- */
+/* ---------------Phần list thông tin xe----------------- */
 .news{
     margin: 30px 0;
     width: 100%;
@@ -231,108 +239,56 @@
     color: #f05626;
     font-weight: bold;
 }
-/* -------------------------------- */
-.brand{
-    margin: 30px 0;
+/* --------------Bảng giá logo các loại xe ------------- */
+.price_oto{
     width: 100%;
-    height: 1200px;
-    background-color: #fff;
+    margin-top: 40px    ;
+    height: 100%;
 }
-.brand_container{
-    box-shadow: 1px 1px 0px 2px #e9e5e5;
-    border-radius: 10px;
-    width: 80%;
-    height: 1195px;
+.container-md{
     margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 5px; ;
+    box-shadow: 1px 1px 0px 2px #e9e5e5;
 }
-.card_brand{
-    box-shadow: 0px 3px 5px rgba(9, 30, 66, 0.16), 0px 0px 1px rgba(9, 30, 66, 0.31);
-    color: #23242A;
-    background-color: #fff;
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
-    color: #4a4a4a;
-    height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
+.container-md .row{
+    margin: auto;
+    flex-wrap: nowrap; 
+    /* justify-content: space-around; */
 }
-.element_brand{
-    height: 10%;
-    width: 100%;
-}
-strong{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.container-md h5{
     font-weight: bold;
+    margin: -10px 1%;
+    line-height: 3;
 }
-.element_brand strong{
-    margin-left: 3%;
-    margin-top: 20px;
-    font-size: 15px;
-    font-weight: bold;
+.container-md .row .card{
+    margin:1%;
 }
-.element_brandBox{
-    margin-right: -53px;
-    margin-left: 68px;
-    margin-top: 15px;
-    float: left;
-}
-.element_brandBox a img{
-    width: 140px;
-    height: 110px;
-    float: left;
-    margin-left: 44px;
-}
-.brand_item{
-    height: 100%;
-}
-.element_brandBox .tag button{
-    width: 210px;
-    height: 160px;
-    text-decoration: none;
-    border: 1px solid #e2dfdf;
+.container-md .card-text{
+    /* text-decoration: none; */
     color: #333;
-    background-color: #fff;
+    font-size: 1.2em;
 }
-.firstTen_brand{
-    height: 352px;
+.card-text:hover{
+    color: red;
+    text-decoration: none;
 }
-.brand_name{
-    font-size: 20px;
+.card_img_top{
+    margin: 5%;
+    width: 60%;
+    height: 70%;    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
 }
-.more_brand{
+.hide_buttom{
     display: none;
 }
-.dong-vao{
-    height: 70px;
+.hide{
+    display: none;
 }
-.dong-vao_edit{
-    color: #f05626;
-    border: 0px solid #000;
-    background-color: #FFF;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 22px;
-    margin-left: 675px;
-}
-.angle-down{
-    margin-left: 3px;
-    margin-bottom: -4px;
-    width: 19px;
-}
-#content.dong-vao{
-    overflow: hidden;
-}
-#content.mo-ra{
-    height: auto;
-}
-#toggleButton{
-    display: block;
+.row_s #btu_show a{
+    background-color: #fff;
+    border: none;
 }
  /* ---------------- SALON OTO-------------------- */
 .contact{
@@ -408,13 +364,10 @@ strong{
     color:#F05626;
     text-decoration:none;
 }
-/* --------------Bảng giá logo các loại xe ------------- */
-.price_oto{
-    width: 100%;
-    height: 1000px;
-}
+
 /* ---------------footer------------------ */
 .footer{
+    margin-top: 30px;
     height:395px;
     background-color:#23242A;
 }
