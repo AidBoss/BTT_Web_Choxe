@@ -24,7 +24,7 @@
     height: 100%;
     margin: auto;
     display: block;
-    width: 78%;
+    width: 80%;
     position: relative;
 }
 .head_top{
@@ -35,25 +35,15 @@
     padding: 1rem 0;
 }
 .head_top a{
-    display: flex;
     margin: 0 15px;
     width: 13%;
     /* height: 40px; */
     color: #fff;
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
 }
-.head_top #logo_header{
-    margin-right: 55%;
-}
-.head_top #icons_header{
-    margin: 5px;
-}
+
 .head_top a p {
     line-height: 2;
-    margin: 2px;
 }
 .head_top a i{
     width: 20px;
@@ -76,9 +66,7 @@
 }
 .head_search a{color: #fff;
     text-decoration: none;}
-#login_dangtin{
-    margin: -3px 0;
-}
+
 .sbox {
     position: relative;
     width: 90%;
@@ -103,7 +91,7 @@
     top: 0;
     left: 0;
     margin-left: 30px;
-    margin-top: 12px;
+    margin-top: 10px;
     z-index: 2;
     color: #333;
 }
@@ -127,10 +115,8 @@
     /* height: 55px; */
     text-align: center;
     line-height: 3;
-    border-radius: 10px;
 }
 .buttom_login i{
-    margin-right: 5px;
     width: 20px;
 }
 .buttom_login a{
@@ -148,7 +134,7 @@
     /* border: 0px outset #fff; */
     border-radius: 10px;
     /* border: 1px solid #d8dbe0; */
-    width: 78%;
+    width: 80%;
     height: 100%;
     margin: auto;
 }
@@ -186,11 +172,11 @@
     text-decoration: underline;
     color: red;
 }
-/* -------------------------------- */
-.news{
+/* -------------Tin Đăng Mới Nhất(News)--------------- */
+.new{
     margin: 30px 0;
     width: 100%;
-    height: 100%;
+    height: 800px;
     background-color: #fff;
 }
 .new_content{
@@ -225,7 +211,10 @@
     color: #f05626;
     font-weight: bold;
 }
-/* -------------------------------- */
+/*-----------------Salon Ô tô-------------------*/
+
+
+/* -------Bảng giá xe các hãng (brand)------------------- */
 .brand{
     margin: 30px 0;
     width: 100%;
@@ -295,7 +284,7 @@ strong{
     background-color: #fff;
 }
 .firstTen_brand{
-    height: 352px;
+    height: 350px;
 }
 .brand_name{
     font-size: 20px;
