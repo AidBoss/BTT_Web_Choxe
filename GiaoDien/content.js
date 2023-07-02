@@ -58,9 +58,11 @@ let eventclickshow = function () {
   if (check) {
     btshow.style.display = 'block';
     show.style.display = 'block';
-    btshow.innerHTML = " Ẩn đi "
+    btshow.innerHTML = " Ẩn đi &uarr;";
+    btshow.style.fontSize = '17px';
     check = false;
   } else {
+    btshow.innerHTML = " Xem Thêm &darr;"
     show.style.display = 'none';
     check = true;
   }
