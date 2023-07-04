@@ -15,51 +15,49 @@
 </head>
 
 <body>
+
     <div class="box">
+        <!-- đầu trang phần logo  -->
+        <div class="header">
+            <div class="header_content">
+                <div class="head_top">
+                    <a href="/Home.html" alt="Chợ xe">
+                        <img src="/img/logo_white.png" alt="" id="logo_header">
+                    </a>
+                    <a href="">
+                        <img src="/img/car_check_white_19_19.png" alt="" id="icons_header">
+                        <p>Car Audit</p>
+                    </a>
+                    <a href="">
+                        <img src="/img/support_white_24_24.png" alt="" id="icons_header">
+                        <p>Thủ tục mua bán</p>
+                    </a>
+                    <a href="" id="childe_news">
+                        <img src="/img/news_white_20_16.png" alt="" id="icons_header">
+                        <p>Tin Tức</p>
+                    </a>
+                </div>
+                <div class="head_search">
+                    <form class="sbox">
 
-        <div class="all">
-            <!-- đầu trang phần logo  -->
-            <div class="header">
-                <div class="header_content">
-                    <div class="head_top">
-                        <a href="" alt="Chợ xe">
-                            <img src="/img/logo_white.png" alt="" id="logo_header">
-                        </a>
-                        <a href="">
-                            <img src="/img/car_check_white_19_19.png" alt="" id="icons_header">
-                            <p>Car Audit</p>
-                        </a>
-                        <a href="">
-                            <img src="/img/support_white_24_24.png" alt="" id="icons_header">
-                            <p>Thủ tục mua bán</p>
-                        </a>
-                        <a href="" id="childe_news">
-                            <img src="/img/news_white_20_16.png" alt="" id="icons_header">
-                            <p>Tin Tức</p>
-                        </a>
-                    </div>
-                    <div class="head_search">
-                        <form class="sbox">
+                        <i class="fa-solid fa-magnifying-glass" id="news"></i>
+                        <input type="text" class="stext" placeholder="Tìm kiếm trong chợ xe" id="usr" name="username">
 
-                            <i class="fa-solid fa-magnifying-glass" id="news"></i>
-                            <input type="text" class="stext" placeholder="Tìm kiếm trong chợ xe" id="usr"
-                                name="username">
-
-                        </form>
-                        <div class="buttom_login">
-                            <div class="but">
-                                <a href="">
-                                    <i class="fa-regular fa-user" id="login_header"></i>Đăng Nhập
-                                </a>
-                            </div>
-                            <div class="but2">
-                                <a href="" id="dangtin">
-                                    Đăng Tin <img src="/img/add_listing_white_16_18.png" alt="" id="login_dangtin"></i>
-                                </a>
-                            </div>
+                    </form>
+                    <div class="buttom_login">
+                        <div class="but">
+                            <a href="">
+                                <i class="fa-regular fa-user" id="login_header"></i>Đăng Nhập
+                            </a>
+                        </div>
+                        <div class="but2">
+                            <a href="" id="dangtin">
+                                Đăng Tin <img src="/img/add_listing_white_16_18.png" alt="" id="login_dangtin"></i>
+                            </a>
                         </div>
                     </div>
-                    <!-- <section class="home">
+                </div>
+                <!-- <section class="home">
                         <div class="form_container">
                             <i class="uil uil-times form_close"></i>
                            
@@ -112,265 +110,404 @@
                             </div>
                         </div>
                     </section> -->
+            </div>
+        </div>
+
+        <!-- đây là nội dung phần thân  -->
+        <div class="container_web">
+            <!------------Địa chỉ dẫn---------->
+            <div class="address_product">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Chợ xe &gt;</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Volkswage &gt;</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Tiguan &gt;</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Volkswagen Tiguan Facelift - 2023</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- --------Thông tin xe -------- -->
+            <div class="information_car">
+                <div class="container_fluid info_cars_row">
+                    <div class="row">
+                        <div class="col-sm-9 mb-3 mb-sm-0 cotphai">
+                            <div class="slider_car">
+                                <div class="slider_top">
+                                    <div class="control"><i id="prev" class="fa-solid fa-circle-chevron-left"
+                                            style="font-size: 40px;"></i>
+                                    </div>
+                                    <div class="img_mid">
+                                        <img src="/img/Oto_8/1.jpg" alt="" class="img-feature">
+                                    </div>
+                                    <div class="control"><i id="next" class="fa-solid fa-circle-chevron-right"
+                                            style="font-size: 40px;"></i>
+                                    </div>
+                                </div>
+                                <div class="list-img">
+                                    <div><img src="/img/Oto_8/1.jpg" alt=""></div>
+                                    <div class="active"><img src="/img/Oto_8/2.jpg" alt=""></div>
+                                    <div><img src="/img/Oto_8/3.jpg" alt=""></div>
+                                    <div><img src="/img/Oto_8/4.jpg" alt=""></div>
+                                    <div><img src="" alt=""></div>
+                                    <div><img src="" alt=""></div>
+                                </div>
+                                <div class="info_text_car">
+                                    <div class="listing_meta">
+                                        <span class="location"> <img src="/img/icons_ctsp/lc (1).png" alt=""> Hà
+                                            Nội</span>
+                                        <span class="location"><img src="/img/icons_ctsp/lc (2).png" alt="">
+                                            20/06/2023</span>
+                                    </div>
+                                    <h4 class="mota_title">Volkswagen Tiguan Facelift - 2023</h4>
+                                    <div class="giaca">
+                                        <p>118 Triệu</p>
+                                        <button type="button" class="btn btn-outline-secondary">Lưu Tin <i
+                                                class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                    <div class="mota">
+                                        <p class="mota_title">Mô tả</p>
+                                        <p>The New Tiguan - Đổi mới để thành công. Nhập khẩu Mexico. Động cơ 2.0 Turbo
+                                            tăng áp. Công suất: 180. Mô men xoắn 320. 5+2 chỗ cho gia đình đi trong phố
+                                            linh hoạt. Tiếp nối thế hệ đầu tiên từng làm mưa làm gió với hơn 6 triệu
+                                            chiếc được bán ra trên thị trường. Tiguan FaceLift - phiên bản mới nhất của
+                                            Tiguan với những đổi mới đáng kể hứa hẹn đem lại hành trình an toàn và thú
+                                            vị cho người dùng: Diện mạo đổi mới, linh hoạt và mạnh mẽ hơn. Mâm xe 18
+                                            inch đi cùng lốp xe tự vá và Pirelli phù hợp với mọi địa hình.
+                                        <p class="hide_buttom" id="bt_show"> Sử dụng
+                                            động
+                                            cơ tiên tiến 2.0TSI với turbo tăng áp kết hợp vận hành êm ái. Hệ thống
+                                            đèn
+                                            cải tiến mở rộng góc chiếu và hỗ trợ khi thời tiết xấu. Nội thất sử dụng
+                                            da
+                                            Vienna kết hợp Ambient Light 30 màu sang trọng và nổi bật. Giá niêm yết.
+                                            1.999.000.000. Riêng màu trắng và xanh Petro 2.049.000.000. Khuyến mãi:
+                                            100%
+                                            trước bạ + 5 năm bảo dưỡng và nhiều quà tặng khác hấp dẫn. Tham khảo
+                                            thêm
+                                            quý khách liên hệ Ms Lan: 0977.875.282 VW Sài Gòn. Có xe lái thử trải
+                                            nghiệm
+                                            duy nhất tại Vw Sài Gòn, thu xe cũ đổi xe mới giá cao. Địa chỉ: 682A
+                                            Trường
+                                            Chinh, Phường 15, Quận Tân Bình, Thành Phố Hồ Chí Minh. Hotline kinh
+                                            doanh:
+                                            0977.875.282 - Hotline/zalo: 0977.875.282
+                                        </p>
+                                        </p>
+                                        <div id="row_s" style="line-height: 3;">
+                                            <button onclick="eventclickshow()" style=" border: none;
+                                                background-color: #fff;">
+                                                <p id="btu_show" style="color: #F05642;"> Xem Thêm <img
+                                                        src="img/chevrons-down.png" alt="">
+                                                </p>
+                                            </button>
+                                        </div>
+                                        <p class="mota_title">Chi Tiết</p>
+                                    </div>
+                                    <table class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td><img src="/img/icons_ctsp/1.png" alt=""> Hãng xe</td>
+                                                <td>Volkswage</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="/img/icons_ctsp/2.png" alt=""> Dòng xe</td>
+                                                <td>Tiguan</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="/img/icons_ctsp/3.png" alt=""> Năm sản xuất
+                                                </td>
+                                                <td>2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="/img/icons_ctsp/5.png" alt=""> Nhiên liệu
+                                                </td>
+                                                <td>Xăng</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="/img/icons_ctsp/6.png" alt=""> Xuất xứ
+                                                </td>
+                                                <td>Nhập khẩu
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="/img/icons_ctsp/7.png" alt=""> Kiểu dáng
+                                                </td>
+                                                <td>SUV</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="/img/icons_ctsp/8.png" alt=""> Số chỗ
+                                                </td>
+                                                <td>7</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-3">
+                            <div class="card card-body card_ctsp">
+                                <h4 class="card-title">Liên Hệ</h4>
+                                <p class="card-text">Mai lan</p>
+                                <p><img src="/img/phone_14_14.png" alt=""> 0977***282
+                                </p>
+                                <p><img src="/img/location_12_13.png" alt=""> Hồ Chí Minh</p>
+                                <a href="#" id="bt_right1" class="btn btn-danger"><img src="/img/phone_white_14_14.png"
+                                        alt="">
+                                    0985***617</a>
+                                <br>
+                                <a href="#" id="bt_right2" class="btn  btn-light1"><img src="/img/audit_16_16.png"
+                                        alt="">
+                                    Car
+                                    Audit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> •
+            <div class="more_cars">
+                <h5 id="title_h5">Các xe Tiguan khác</h5>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/x1.jpg" alt="Card image cap">
+                            <div class="card-body ">
+                                <h5 class="card-title">Volkswagen Tiguan Volkswagen Tiguan Luxury S 2021, Tự động</h5>
+                                <p class="card-text">2021 •
+                                    Tự động •
+                                    Xe mới</p>
+                                <h5 class="card-title">1 tỷ 929 triệu</h5>
+                                <p class="card-text">Quảng Ninh •
+                                    12/4/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/x2.jpg" alt="Card image cap">
+                            <div class="card-body ">
+                                <h5 class="card-title">Volkswagen Tiguan Elegance 2021</h5>
+                                <p class="card-text">2021 •
+                                    Xe mới</p>
+                                <h5 class="card-title">1 tỷ 699 triệu</h5>
+                                <p class="card-text">Hà Nội •
+                                    7/11/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/x3.jpg" alt="Card image cap">
+                            <div class="card-body ">
+                                <h5 class="card-title">Volkswagen Tiguan Volkswagen Tiguan Allspace 2.0 2018_ Đăng Ký
+                                    Lần đầu 2020_ Xe Nhập Khẩu Mexico 2018</h5>
+                                <p class="card-text">2018
+                                    30.000 km</p>
+                                <h5 class="card-title">1 tỷ 230 triệu</h5>
+                                <p class="card-text">Hồ Chí Minh •
+                                    28/10/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/x4.jpg" alt="Card image cap">
+                            <div class="card-body ">
+                                <h5 class="card-title">Volkswagen Tiguan Luxury S 2022</h5>
+                                <p class="card-text">2022 •
+                                    Xe mới</p>
+                                <h5 class="card-title">1 tỷ 929 triệu</h5>
+                                <p class="card-text">Hồ Chí Minh •
+                                    5/10/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" id="next_page">
+                        <p>Xem Thêm <img src="/img/chevrons-right_20_20.png" alt=""></p>
+                    </a>
+                </div>
+                <h5 id="title_h5">Các xe cùng phân khúc</h5>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/m1.jpg" alt="Card image cap">
+                            <div class="card-body list_item">
+                                <h5 class="card-title">Ford Everest Wildtrak 2023</h5>
+                                <p class="card-text">2023 •
+                                    Tự động •
+                                    Xe mới</p>
+                                <h5 class="card-title">1 tỷ 499 triệu</h5>
+                                <p class="card-text">Hồ Chí Minh •
+                                    5/4/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/m2.jpg" alt="Card image cap">
+                            <div class="card-body list_item">
+                                <h5 class="card-title">Toyota Rush Toyota Rush S 1.5AT 2020, Tự động, đã đi 57.000 km
+                                </h5>
+                                <p class="card-text">2020 •
+                                    Tự động •
+                                    57.000 km</p>
+                                <h5 class="card-title">550 Triệu</h5>
+                                <p class="card-text">Hồ Chí Minh •
+                                    5/4/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/m3.jpg" alt="Card image cap">
+                            <div class="card-body list_item">
+                                <h5 class="card-title">BMW X5 BMW X5 xDrive40i xLine Plus 2021, Tự động</h5>
+                                <p class="card-text">2021 •
+                                    Tự động •
+                                    Xe mới</p>
+                                <h5 class="card-title">4 tỷ 239 triệu</h5>
+                                <p class="card-text">Hà Nội •
+                                    5/4/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/m4.jpg" alt="Card image cap">
+                            <div class="card-body list_item">
+                                <h5 class="card-title">Bán xe SantaFe 2.2 máy dầu cao cấp Premium
+                                </h5>
+                                <p class="card-text">2019 •
+                                    Tự động •
+                                    23.000 km</p>
+                                <h5 class="card-title">1 tỷ 050 triệu</h5>
+                                <p class="card-text">Hà Nội •
+                                    12/4/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top list_item" src="/img/Oto_8/m5.jpg" alt="Card image cap">
+                            <div class="card-body list_item ">
+                                <h5 class="card-title"> Volkswagen Tiguan Volkswagen Tiguan Luxury S 2021, Tự động</h5>
+                                <p class="card-text">2021 •
+                                    Tự động •
+                                    Xe mới</p>
+                                <h5 class="card-title">1 tỷ 929 triệu</h5>
+                                <p class="card-text">Quảng Ninh
+                                    • 12/4/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" id="next_page">
+                        <p>Xem Thêm <img src="/img/chevrons-right_20_20.png" alt=""></p>
+                    </a>
                 </div>
             </div>
-
-            <!-- đây là nội dung phần thân  -->
-            <div class="container_web">
-                <!------------Địa chỉ dẫn---------->
-                <div class="address_product">
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Chợ xe &gt;</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Mitsubishi &gt;</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Triton &gt;</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link">Mitsubishi Triton GLS 2017, Tự động, đã đi 40.000 km</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <!-- --------Thông tin xe -------- -->
-                <div class="information_car">
-                    <div class="container_fluid info_cars_row">
-                        <div class="row">
-                            <div class="col-sm-9 mb-3 mb-sm-0 cotphai">
-                                <div class="slider_car">
-                                    <div class="slider_top">
-                                        <div class="control"><i id="prev" class="fa-solid fa-circle-chevron-left"
-                                                style="font-size: 40px;"></i>
-                                        </div>
-                                        <div class="img_mid">
-                                            <img src="/img/Oto_2/1.jpg" alt="" class="img-feature">
-                                        </div>
-                                        <div class="control"><i id="next" class="fa-solid fa-circle-chevron-right"
-                                                style="font-size: 40px;"></i>
-                                        </div>
-                                    </div>
-                                    <div class="list-img">
-                                        <div><img src="/img/Oto_2/1.jpg" alt=""></div>
-                                        <div class="active"><img src="/img/Oto_2/2.jpg" alt=""></div>
-                                        <div><img src="/img/Oto_2/3.jpg" alt=""></div>
-                                        <div><img src="/img/Oto_2/4.jpg" alt=""></div>
-                                        <div><img src="/img/Oto_2/5.jpg" alt=""></div>
-                                        <div><img src="/img/Oto_2/6.jpg" alt=""></div>
-                                    </div>
-                                    <div class="info_text_car">
-                                        <div class="listing_meta">
-                                            <span class="location"> <img src="/img/icons_ctsp/lc (1).png" alt="">Hòa
-                                                Bình</span>
-                                            <span class="location"><img src="/img/icons_ctsp/lc (2).png" alt="">
-                                                28/06/2023</span>
-                                        </div>
-                                        <h4 class="mota_title">Mitsubishi Triton GLS 2017, Tự động, đã đi 40.000 km</h4>
-                                        <div class="giaca">
-                                            <p>420 Triệu</p>
-                                            <button type="button" class="btn btn-outline-secondary">Lưu Tin <i
-                                                    class="fa-regular fa-heart"></i></button>
-                                        </div>
-                                        <div class="mota">
-                                            <p class="mota_title">Mô tả</p>
-                                            <p>Xe chính chủ, xe rất đẹp, sản xuất cuối 2017 tại Thái Lan, form 2018. Ghế
-                                                điện, nội thất bọc da, chìa khóa smartkey, camera 360 độ. Nay gia đình
-                                                muốn bán cho ai có nhu cầu xin liên hệ 0985 670 617 - Ngọc.
-                                            </p>
-                                            <p class="mota_title">Chi Tiết</p>
-                                        </div>
-                                        <table class="table table-striped table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <td><img src="/img/icons_ctsp/1.png" alt=""> Hãng xe</td>
-                                                    <td>Mitsubishi</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><img src="/img/icons_ctsp/2.png" alt=""> Dòng xe</td>
-                                                    <td>Triton</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="/img/icons_ctsp/3.png" alt=""> Năm sản xuất
-                                                    </td>
-                                                    <td>2017</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="/img/icons_ctsp/4.png" alt=""> Số km đã
-                                                        đi</td>
-                                                    <td>40000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="/img/icons_ctsp/5.png" alt=""> Nhiên liệu
-                                                    </td>
-                                                    <td>Dầu</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-sm-3">
-                                <div class="card card-body card_ctsp">
-                                    <h4 class="card-title">Liên Hệ</h4>
-                                    <p class="card-text">Vũ Duy Ngọc</p>
-                                    <p><img src="/img/phone_14_14.png" alt=""> 0985***617</p>
-                                    <p><img src="/img/location_12_13.png" alt=""> Hoà Bình</p>
-                                    <a href="#" id="bt_right1" class="btn btn-danger"><img
-                                            src="/img/phone_white_14_14.png" alt="">
-                                        0985***617</a>
-                                    <br>
-                                    <a href="#" id="bt_right2" class="btn  btn-light1"><img src="/img/audit_16_16.png"
-                                            alt="">
-                                        Car
-                                        Audit</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="more_cars">
-                    <h5 id="title_h5">Tin Đăng mới nhất</h5>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 19rem;">
-                                <img class="card-img-top" src="/img/Oto_2/m1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mitsubishi Triton GLS 4x4 AT 2014 2014</h5>
-                                    <p class="card-text">2014 • 100.000 km</p>
-                                    <h5 class="card-title">350 Triệu</h5>
-                                    <p class="card-text">Hà Nội • 13/2/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 19rem;">
-                                <img class="card-img-top" src="/img/Oto_2/m2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mitsubishi Triton Athlete 2018</h5>
-                                    <p class="card-text">2018 • 65.000 km</p>
-                                    <h5 class="card-title">570 Triệu</h5>
-                                    <p class="card-text">Cần Thơ • 19/12/2022</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 19rem;">
-                                <img class="card-img-top" src="/img/Oto_2/m3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mitsubishi Triton Triton Athlete 4 X 4 Bản 2022 2021</h5>
-                                    <p class="card-text">2021 • 3.000 km</p>
-                                    <h5 class="card-title">880 Triệu</h5>
-                                    <p class="card-text">Hồ Chí Minh • 9/11/2022</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 19rem;">
-                                <img class="card-img-top" src="/img/Oto_2/m4.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mitsubishi Triton Athlete Premium 4x4 Full 2022</h5>
-                                    <p class="card-text">2022 • 12.000 km</p>
-                                    <h5 class="card-title">8590 Triệu</h5>
-                                    <p class="card-text">Hồ Chí Minh • 29/10/2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <a href="#" id="next_page">
-                            <p>Xem Thêm <img src="/img/chevrons-right_20_20.png" alt=""></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="more_cars">
-                    <h5 id="title_h5">Các tin khác cùng người bán</h5>
-                    <div class="row">
-                        <a id="next_page">
-                            <p><img src="/img/file_empty.png" alt=""></p>
-                            <p style="color: gray; text-align: center;">chưa có tin đăng </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Phần chân trang web -->
-            <div class="footer">
-                <div style="height:238px; width:400px;" class="contenfooter">
-                    <div>
-                        <img src="/img/logo_white_117_32.png" alt=""
-                            style="width:117px; height:32px; margin-top:20px;"></img>
-                    </div>
-                    <div style="width:400px; height:42px; color:white; margin-top:40px;">
-                        ©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số
-                        thuế: 0304013473
-                    </div>
-                    <div style="width:400px; height:42px; color:white; margin-top:40px;">
-                        Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, phường Tân Phong, Quận 7, TPHCM
-                    </div>
-                    <div style="height:18px; width:247px;margin-top:40px; display:inline-flex;">
-                        <i class="fa-solid fa-phone" style="color:white; font-size:14px;"><a href=""
-                                class="phone">091.144.2883</a></i>
-                        <i class="fa-solid fa-envelope" style="color:white; margin-left:60px; font-size:14px;"><a
-                                href="" class="email">cskh@choxe.vn</a></i>
-                    </div>
-                    <div>
-                        <img src="/img/logo-bct.png" alt="" style="height:45px;width:122px; margin-top:50px;"></img>
-                    </div>
-                </div>
-                <div style="margin-left:565px; width:180px; height:220px; margin-top:-140px;">
-                    <a href="" class="footerlink">Giới thiệu</a>
-                    <a href="" class="footerlink">Quy chế hoạt động</a>
-                    <a href="" class="footerlink">Báo giá</a>
-                </div>
-                <!-- <div style="  margin-left:900px; margin-top:-150px;">
-                    <div class="phones"><i class="fa-solid fa-phone" style="color:#F05626; font-size:17px;"><a href="" class="hotline">Hotline: 091.144.2883</a></i></div>
-                    <div class="salons"><i class="fa-sharp fa-solid fa-store" style="color:white; font-size:17px;"><a href="" class="salon">Dành cho Salon, Môi giới</a></i></div>
-                </div> -->
-                <div class="footer-content-right">
-                    <div class="footer-content-right-1">
-                        <a href=""><img src="/img/hotline2.png"></a>
-                        <div class="footer-content-right-1_1">
-                            <a href=""><b>Hotline: 091.144.2883</b></a>
-                        </div>
-                    </div>
-                    <div class="footer-content-right-2">
-                        <a href=""><img src="/img/danhchomoigioi.png"></a>
-                        <div class="footer-content-right-2_1">
-                            <a href=""><b>Dành cho salon, Môi giới</b></a>
-                        </div>
-                    </div>
+            <div class="more_cars">
+                <h5 id="title_h5">Các tin khác cùng người bán</h5>
+                <div class="row">
+                    <a id="next_page">
+                        <p><img src="/img/file_empty.png" alt=""></p>
+                        <p style="color: gray; text-align: center;">chưa có tin đăng </p>
+                    </a>
                 </div>
             </div>
         </div>
 
 
 
-        <script src="slider.js"></script>
-        <script src="content.js"></script>
-        <!-- bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+        <!-- Phần chân trang web -->
+        <div class="footer">
+            <div style="height:238px; width:400px;" class="contenfooter">
+                <div>
+                    <img src="/img/logo_white_117_32.png" alt=""
+                        style="width:117px; height:32px; margin-top:20px;"></img>
+                </div>
+                <div style="width:400px; height:42px; color:white; margin-top:40px;">
+                    ©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số
+                    thuế: 0304013473
+                </div>
+                <div style="width:400px; height:42px; color:white; margin-top:40px;">
+                    Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, phường Tân Phong, Quận 7, TPHCM
+                </div>
+                <div style="height:18px; width:247px;margin-top:40px; display:inline-flex;">
+                    <i class="fa-solid fa-phone" style="color:white; font-size:14px;"><a href=""
+                            class="phone">091.144.2883</a></i>
+                    <i class="fa-solid fa-envelope" style="color:white; margin-left:60px; font-size:14px;"><a href=""
+                            class="email">cskh@choxe.vn</a></i>
+                </div>
+                <div>
+                    <img src="/img/logo-bct.png" alt="" style="height:45px;width:122px; margin-top:50px;"></img>
+                </div>
+            </div>
+            <div style="margin-left:565px; width:180px; height:220px; margin-top:-140px;">
+                <a href="" class="footerlink">Giới thiệu</a>
+                <a href="" class="footerlink">Quy chế hoạt động</a>
+                <a href="" class="footerlink">Báo giá</a>
+            </div>
+            <!-- <div style="  margin-left:900px; margin-top:-150px;">
+                    <div class="phones"><i class="fa-solid fa-phone" style="color:#F05626; font-size:17px;"><a href="" class="hotline">Hotline: 091.144.2883</a></i></div>
+                    <div class="salons"><i class="fa-sharp fa-solid fa-store" style="color:white; font-size:17px;"><a href="" class="salon">Dành cho Salon, Môi giới</a></i></div>
+                </div> -->
+            <div class="footer-content-right">
+                <div class="footer-content-right-1">
+                    <a href=""><img src="/img/hotline2.png"></a>
+                    <div class="footer-content-right-1_1">
+                        <a href=""><b>Hotline: 091.144.2883</b></a>
+                    </div>
+                </div>
+                <div class="footer-content-right-2">
+                    <a href=""><img src="/img/danhchomoigioi.png"></a>
+                    <div class="footer-content-right-2_1">
+                        <a href=""><b>Dành cho salon, Môi giới</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+
+    <!-- link javascrip -->
+    <script src="/javascrip/slider.js"></script>
+    <script src="/javascrip/content.js"></script>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
