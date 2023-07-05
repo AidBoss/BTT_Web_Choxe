@@ -60,11 +60,23 @@ let eventclickshow = function () {
     show.style.display = 'block';
     btshow.innerHTML = " Ẩn đi &uarr;";
     btshow.style.fontSize = '15px';
+    register.style.display = 'block';
+    btchange.style.display = 'block';
+    login.style.display = 'none';
+    btchange.innerHTML = 'Đăng Nhập'
     check = false;
   } else {
     btshow.innerHTML = " Xem Thêm &darr;"
     show.style.display = 'none';
+    register.style.display = 'none';
+    login.style.display = 'block';
+    btchange.innerHTML = 'Đăng Ký'
     check = true;
   }
 }
+const register = document.querySelector('.register_modal')
+const btchange = document.querySelector('#change_login')
+const login = document.querySelector('.login_modal')
+
+
 

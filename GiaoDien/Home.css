@@ -20,7 +20,7 @@
     background-color: #f05626;
     position: relative;
     min-height: 3.25rem;
-    z-index: 30;
+    /* z-index: 30; */
 }
 
 .header_content{
@@ -68,6 +68,44 @@
 #news{
     margin-left: 20px;
 }
+
+
+
+/* -------------Form Đăng ký đăng nhập---------- */
+.modal-content{
+    margin-top: 20%;
+}
+#icons_modal{
+    width: 100%;
+    height: 30px;
+    /* font-weight: bold; */
+}
+#icons_modal button{
+    width: 100%;
+    height: 100%;
+    border: 1px solid#e4e5e7;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+#ip_tkmk{
+    font-size: 11px;
+    position: inherit;
+    height: 40px;
+}
+#lb_tkmk{
+    color: #c1c1c1;
+    left: 25px;
+    font-size: 12px;
+    position: absolute;
+}
+.register_modal{
+    display: none;
+}
+/* ---------kết thúc css phần Đăng ký đăng nhập-------  */
+
+
+/* <!-- Phần tìm kiếm nhiều nhất --> */
 .head_search{
     height: 80px;
     width: 100%;
@@ -147,7 +185,9 @@
     color:#fff;
     text-decoration: none;
 }
+
 /* noi dung phan than */
+/* <!-- Phần tìm kiếm nhiều nhất --> */
 .search_price{
     margin: 30px 0;
     width: 100%;
@@ -181,7 +221,7 @@
     height: 50%;
     margin: 0 3%;
 }
-
+/* các nút lựa chọn trong phần tìm kiếm nhiều nhất */
 .element_box .tag button{
     text-decoration: none;
     margin-top: 5px;
@@ -206,7 +246,7 @@
     height: 100%;
 }
 .new_content{
-    width: 80%;
+    width: 78%;
     height: 100%;
     margin: auto;
 }
@@ -243,6 +283,82 @@
 #tx_link:hover{
     text-decoration: none;
 }
+
+ /* ---------------- SALON OTO-------------------- */
+.contact{
+    height: 420px;
+    width: 100%;
+}
+ .containers {
+    width: 100%;
+    padding: 10px;
+ }#post {
+    width: 50%;
+    height: 160.5px;
+    background: #FFFF;
+    float: left;
+ }
+ #sidebar {
+    width: 50%;
+    height: 160.5px;
+    background: #FFFF;
+    float: right;
+   }
+.photo{
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+}
+.info{
+    float: right;
+    margin-right:290px;
+    margin-top:15px;
+    line-height:23px;
+}
+.nd{
+    width:600px;
+    height:140px;
+}
+.info2{
+    float: right;
+    margin-right:245px;
+    margin-top:15px;
+    line-height:23px;
+}
+.info3{
+    float: right;
+    margin-right:270px;
+    margin-top:15px;
+    line-height:23px;
+}
+.info4{
+    float: right;
+    width:340.5px;
+    margin-right:55px;
+    margin-top:15px;
+    line-height:23px;
+}
+.iteminfo{
+    font-size:12px;
+}
+.contents{
+    width:78%;
+    height:409px;
+    background-color:white;
+    margin:auto;
+    box-shadow: 1px 1px 0px 2px #e9e5e5;
+}
+.salon{
+    height:29px;
+    font-weight:bold;
+    text-decoration:none;
+    color:black;
+}
+.salon:hover{
+    color:#F05626;
+    text-decoration:none;
+}
+
 /* --------------Bảng giá logo các loại xe ------------- */
 .price_oto{
     width: 100%;
@@ -299,80 +415,6 @@
 .row_s #btu_show a{
     background-color: #fff;
     border: none;
-}
- /* ---------------- SALON OTO-------------------- */
-.contact{
-    height: 420px;
-    width: 100%;
-}
- .containers {
-    width: 100%;
-    padding: 10px;
- }#post {
-    width: 599.5px;
-    height: 160.5px;
-    background: #FFFF;
-    float: left;
- }
- #sidebar {
-    width: 599.5px;
-    height: 160.5px;
-    background: #FFFF;
-    float: right;
-   }
-.photo{
-    float:left;
-    margin-top:20px;
-    margin-left:20px;
-}
-.info{
-    float: right;
-    margin-right:290px;
-    margin-top:15px;
-    line-height:23px;
-}
-.nd{
-    width:600px;
-    height:140px;
-}
-.info2{
-    float: right;
-    margin-right:245px;
-    margin-top:15px;
-    line-height:23px;
-}
-.info3{
-    float: right;
-    margin-right:270px;
-    margin-top:15px;
-    line-height:23px;
-}
-.info4{
-    float: right;
-    width:340.5px;
-    margin-right:55px;
-    margin-top:15px;
-    line-height:23px;
-}
-.iteminfo{
-    font-size:12px;
-}
-.contents{
-    width:80%;
-    height:409px;
-    background-color:white;
-    margin:auto;
-    box-shadow: 1px 1px 0px 2px #e9e5e5;
-}
-.salon{
-    height:29px;
-    font-weight:bold;
-    text-decoration:none;
-    color:black;
-}
-.salon:hover{
-    color:#F05626;
-    text-decoration:none;
 }
 
 /* ---------------footer------------------ */
@@ -651,6 +693,7 @@
 .list_item{
     height: 160px;
 }
+
 /* -------------------------------- */
 /* .brand{
     margin: 30px 0;

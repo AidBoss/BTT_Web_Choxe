@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="Home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" "        integrity="
+        sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="fonts/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -36,6 +37,7 @@
                         <i class="fa-solid fa-newspaper"></i>
                         <p>Tin Tức</p>
                     </a>
+
                 </div>
                 <div class="head_search">
                     <form class="sbox">
@@ -46,9 +48,124 @@
                     </form>
                     <div class="buttom_login">
                         <div class="but">
-                            <a target="_blank" href="">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#modelId" style="background-color: #f05626;border: none;font-size: 16px;">
                                 <i class="fa-regular fa-user" id="login_header"></i>Đăng Nhập
-                            </a>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modelId" tabindex="-1" role="dialog"
+                                aria-labelledby="modelTitleId" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Đăng Nhập</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- form dang ky dang nhap -->
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-outline mb-4" id="icons_modal">
+                                                    <button>
+                                                        <i class="fa-brands fa-facebook" style="color: #225fc9;"></i>
+                                                        Đăng nhập bằng facebook
+                                                    </button>
+                                                </div>
+                                                <div class="form-outline mb-4" id="icons_modal">
+                                                    <button>
+                                                        <i class="fa-brands fa-google"></i> Đăng nhập bằng google
+                                                    </button>
+                                                </div>
+
+                                                <!-- Password input -->
+                                                <div class="form-outline mb-4">
+                                                    <p class="form-label" for="form2Example2" style="color: #B3B6C1;">
+                                                        hoặc đăng nhập bằng
+                                                        tài khoản Chợ xe</p>
+                                                </div>
+                                                <div class="login_modal">
+                                                    <!-- Email input -->
+                                                    <div class="form-outline mb-4">
+                                                        <label class="form-label" id="lb_tkmk" for="form2Example2">Số
+                                                            điện
+                                                            thoại</label>
+                                                        <input type="text" id="ip_tkmk" class="form-control" />
+                                                    </div>
+
+                                                    <!-- Password input -->
+                                                    <div class="form-outline mb-4">
+                                                        <label class="form-label" id="lb_tkmk" for="form2Example2">mật
+                                                            khẩu</label>
+                                                        <input type="password" id="ip_tkmk" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="register_modal">
+                                                    <!-- Email input -->
+                                                    <div class="form-outline mb-4">
+                                                        <label class="form-label" id="lb_tkmk" for="form2Example2">Họ
+                                                            tên</label>
+                                                        <input type="text" id="ip_tkmk" class="form-control" />
+                                                    </div>
+
+                                                    <!-- Password input -->
+                                                    <div class="form-outline mb-4">
+                                                        <label class="form-label" id="lb_tkmk" for="form2Example2">Số
+                                                            điện thoại</label>
+                                                        <input type="text" id="ip_tkmk" class="form-control" />
+                                                    </div>
+                                                    <!-- Email input -->
+                                                    <div class="form-outline mb-4">
+                                                        <label class="form-label" id="lb_tkmk"
+                                                            for="form2Example2">Email</label>
+                                                        <input type="email" id="ip_tkmk" class="form-control" />
+                                                    </div>
+
+                                                    <!-- Password input -->
+                                                    <div class="form-outline mb-4">
+                                                        <label class="form-label" id="lb_tkmk" for="form2Example2">Mật
+                                                            khẩu</label>
+                                                        <input type="password" id="ip_tkmk" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <!-- 2 column grid layout for inline styling -->
+                                                <div class="row mb-4">
+                                                    <div class="col d-flex justify-content-center">
+
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="form2Example31" checked />
+                                                            <label class="form-check-label" for="form2Example31">
+                                                                Lưu mật khẩu </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <!-- Simple link -->
+                                                        <a href="#!" style="color: #f05626;">Quên mật khẩu ?</a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Submit button -->
+                                                <button type="button" style="background-color: #f05626; border: none;"
+                                                    class="btn btn-primary btn-block mb-4">Đăng
+                                                    Nhập</button>
+
+                                                <!-- Register buttons -->
+                                                <div class="text-center ">
+                                                    <p>Bạn Chưa có tài khoản? <a onclick="eventclickshow()"
+                                                            id="change_login" href="#!" style="color: #f05626;">Đăng
+                                                            ký</a>
+                                                    </p>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="but2">
                             <a target="_blank" href="" id="dangtin">
@@ -76,6 +193,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Phần tin đăng mới nhất -->
         <div class="news">
             <div class="new_content">
@@ -215,6 +333,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Phần Salon Ô tô -->
         <div class="contact">
             <div class="contents">
@@ -302,6 +421,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Bảng giá xe các hãng -->
         <div class="price_oto">
             <div class="container-md mt-3" style="background-color:#FFF;">
@@ -510,6 +630,7 @@
             </div>
 
         </div>
+
         <!-- Phần chân trang web -->
         <div class="footer">
             <div style="height:238px; width:400px;" class="contenfooter">
@@ -554,6 +675,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- form Đăng nhập -->
     </div>
 
     <!-- link javascrip -->
