@@ -1,0 +1,125 @@
+.footer2{
+    margin-top: 30px;
+    height:325px;
+    background-color:#23242A;
+}
+.footerlink2{
+    text-decoration: none;
+    color:#bababa;
+}
+.footerlink2:hover{
+    text-decoration:none;
+    color:#FFFF;
+}
+.header2{
+background-color:white;
+height:225.59px;
+width:100%;
+}
+.container-fluid{
+    background-color:#F04C24;
+    height:45px;
+    width:12000px;
+}
+.dropdown-menu{
+    background-color: #F04C24;
+    border:1px solid #F04C24;
+}
+.dropdown-item{
+    color:white;
+}
+.dropdown-item:hover{
+    background-color: #F04C24;
+    color:white;
+}
+.name-menu{
+    color:white;
+    font-weight:bold;
+}
+.all2{
+    background-color: #FFFF;
+}
+.box2{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    font-weight: 800;
+    line-height: 1.5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 15px sans-serif;
+}
+.navbar{
+    margin-left:10%;
+    height:45px;
+}
+.pagination{
+    margin-left:30%;
+}
+.page-item a{
+    color:#bababa;
+}
+.page-item a:hover{
+    background-color: #F04C24;
+    color:#fff;
+}
+.contentlink {
+    font-size:22px;
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+.contentlink:hover{
+    text-decoration:none;
+    color:black;
+}
+.content-link-right{
+    list-style:none;
+    margin-left:-30px;
+}
+.content-link-right li a{
+    text-decoration:none;
+    color:#bababa;
+}
+.content-link-right li hr{
+    width:280px; height:1px; color:#8f8e8e
+}
+.sbox2 {
+    position: relative;
+    }
+.stext2 {
+    width: 220px;
+    height: 40px;
+    background: #ffffff;
+    /* border: none; */
+    border:1px solid darkgrey;
+    font-size: 10pt;
+    float: left;
+    color: #2b303b;
+    padding-left: 15px;
+    /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;*/
+} 
+
+.button {  background-color:#F04C24; 
+    border: none;  
+    color: white;  
+    /* padding: 15px 32px;   */
+    width:80px;
+    height:40px;
+    text-align: center; 
+    text-decoration: none;  
+    display: inline-block; 
+    font-size: 15px; 
+    margin: 4px 2px; 
+    cursor: pointer;
+    margin-top:-0px;
+    margin-left:-0px;
+}
+.button:hover{
+    background-color:#23242A;
+    color:white;
+}
