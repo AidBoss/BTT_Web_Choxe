@@ -288,8 +288,9 @@
 .contact{
     height: 420px;
     width: 100%;
+    
 }
- .containers {
+ /* .containers {
     width: 100%;
     padding: 10px;
  }#post {
@@ -357,6 +358,26 @@
 .salon:hover{
     color:#F05626;
     text-decoration:none;
+} */
+.iteminfo{
+    color:#8F93A0;
+}
+.salon{
+    text-decoration:none;
+    color:black;
+    font-size:17px;
+    font-weight: bold;
+}
+.salon:hover{
+    color:#F05626;
+    text-decoration: none;
+}
+.salon2{
+    font-size:21px;
+    font-weight:bold;
+}
+.salon2:hover{
+    color:#F05626;
 }
 
 /* --------------Bảng giá logo các loại xe ------------- */
