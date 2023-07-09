@@ -132,7 +132,7 @@
     height: 684px;
 }
 .can_giua{
-    margin: 0 145px;
+    margin:auto;
 }
 .lc1_container{
     display: flex;
@@ -549,7 +549,8 @@ label::after{
     background: #fff;
 }
 .lc3_container{
-    margin: 0 210px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .car_intro{
     font-size: 32px;
@@ -606,7 +607,8 @@ label::after{
     padding: 48px 16px;
 }
 .lc4_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .feature_box{
     display: flex;
@@ -642,7 +644,8 @@ label::after{
     background: #fff;
 }
 .lc5_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .price_sub{
     font-size: 32px;
@@ -740,7 +743,8 @@ label::after{
     width: 100%;
 }
 .lc6_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .check_step{
     font-size: 32px;
@@ -837,7 +841,8 @@ label::after{
     height: 380px;
 }
 .lc7_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .form_title{
     font-size: 32px;
@@ -887,7 +892,8 @@ label::after{
     background: #fff;
 }
 .lc8_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .car_title{
     font-size: 32px;
@@ -979,7 +985,8 @@ label::after{
     width: 100%;
 }
 .lc9_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .client_rate{
     font-size: 32px;
@@ -1136,7 +1143,8 @@ label::after{
     background: #fff;
 }
 .lc10_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .title_ask{
     font-size: 32px;
@@ -1192,9 +1200,11 @@ label::after{
     padding: 56px 0;
     color: white;
     background: #23242A;
+    width:100%;
 }
 .footer_container{
-    margin: 0 335px;
+    margin-left:5%;
+    margin-right:5%;
 }
 .logo_footer{
     display: inline-block;
