@@ -849,6 +849,47 @@ option{
     height: 160px;
 }
 
+
+/* -------------------------------- */
+/* css của trang User. */
+.container_web_users{
+    height: 100%;
+    margin: auto;
+    width: 78%;
+}
+.list_select_users{
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.left_container{
+width: 37%;
+border: none;
+}
+.right_container{
+    width: 61%;
+}
+.left_container .list-group .list-group-item{
+    border: none;
+}
+.left_container .list-group .list-group-item:hover{
+    color: #F05626;
+}
+.left_container .list-group .list-group-item:last-child{
+    color: red;
+}
+/* -------------------------------- */
+
+
+
+
 /* -------------------------------- */
 /* .brand{
     margin: 30px 0;
