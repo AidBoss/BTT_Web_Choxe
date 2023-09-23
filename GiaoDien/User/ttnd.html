@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Choxe</title>
-    <link rel="stylesheet" href="/GiaoDien/Home.css">
+    <link rel="stylesheet" href="../Home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -536,10 +536,9 @@
 
                 <div class="right_container">
                     <ul class="list-group">
-
                         <!-- html của thông tin đăng nhập -->
                         <!-- html của thông tin đăng nhập -->
-                        <div class="content_info_login">
+                        <!-- <div class="content_info_login">
                             <li class="list-group-item disabled">Thông tin đăng nhập </li>
                             <li class="list-group-item">
                                 <div class="render-avatar">
@@ -570,7 +569,107 @@
                             <li class="list-group-item">
                                 <button type="submit" class="sub-users" id="sub-web-users">Cập nhập</button>
                             </li>
+                        </div> -->
+
+                        <!-- phần của đức anh từ quản lý tin đăng lên trên-->
+                        <!-- phần của huy từ quản lý đơn hàng xuống-->
+                        
+                        <!-- html của quản lý đơn hàng -->
+                        <div class="order-management">
+                            <li class="list-group-item disabled">Quản lý đơn hàng</li>
+                            <div class="columns">
+                                <div class="column is-6 ">
+                                    <div class="select">
+                                        <select>
+                                            <option value="option1">Tất cả</option>
+                                            <option value="option2">Dịch vụ kiểm tra xe phổ thông</option>
+                                            <option value="option3">Hỗ trợ vay ngân hàng</option>
+                                            <option value="option4">Dịch vụ làm giấy tờ xe</option>
+                                            <option value="option5">Dịch vụ kiểm tra xe phổ thông</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-services">
+                                <h4>Bạn chưa sử dụng dịch vụ nào</h4>
+                            </div>
                         </div>
+
+                        <!-- html của quản lý tin đã lưu -->
+                        <!-- <div class="saved-news">
+                            <li class="list-group-item disabled">Tin đã lưu</li>
+                            <div class="list-news">
+                                <h4>Chưa có tin đăng</h4>
+                            </div>
+                        </div> -->
+
+                        <!-- html của đăng ký salon -->
+                        <!-- <div class="salon-sign-in">
+                            <li class="list-group-item disabled">Quản lý salon</li>
+                            <div class="small-container">
+                                <div class="salon-header"></div>
+                                <h1 class="center-text mt-5">Quyền lợi khi đăng ký trở thành salon của Chợ Xe</h1>
+                                <div class="list-benefit mt-4">
+                                    <div class="benefit-item">
+                                        Được đăng 6 tin miễn phí 1 tháng (được xem như tin thường)
+                                    </div>
+                                    <div class="benefit-item">
+                                        Có gian hàng và địa chỉ url riêng. Không giới hạn sản phẩm trên trang cửa hàng của mình
+                                    </div>
+                                    <div class="benefit-item">
+                                        Được hiển thị tên salon ở Trang chủ. Với thứ tự ưu tiên theo:
+                                        <ul>
+                                            <li>• Những salon mua gói dài hạn ưu tiên trước</li>
+                                            <li>• Nếu cùng gói, salon mua trước sẽ hiển thị trước</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- html của đổi mật khẩu -->
+                        <!-- <div class="change-password">
+                            <li class="list-group-item disabled">Đổi mật khẩu</li>
+                            <div class="change-password-container">
+                                <form class="select-password">
+                                    <div class="field">
+                                        <div class="control-field">
+                                            <div class="text-input">
+                                                <input type="password" class="input" wire:model.defer="password-old" placeholder="Nhập mật khẩu cũ" id="passworda">
+                                                <span class="icon-eye-right">
+                                                    <i class="icon-eye" id="showPassword" onclick="togglePassword1()"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control-field">
+                                            <div class="text-input">
+                                                <input type="password" class="input" wire:model.defer="password-old" placeholder="Nhập mật khẩu mới" id="passwordb">
+                                                <span class="icon-eye-right">
+                                                    <i class="icon-eye" id="showPassword" onclick="togglePassword2()"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control-field">
+                                            <div class="text-input">
+                                                <input type="password" class="input" wire:model.defer="password-old" placeholder="Nhập lại mật khẩu mới" id="passwordc">
+                                                <span class="icon-eye-right">
+                                                    <i class="icon-eye" id="showPassword" onclick="togglePassword3()"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="field-control">
+                                            <button type="button" class="width-full" onclick="changePassword()">Cập nhật</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> -->
                     </ul>
                 </div>
 
@@ -636,7 +735,7 @@
     <!-- link javascrip -->
     <script src="/GiaoDien/javascrip/slider.js"></script>
     <script src="/GiaoDien/javascrip/content.js"></script>
-
+    <script src="../javascrip/change_password.js"></script>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
