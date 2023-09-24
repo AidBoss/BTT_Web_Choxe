@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font: 15px sans-serif;
 }
-/* .all{
-    background-color: #f5f5f6;
-} */
 .box {
     height: auto;
     width: 100%;
@@ -20,7 +17,6 @@
     background-color: #f05626;
     position: relative;
     min-height: 3.25rem;
-    /* z-index: 30; */
 }
 
 .header_content {
@@ -34,14 +30,11 @@
     height: 60px;
     display: flex;
     align-items: center;
-    /* text-align: center; */
     padding: 1rem 0;
 }
 .head_top a {
     display: flex;
     margin-left: 30px;
-    /* width: 13%; */
-    /* height: 40px; */
     color: #fff;
     text-decoration: none;
     justify-content: center;
@@ -67,9 +60,6 @@
 }
 
 /* -------------Form Đăng ký đăng nhập---------- */
-/* .modal-content{
-    margin-top: 20%;
-} */
 #icons_modal {
     width: 100%;
     height: 30px;
@@ -249,7 +239,6 @@ option {
     height: 40px;
     background: #ffffff;
     border: none;
-    /* font-size: 15pt; */
     float: left;
     color: black;
     padding-left: 45px;
@@ -297,7 +286,6 @@ option {
 .but2 {
     width: 180px;
     border: 1px solid #fff;
-    /* height: 55px; */
     text-align: center;
     line-height: 3;
     border-radius: 10px;
@@ -323,9 +311,7 @@ option {
 }
 .search_price_contentner {
     box-shadow: 1px 1px 0px 2px #e9e5e5;
-    /* border: 0px outset #fff; */
     border-radius: 10px;
-    /* border: 1px solid #d8dbe0; */
     width: 78%;
     height: 100%;
     margin: auto;
@@ -359,7 +345,6 @@ option {
     background-color: #fff;
     margin-right: 5px;
     height: 30px;
-    /* margin:10px 10px */
 }
 .element_box .tag button:hover {
     text-decoration: underline;
@@ -469,10 +454,7 @@ option {
     color: #333;
     font-size: 1.2em;
 }
-/* .card-text:hover{
-    color: red;
-    text-decoration: none;
-} */
+
 .card_img_top {
     margin: 5%;
     width: 60%;
@@ -637,10 +619,7 @@ option {
 }
 
 /* -------CSS CHI TIET SAN PHAM-------- */
-/* .address_product{
-    width: 100%;
-    height: 100%;
-  } */
+
 .bg-body-tertiary {
     width: 80%;
     height: 100%;
@@ -774,10 +753,12 @@ option {
 .sub-users {
     border: none;
     background-color: #f05626;
+    border-radius: 5px;
     width: 100%;
     height: 100%;
     color: #fff;
 }
+
 /* -------------------------------- */
 /* -------------------------------- */
 /* -------------------------------- */
@@ -815,9 +796,15 @@ option {
     margin: auto;
     height: auto;
 }
+.left_container .list-group .list-group-item {
+    line-height: 2.5;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
 .list-group .list-group-item {
     border: none;
-    height: 60px;
+    height: 57px;
     font-weight: bold;
     color: #505258;
 }
@@ -826,12 +813,11 @@ option {
     font-weight: bold;
     color: #0b0217;
 }
-.left_container .list-group .list-group-item:hover {
-    color: #f05626;
-}
+
 .left_container .list-group .list-group-item:last-child {
     color: red;
 }
+
 .render-avatar {
     width: 20%;
     height: 100%;
@@ -840,6 +826,43 @@ option {
 .up-file-pic {
     width: 78%;
     height: 100%;
+}
+#users_ttnd {
+    color: #f05626;
+    background-color: #ffede7;
+}
+/* css trang ttlh */
+#ttlh_text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+}
+#link_users {
+    text-decoration: none;
+    color: #505258;
+}
+#link_users:hover {
+    color: #f05626;
+}
+/* css trang qldh */
+#qldh_tb_01 {
+    font-weight: bold;
+    height: 50px;
+    font-size: 17px;
+}
+#qldh_tb_02 {
+    text-decoration: none;
+    color: #f05626;
+    text-align: right;
+}
+#qldh_tb_03 {
+    text-align: center;
+    height: 70px;
+    line-height: 3;
+    color: #b3b6c1;
+}
+#ct_login_hide {
+    display: none;
 }
 /* -------------------------------- */
 /* -------------------------------- */
@@ -1012,7 +1035,6 @@ option {
     width: 97%;
     height: 40px;
     background: #ffffff;
-    /* border: none; */
     border: 1px solid darkgrey;
     font-size: 10pt;
     float: left;
