@@ -487,7 +487,7 @@
                         </div>
                         <div class="but2">
                             <a target="_blank" href="" id="dangtin">
-                                Đăng Tin <img src="img/add_listing_white_16_18.png" alt="" id="login_dangtin"></i>
+                                Đăng Tin <img src="/img/add_listing_white_16_18.png" alt="" id="login_dangtin"></i>
                             </a>
                         </div>
                     </div>
@@ -895,11 +895,11 @@
             </div>  
             <div  style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:75px;border-radius:3px;margin-top:2%;">
                 <label style="margin-left:12px;color: #A5A5A5;font-size:12px;height:10px;">Tiêu đề của tin *</label>
-                <textarea style="width: 100%; height:50px;border: none;"></textarea>
+                <textarea style="width: 100%; height:50px;border: none;" class="nut2"></textarea>
             </div>
-            <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:150px;border-radius:3px;margin-top:2%;">
+            <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:150px;border-radius:4px;margin-top:2%;">
                 <label for="" style="margin-left:12px;color: #A5A5A5;font-size:12px;height:5px;">Mô tả chi tiết   *</label>
-                <textarea name="" id="" style="width: 100%; height:130px;border: none;" placeholder="  Nhập mô tả chi tiết về xe đăng bán
+                <textarea name="" id="" style="width: 100%; height:130px;border: none;" class="nut2" placeholder="  Nhập mô tả chi tiết về xe đăng bán
                 · Tình trạng chiếc xe
                 · Thời gian sử dụng xe
                 · Bảo trì xe: bao lâu/lần ở đâu
@@ -909,10 +909,108 @@
             <div style="margin-left:25%;margin-top:4%;width:50%;height:50px;">
                 <span style="margin-left:30%;font-size:16px; color: #F05626;">Hiển thị tùy chọn nâng cao &#8744;</span>
             </div>
+            <div>
+            <div style="width:50%;margin-top:2%;margin-left:25%;">
+                <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                    <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:7px;">Kiểu dáng</label>
+                    <select style="width: 100%;margin-top:-2px;" class="nut2">
+                        <option value="">chọn phiên kiểu dáng</option>
+                        <option value="" class="chọn">Sedan</option>
+                        <option value="" class="chọn">Hatchback</option>
+                        <option value="" class="chọn">SUV</option>
+                        <option value="" class="chọn">Bán tải</option>
+                        <option value="" class="chọn">Xe tải</option>
+                        <option value="" class="chọn">MPV</option>
+                        <option value="" class="chọn">Van/Minivan</option>
+                        <option value="" class="chọn">Coupe</option>
+                        <option value="" class="chọn">Mui Trần</option>
+                    </select>
+                </div>
+            </div>
+            <div style="width:50%;margin-top:2%;margin-left:25%;">
+                <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                    <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Số chỗ</label>
+                    <select style="width: 100%; margin-top:-2px;" class="nut2">
+                        <option value="">Chọn số chỗ</option>
+                        <option value="" class="chọn">2</option>
+                        <option value="" class="chọn">4</option>
+                        <option value="" class="chọn">9</option>
+                        <option value="" class="chọn">7</option>
+                        <option value="" class="chọn">14</option>
+                        <option value="" class="chọn">3</option>
+                        <option value="" class="chọn">8</option>
+                        <option value="" class="chọn">6</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div style="width:50%;margin-top:2%;margin-left:25%;">
+                <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                    <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Xuất xứ</label>
+                    <select style="width: 100%; margin-top:-2px;" class="nut2">
+                        <option value="">Chọn xuất xứ</option>
+                        <option value="" class="chọn">Nhập khẩu </option>
+                        <option value="" class="chọn">Lắp ráp trong nước</option>
+                    </select>
+                </div>
+            </div>
+            </div>
             <div style="margin-left:25%;margin-top:2%;width:50%;">
-                <p style=" color: #A5A5A5;height:10px;">Thông tin người bán *</p>
+                <p style=" color: #A5A5A5;height:10px;">Thông tin người bán </p>
                 <div style="border: 1px solid #e2dfdf;width:100%;height:80px;border-radius:6px;">
                     <button style="border: none;background-color:#fff;margin-top:30px;margin-left:30%;font-size:16px;color: #F05626;">Thêm thông tin liên hệ mới <span>&#43;</span></button>
+                </div>
+            </div>
+            <div style="width:50%;margin-left:25%;height:auto;margin-top:2%;">
+                <div>
+                    <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
+                        <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tên liên hệ*</label>
+                        <input type="text" class="nut2">
+                    </div>
+                    <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
+                        <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Số điện thoại liên hệ*</label>
+                        <input type="text" class="nut2">
+                    </div>
+                    <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
+                        <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tỉnh/Thành phố*</label>
+                        <select style="border: none;" class="nut2">
+                            <option value="" style="font-size:14px;">Chọn Tỉnh/Thành phố</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
+                        <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Quận/huyện*</label>
+                        <select style="border: none;" class="nut2">
+                            <option value="" style="font-size:14px;">Chọn Quận/huyện</option>
+                        </select>
+                    </div>
+                    <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
+                        <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Phương/xã*</label>
+                        <select style="border: none;" class="nut2">
+                            <option value="" style="font-size:14px;">Chọn Phương/xã</option>
+                        </select>
+                    </div>
+                    <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
+                        <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Địa chỉ*</label>
+                        <input type="text" class="nut2">
+                    </div>
+                    <div style="margin-top:2%;margin-left:4%">
+                        <input type="checkbox"> Đặt làm mặc định
+                    </div>
+                    <div style="margin-left:4%;margin-top:2%;">
+                        <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;"
+                        type="button" class="nut3">Hủy bỏ</button>
+                        <button style="background-color: #F05626;border: 1px solid #F05626;color:#fff;margin-left:4%;"
+                        type="button" class="nut3">Thêm mới</button>
+                    </div>
                 </div>
             </div>
             <div style="width:50%;margin-left:25%;margin-top:2%;">
@@ -995,5 +1093,5 @@
     </div>
 
 </body>
-
+  
 </html>
