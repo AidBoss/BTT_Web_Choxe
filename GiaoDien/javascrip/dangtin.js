@@ -6,9 +6,9 @@ function toggleShow(){
     bShow.style.display = 'none';
 }
 function nutShow(){
-    const bnShow = document.getElementById("btShow");
-    const bnHide = document.getElementById("btHide");
+    const bnShow = document.getElementById("tnShow");
+    const bnHide = document.getElementById("tnHide");
 
-    bnHide.style.display = 'none';
-   bnShow.style.display = 'block';
+   bnHide.style.display = 'block';
+   bnShow.style.display = 'none';
 }
