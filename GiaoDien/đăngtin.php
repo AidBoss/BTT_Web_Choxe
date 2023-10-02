@@ -559,7 +559,7 @@
 
         <div style="width:80%;background-color:#fff;height:auto; margin-left:11%;
         margin-top: 2%;border-radius:10px 10px;border: 1px solid #e2dfdf; margin-bottom:2%;">
-
+        <form method="post" enctype="multipart/form-data">
         <div style="margin-bottom:2%;">
             <div>
                 <label class="dropdown" style="width: 50%;margin-left:25%;margin-top:2%;">
@@ -586,7 +586,7 @@
                             </form>
                             <!-- </div> -->
                             <div>
-                                <select class="flatform" size="6">
+                                <select class="flatform" size="6" name="txtbanxe">
                                     <option value="An Giang">An Giang
                                     <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
                                     <option value="Bắc Giang">Bắc Giang
@@ -661,8 +661,8 @@
             <div style="width:50%;margin-left:25%;">
                 <p>Tình trạng</p>
                 <div class="tt_xe_bl">
-                    <button>xe cũ</button>
-                    <button>xe mới</button>
+                    <button name="txttinhtrang">xe cũ</button>
+                    <button name="txttinhtrang">xe mới</button>
                 </div>
             </div>
 
@@ -687,7 +687,7 @@
                 <!-- <span>
                     <i class="icon-add-photo"></i>
                 </span> -->
-                <input type="file" style="margin-left:25%;margin-top:25px;">
+                <input type="file" style="margin-left:25%;margin-top:25px;" name="txtfile">
             </div>
             <label class="dropdown" style="width:50%;margin-left:25%;margin-top:2%;">
                 <label class="form-label" id="lb_bl" for="form2Example2">Hãng Xe
@@ -707,7 +707,7 @@
                                             class="fa-solid fa-magnifying-glass"></i></span>
                                 </div>
                                 <input type="text" class="form-control"
-                                    placeholder="Username">
+                                    placeholder="Username" name="txthangxe">
                             </div>
                         </form>
                         <!-- </div> -->
@@ -758,7 +758,7 @@
                                             class="fa-solid fa-magnifying-glass"></i></span>
                                 </div>
                                 <input type="text" class="form-control"
-                                    placeholder="Username">
+                                    placeholder="Username" name="txtdongxe">
                             </div>
                         </form>
                         <!-- </div> -->
@@ -808,7 +808,7 @@
                                             class="fa-solid fa-magnifying-glass"></i></span>
                                 </div>
                                 <input type="text" class="form-control"
-                                    placeholder="Username">
+                                    placeholder="Username" name="txtnamsanxuat">
                             </div>
                         </form>
                         <!-- </div> -->
@@ -844,41 +844,41 @@
 
             <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:40px;border-radius:3px ;">
                 <label for="" style="margin-left:2px;color: #A5A5A5;font-size:12px;height:5px;">Phiên bản *</label>
-                <input type="text" class="nut2">
+                <input type="text" class="nut2" name="txtphienban">
             </div>
             <div style="margin-left:25%;width:50%;background-color: white;height:40px;border: 1px solid #5e5e5f;border-radius:4px;margin-top:1%;">
                 <label style="margin-left:1%;height:5px;font-size:12px;color: #A5A5A5">Số km đã đi(ODO) *</label>
-                <input type="text" class="nut2">
+                <input type="text" class="nut2" name="txtsokmdi">
             </div>
             <div  style="width:50%;margin-left:25%;margin-top:10px;">
                 <p>Hộp số</p>
                 <div class="tt_xe_bl ">
-                    <button id="hs_bl">Số sàn</button>
-                    <button id="hs_bl">Tự động</button>
-                    <button id="hs_bl">Bán tự động</button>
+                    <button id="hs_bl" name="txthopso">Số sàn</button>
+                    <button id="hs_bl" name="txthopso">Tự động</button>
+                    <button id="hs_bl" name="txthopso">Bán tự động</button>
                 </div>
             </div>
             <div  style="width:50%;margin-left:25%;margin-top:10px;">
                 <p>Kiểu dẫn động</p>
                 <div class="nl_xe_bl" style="flex-grow: 1;">
-                    <button class="nl_bt">FWD</button>
-                    <button class="nl_bt">RWD</button>
-                    <button class="nl_bt">AWD</button>
-                    <button class="nl_bt">4WD</button>
+                    <button class="nl_bt" name="txtkieudandong">FWD</button>
+                    <button class="nl_bt" name="txtkieudandong">RWD</button>
+                    <button class="nl_bt" name="txtkieudandong">AWD</button>
+                    <button class="nl_bt" name="txtkieudandong">4WD</button>
                 </div>
             </div>
             <div  style="width:50%;margin-left:25%;margin-top:10px;">
                 <p>Nhiên Liệu</p>
                 <div class="nl_xe_bl">
-                    <button class="nl_bt">Xăng</button>
-                    <button class="nl_bt">Dầu</button>
-                    <button class="nl_bt">Điện</button>
-                    <button class="nl_bt">Hybrid</button>
+                    <button class="nl_bt" name="txtnhienlieu">Xăng</button>
+                    <button class="nl_bt" name="txtnhienlieu">Dầu</button>
+                    <button class="nl_bt" name="txtnhienlieu">Điện</button>
+                    <button class="nl_bt" name="txtnhienlieu">Hybrid</button>
                 </div>
             </div>
             <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:40px;border-radius:3px;margin-top:2%;">
                 <label for="" style="margin-left:2px;color: #A5A5A5;font-size:12px;height:5px;">Giá bán*</label>
-                <input type="text" class="nut2">
+                <input type="text" class="nut2" name="txtgiaban">
             </div>
             <div style="margin-left:25%;margin-top:1%;">
                 <P style="color: #A5A5A5;">Tiêu đề của tin *</P>
@@ -897,11 +897,11 @@
             </div>  
             <div  style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:75px;border-radius:3px;margin-top:2%;">
                 <label style="margin-left:12px;color: #A5A5A5;font-size:12px;height:10px;">Tiêu đề của tin *</label>
-                <textarea style="width: 100%; height:50px;border: none;" class="nut2"></textarea>
+                <textarea style="width: 100%; height:50px;border: none;" class="nut2" name="txttieude"></textarea>
             </div>
             <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:150px;border-radius:4px;margin-top:2%;">
                 <label for="" style="margin-left:12px;color: #A5A5A5;font-size:12px;height:5px;">Mô tả chi tiết   *</label>
-                <textarea name="" id="" style="width: 100%; height:130px;border: none;" class="nut2" placeholder="  Nhập mô tả chi tiết về xe đăng bán
+                <textarea name="txtmota" id="" style="width: 100%; height:130px;border: none;" class="nut2" placeholder="  Nhập mô tả chi tiết về xe đăng bán
                 · Tình trạng chiếc xe
                 · Thời gian sử dụng xe
                 · Bảo trì xe: bao lâu/lần ở đâu
@@ -917,7 +917,7 @@
             <div style="width:50%;margin-top:2%;margin-left:25%;">
                 <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:7px;">Kiểu dáng</label>
-                    <select style="width: 100%;margin-top:-2px;" class="nut2">
+                    <select style="width: 100%;margin-top:-2px;" class="nut2" name="txtkieudang">
                         <option value="">chọn phiên kiểu dáng</option>
                         <option value="" class="chọn">Sedan</option>
                         <option value="" class="chọn">Hatchback</option>
@@ -934,7 +934,7 @@
             <div style="width:50%;margin-top:2%;margin-left:25%;">
                 <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Số chỗ</label>
-                    <select style="width: 100%; margin-top:-2px;" class="nut2">
+                    <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtsocho">
                         <option value="">Chọn số chỗ</option>
                         <option value="" class="chọn">2</option>
                         <option value="" class="chọn">4</option>
@@ -951,7 +951,7 @@
             <div style="width:50%;margin-top:2%;margin-left:25%;">
                 <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Xuất xứ</label>
-                    <select style="width: 100%; margin-top:-2px;" class="nut2">
+                    <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtxuatxu">
                         <option value="">Chọn xuất xứ</option>
                         <option value="" class="chọn">Nhập khẩu </option>
                         <option value="" class="chọn">Lắp ráp trong nước</option>
@@ -971,17 +971,17 @@
                 <div style="width:50%;margin-left:25%;height:auto;margin-top:2%;">
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tên liên hệ*</label>
-                        <input type="text" class="nut2">
+                        <input type="text" class="nut2" name="txttenlienhe">
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Số điện thoại liên hệ*</label>
-                        <input type="text" class="nut2">
+                        <input type="text" class="nut2" name="txtsdt">
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tỉnh/Thành phố*</label>
-                        <select style="border: none;" class="nut2">
+                        <select style="border: none;" class="nut2" name="txttinhtp">
                             <option value="" style="font-size:14px;">Chọn Tỉnh/Thành phố</option>
-                            <option value=""></option>
+                            <option value="">Hà Nội</option>
                             <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
@@ -994,19 +994,19 @@
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Quận/huyện*</label>
-                        <select style="border: none;" class="nut2">
+                        <select style="border: none;" class="nut2" name="txtquanhuyen">
                             <option value="" style="font-size:14px;">Chọn Quận/huyện</option>
                         </select>
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Phương/xã*</label>
-                        <select style="border: none;" class="nut2">
+                        <select style="border: none;" class="nut2" name="txtphuongxa">
                             <option value="" style="font-size:14px;">Chọn Phương/xã</option>
                         </select>
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Địa chỉ*</label>
-                        <input type="text" class="nut2">
+                        <input type="text" class="nut2" name="txtdiachi">
                     </div>
                     <div style="margin-top:2%;margin-left:4%">
                         <input type="checkbox"> Đặt làm mặc định
@@ -1021,13 +1021,14 @@
             </div>
             <div style="width:50%;margin-left:25%;margin-top:2%;">
                 <button style="background-color: #F05626;border: 1px solid #F05626;color:#fff;"
-                type="button" class="nut1">Tiếp tục</button>
+                type="button" class="nut1" name="txtsub">Tiếp tục</button>
             </div>
             <div  style="width:50%;margin-left:25%;margin-top:2%;">
                 <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;"
                     type="button" class="nut1">Lưu tin</button>
             </div>
         </div>
+        </form>
         <?php
             include('control.php');//Chèn trang control vào bài
             $get_data=new data();//Gọi đến class data
@@ -1050,15 +1051,30 @@
                           //  }
                    // }
                     move_uploaded_file($_FILES['txtfile']['tmp_name'],'/img '.$_FILES['txtfile']['name']);
-                    $contact=$get_data->insert_dangtin(
-                                                $_POST['txtname'],
-                                                $_POST['txtnumber'],
-                                                $_POST['txtprice'],
-                                                $_POST['txtdate'],
+                    $contact=$get_data->dangtin_tt(
+                                                $_POST['txtbanxe'],
+                                                $_POST['txttinhtrang'],
                                                 $_FILES['txtfile']['name'],
-                                                $_POST['txtcategory'],
-                                                $_POST['txttext'],
-                                                $_POST['txtstatus']);
+                                                $_POST['txthangxe'],
+                                                $_POST['txtdongxe'],
+                                                $_POST['txtnamsanxuat'],
+                                                $_POST['txtphienban'],
+                                                $_POST['txtsokmdi'],
+                                                $_POST['txthopso'],
+                                                $_POST['txtkieudandong'],
+                                                $_POST['txtnhienlieu'],
+                                                $_POST['txtgiaban'],
+                                                $_POST['txttieude'],
+                                                $_POST['txtmota'],
+                                                $_POST['txtkieudang'],
+                                                $_POST['txtsocho'],
+                                                $_POST['txtxuatxu'],
+                                                $_POST['txttenlienhe'],
+                                                $_POST['txtsdt'],
+                                                $_POST['txttinhtp'],
+                                                $_POST['txtquanhuyen'],
+                                                $_POST['txtphuongxa'],
+                                                $_POST['txtdiachi']);
                     if($insert) echo "<script>alert('thêm mới sản phẩm thành công')
                     window.location='product.php';
                     </script>";
