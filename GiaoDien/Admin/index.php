@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trang của quản trị viên</title>
+</head>
+
+<body>
+   <?php
+   include("view/header.php");
+   if (isset($_GET['act'])) {
+      switch ($_GET['act']) {
+         case 'qltk':
+            include('view/listAcc.php');
+            break;
+         case 'qlsp':
+            include("view/listProduct.php");
+            break;
+         case 'qlbd':
+            include("view/listNews.php");
+            break;
+         default:
+            include('view/listAcc.php');
+            break;
+      }
+   } else {
+      // include("home.php");
+   }
+   include("view/footer.php");
+   ?>
+</body>
+
+</html>

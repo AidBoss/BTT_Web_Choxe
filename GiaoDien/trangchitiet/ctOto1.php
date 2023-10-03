@@ -4,43 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Choxe</title>
-    <link rel="stylesheet" href="../Home.css">
+    <link rel="stylesheet" href="../CSS/Home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/fonts/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 </head>
 
 <body>
-
     <div class="box">
         <!-- đầu trang phần logo  -->
         <div class="header">
             <div class="header_content">
                 <div class="head_top">
                     <a href="/Home.html" alt="Chợ xe">
-                        <img src="/img/logo_white.png" alt="" id="logo_header">
+                        <img src="../img/logo_white.png" alt="" id="logo_header">
                     </a>
                     <a href="/Car-Audit.html">
-                        <img src="/img/car_check_white_19_19.png" alt="" id="icons_header">
+                        <img src="../img/car_check_white_19_19.png" alt="" id="icons_header">
                         <p>Car Audit</p>
                     </a>
                     <a href="">
-                        <img src="/img/support_white_24_24.png" alt="" id="icons_header">
+                        <img src="../img/support_white_24_24.png" alt="" id="icons_header">
                         <p>Thủ tục mua bán</p>
                     </a>
                     <a href="/tintuc.html" id="childe_news">
-                        <img src="/img/news_white_20_16.png" alt="" id="icons_header">
+                        <img src="../img/news_white_20_16.png" alt="" id="icons_header">
                         <p>Tin Tức</p>
                     </a>
                 </div>
+
                 <div class="head_search">
                     <form class="sbox">
                         <i class="fa-solid fa-magnifying-glass kl1"></i>
@@ -244,9 +240,9 @@
 
                                             <div class="form-group" style="width: 100%;">
                                                 <!-- <label class="form-label" id="lb_bl3" for="form2Example2">Dòng xe
-                                                    </label> -->
+                                                </label> -->
                                                 <select class="form-control" style="height: 40px;
-                                                    margin: 0 5px;" disabled>
+                                                margin: 0 5px;" disabled>
                                                     <option selected>Tất cả</option>
                                                     <option></option>
                                                     <option></option>
@@ -257,8 +253,7 @@
                                             <div class="boc_than_bl">
                                                 <p>Khoảng Giá</p>
                                                 <div class="khgia_home">
-                                                    <p><b>Từ 0 đến <span id="demo2"></span></b><b>&nbsp;triệu</b>
-                                                    </p>
+                                                    <p><b>Từ 0 đến <span id="demo2"></span></b><b>&nbsp;triệu</b></p>
                                                     <input type="range" min="0" max="900" value="0" class="slider2"
                                                         id="myRange2">
 
@@ -495,12 +490,15 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
         <!-- đây là nội dung phần thân  -->
         <div class="container_web">
+
             <!------------Địa chỉ dẫn---------->
+
             <div class="address_product">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
@@ -510,107 +508,120 @@
                                     <a class="nav-link active" aria-current="page" href="#">Chợ xe &gt;</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Toyota &gt;</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Hyundai &gt;</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Veloz Cross &gt;</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Starex &gt;</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">Toyota Veloz Cross Toyota Veloz Cross CVT 2022, Tự động, đã
-                                        đi 19.000 km</a>
+                                    <a class="nav-link">Hyundai Starex Hyundai Starex H-1 2.5 MT 6 chỗ máy dầu 2015,
+                                        Số sàn, đã đi 80.000 km</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
+
             <!-- --------Thông tin xe -------- -->
+
             <div class="information_car">
                 <div class="container_fluid info_cars_row">
                     <div class="row">
                         <div class="col-sm-9 mb-3 mb-sm-0 cotphai">
+
+                            <!-- slide chứa các hình ảnh của xe -->
+
                             <div class="slider_car">
                                 <div class="slider_top">
                                     <div class="control"><i id="prev" onclick="prev()"
                                             class="fa-solid fa-circle-chevron-left" style="font-size: 40px;"></i>
                                     </div>
                                     <div class="img_mid">
-                                        <img src="/img/Oto_6/1.jpg" alt="" class="img-feature">
+                                        <img src="../img/Oto_1/oto1.jpg" alt="" class="img-feature">
                                     </div>
                                     <div class="control"><i id="next" onclick="next()"
                                             class="fa-solid fa-circle-chevron-right" style="font-size: 40px;"></i>
                                     </div>
                                 </div>
+
+                                <!-- danh sách các hình ảnh của xe  -->
+
                                 <div class="list-img">
-                                    <div><img src="/img/Oto_6/1.jpg" alt=""></div>
-                                    <div class="active"><img src="/img/Oto_6/2.jpg" alt=""></div>
-                                    <div><img src="/img/Oto_6/3.jpg" alt=""></div>
-                                    <div><img src="/img/Oto_6/4.jpg" alt=""></div>
-                                    <div><img src="/img/Oto_6/5.jpg" alt=""></div>
-                                    <div><img src="/img/Oto_6/6.jpg" alt=""></div>
+                                    <div><img src="../img/Oto_1/oto1.jpg" alt=""></div>
+                                    <div class="active"><img src="../img/Oto_1/2a.jpg" alt=""></div>
+                                    <div><img src="../img/Oto_1/3.jpg" alt=""></div>
+                                    <div><img src="../img/Oto_1/4.jpg" alt=""></div>
+                                    <div><img src="../img/Oto_1/5.jpg" alt=""></div>
+                                    <div><img src="../img/Oto_1/6.jpg" alt=""></div>
                                 </div>
+
+                                <!-- chi tiết mô tả xe -->
                                 <div class="info_text_car">
                                     <div class="listing_meta">
-                                        <span class="location"> <img src="/img/icons_ctsp/lc (1).png" alt="">Hà
+                                        <span class="location"> <img src="../img/icons_ctsp/lc (1).png" alt="">
+                                            Hà
                                             Nội</span>
-                                        <span class="location"><img src="/img/icons_ctsp/lc (2).png" alt="">
-                                            20/06/2023</span>
+                                        <span class="location"><img src="../img/icons_ctsp/lc (2).png" alt="">
+                                            28/06/2023</span>
                                     </div>
-                                    <h4 class="mota_title">Toyota Veloz Cross Toyota Veloz Cross CVT 2022, Tự động,
-                                        đã đi 19.000 km</h4>
+                                    <h4 class="mota_title">Hyundai Starex Hyundai Starex H-1 2.5 MT 6 chỗ máy dầu
+                                        2015, Số sàn, đã đi 80.000 km</h4>
                                     <div class="giaca">
-                                        <p>655 Triệu</p>
-                                        <button type="button" class="btn btn-outline-secondary">Lưu Tin
-                                            <i class="fa-regular fa-heart"></i></button>
+                                        <p>510 Triệu</p>
+                                        <button type="button" class="btn btn-outline-secondary">Lưu Tin <i
+                                                class="fa-regular fa-heart"></i></button>
                                     </div>
+
+                                    <!-- mô tả xe   -->
                                     <div class="mota">
                                         <p class="mota_title">Mô tả</p>
-                                        <p>Toyota Veloz xe cũ như mới lăn bánh được 1,9 vạn km Màu bạc theo xe,
-                                            không va chạm ngập nước Máy zin theo xe, cam kết không chỉnh sửa, thay
-                                            cũ lấy mới Nội thất trong xe còn mới
+                                        <p>Bán xe starex Hyundai tải van đời 2015,6 chỗ,tải 670kg,xe chính chủ đi từ
+                                            mới.không đâm va hay ngập nước,máy zin nguyên bản,nội thất nỉ,điều hoà
+                                            mát rét,vừa khám lưu hành.Lh 0928888699 xem xe
                                         </p>
                                         <p class="mota_title">Chi Tiết</p>
                                     </div>
                                     <table class="table table-striped table-bordered">
                                         <thead>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/1.png" alt=""> Hãng xe</td>
-                                                <td>Toyota</td>
+                                                <td><img src="../img/icons_ctsp/1.png" alt=""> Hãng xe</td>
+                                                <td>Hyundai</td>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/2.png" alt=""> Dòng xe</td>
-                                                <td>Veloz Cross
-                                                </td>
+                                                <td><img src="../img/icons_ctsp/2.png" alt=""> Dòng xe</td>
+                                                <td>Starex</td>
                                             </tr>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/3.png" alt=""> Năm sản xuất
+                                                <td><img src="../img/icons_ctsp/3.png" alt=""> Năm sản xuất
                                                 </td>
-                                                <td>2022</td>
+                                                <td>2015</td>
                                             </tr>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/4.png" alt=""> Số km đã
+                                                <td><img src="../img/icons_ctsp/4.png" alt=""> Số km đã
                                                     đi</td>
-                                                <td>19000</td>
+                                                <td>80000</td>
                                             </tr>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/5.png" alt=""> Nhiên liệu
+                                                <td><img src="../img/icons_ctsp/5.png" alt=""> Nhiên liệu
                                                 </td>
-                                                <td>Xăng</td>
+                                                <td>Dầu</td>
                                             </tr>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/6.png" alt=""> Xuất xứ</td>
+                                                <td><img src="../img/icons_ctsp/6.png" alt=""> Xuất xứ
+                                                </td>
                                                 <td>Nhập khẩu
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/7.png" alt=""> Kiểu dáng
+                                                <td><img src="../img/icons_ctsp/7.png" alt=""> Kiểu dáng
                                                 </td>
-                                                <td>MPV</td>
+                                                <td>Van/Minivan</td>
                                             </tr>
                                             <tr>
-                                                <td><img src="/img/icons_ctsp/8.png" alt=""> Số chỗ
+                                                <td><img src="../img/icons_ctsp/8.png" alt=""> Số chỗ
                                                 </td>
                                                 <td>7</td>
                                             </tr>
@@ -623,14 +634,14 @@
                         <div class=" col-sm-3">
                             <div class="card card-body card_ctsp">
                                 <h4 class="card-title">Liên Hệ</h4>
-                                <p class="card-text">Hiếu</p>
-                                <p><img src="/img/phone_14_14.png" alt=""> 0378***047</p>
-                                <p><img src="/img/location_12_13.png" alt=""> Hà Nội</p>
-                                <a href="#" id="bt_right1" class="btn btn-danger"><img src="/img/phone_white_14_14.png"
-                                        alt="">
-                                    0378***047</a>
+                                <p class="card-text">Đỗ Văn Bắc</p>
+                                <p><img src="../img/phone_14_14.png" alt=""> 0928***699</p>
+                                <p><img src="../img/location_12_13.png" alt=""> Hà Nội</p>
+                                <a href="#" id="bt_right1" class="btn btn-danger"><img
+                                        src="../img/phone_white_14_14.png" alt="">
+                                    0928***699</a>
                                 <br>
-                                <a href="#" id="bt_right2" class="btn  btn-light1"><img src="/img/audit_16_16.png"
+                                <a href="#" id="bt_right2" class="btn  btn-light1"><img src="../img/audit_16_16.png"
                                         alt="">
                                     Car
                                     Audit</a>
@@ -640,80 +651,16 @@
                 </div>
             </div>
             <div class="more_cars">
-                <h5 id="title_h5">Các xe cùng phân khúc</h5>
+                <h5 id="title_h5">Tin Đăng mới nhất</h5>
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top list_item" src="/img/Oto_6/m1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">KIA Rondo KIA Rondo 2.0 GAT DELUXE 2016, Tự động, đã đi
-                                    119.000 km</h5>
-                                <p class="card-text">2016 •
-                                    Tự động •
-                                    119.000 km</p>
-                                <h5 class="card-title">435 Triệu</h5>
-                                <p class="card-text">Hồ Chí Minh •
-                                    5/4/2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top list_item" src="/img/Oto_6/m2.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Bán siêu lướt Mitsubishi Xpander Premium 2022, đã đi 11.000
-                                    km
-                                </h5>
-                                <p class="card-text">2022 •
-                                    Tự động •
-                                    11.000 km</p>
-                                <h5 class="card-title">620 Triệu</h5>
-                                <p class="card-text">Bình Thuận •
-                                    12/4/2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top list_item" src="/img/Oto_6/m3.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Mitsubishi Xpander AT Premium 2023</h5>
-                                <p class="card-text">2023 •
-                                    Tự động •
-                                    Xe mới</p>
-                                <h5 class="card-title">658 Triệu</h5>
-                                <p class="card-text">Hồ Chí Minh •
-                                    18/4/2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top list_item" src="/img/Oto_6/m4.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Để lại Toyota Innova G số tự động, trắng tinh
-                                </h5>
-                                <p class="card-text">2020 •
-                                    Tự động •
-                                    49.000 km</p>
-                                <h5 class="card-title">719 Triệu</h5>
-                                <p class="card-text">Hồ Chí Minh •
-                                    25/4/2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top list_item" src="/img/Oto_6/m5.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Mitsubishi Xpander xe giao ngay, nhiều quà tặng</h5>
-                                <p class="card-text">2023 •
-                                    Tự động •
-                                    Xe mới</p>
-                                <h5 class="card-title">555 Triệu</h5>
-                                <p class="card-text">Hồ Chí Minh • 25/4/2023</p>
+                            <img class="card-img-top list_item" src="../img/Oto_1/3a.jpg" alt="Card image cap">
+                            <div class="card-body list_item">
+                                <h5 class="card-title">Hyundai Starex 2003, xe 1 chủ dùng từ đầu gia hấp dẫn</h5>
+                                <p class="card-text">2003 •Số sàn• 18.000 km</p>
+                                <h5 class="card-title">120 Triệu</h5>
+                                <p class="card-text">Hà Nội • 15/6/2023</p>
                             </div>
                         </div>
                     </div>
@@ -726,7 +673,7 @@
                 </div>
                 <div class="row">
                     <a href="#" id="next_page">
-                        <p>Xem Thêm <img src="/img/chevrons-right_20_20.png" alt=""></p>
+                        <p>Xem Thêm <img src="../img/chevrons-right_20_20.png" alt=""></p>
                     </a>
                 </div>
             </div>
@@ -734,7 +681,7 @@
                 <h5 id="title_h5">Các tin khác cùng người bán</h5>
                 <div class="row">
                     <a id="next_page">
-                        <p><img src="/img/file_empty.png" alt=""></p>
+                        <p><img src="../img/file_empty.png" alt=""></p>
                         <p style="color: gray; text-align: center;">chưa có tin đăng </p>
                     </a>
                 </div>
@@ -747,7 +694,7 @@
         <div class="footer">
             <div style="height:238px; width:400px;" class="contenfooter">
                 <div>
-                    <img src="/img/logo_white_117_32.png" alt=""
+                    <img src="../img/logo_white_117_32.png" alt=""
                         style="width:117px; height:32px; margin-top:20px;"></img>
                 </div>
                 <div style="width:400px; height:42px; color:white; margin-top:40px;">
@@ -764,7 +711,7 @@
                             class="email">cskh@choxe.vn</a></i>
                 </div>
                 <div>
-                    <img src="/img/logo-bct.png" alt="" style="height:45px;width:122px; margin-top:50px;"></img>
+                    <img src="../img/logo-bct.png" alt="" style="height:45px;width:122px; margin-top:50px;"></img>
                 </div>
             </div>
             <div style="margin-left:565px; width:180px; height:220px; margin-top:-140px;">
@@ -778,13 +725,13 @@
                 </div> -->
             <div class="footer-content-right">
                 <div class="footer-content-right-1">
-                    <a href=""><img src="/img/hotline2.png"></a>
+                    <a href=""><img src="../img/hotline2.png"></a>
                     <div class="footer-content-right-1_1">
                         <a href=""><b>Hotline: 091.144.2883</b></a>
                     </div>
                 </div>
                 <div class="footer-content-right-2">
-                    <a href=""><img src="/img/danhchomoigioi.png"></a>
+                    <a href=""><img src="../img/danhchomoigioi.png"></a>
                     <div class="footer-content-right-2_1">
                         <a href=""><b>Dành cho salon, Môi giới</b></a>
                     </div>
@@ -792,6 +739,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- link javascrip -->
@@ -807,7 +755,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
