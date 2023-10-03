@@ -489,7 +489,7 @@
                             </div>
                         </div>
                         <div class="but2">
-                            <a target="_blank" href="" id="dangtin">
+                            <a target="_blank" href="đăngtin.html" id="dangtin">
                                 Đăng Tin <img src="img/add_listing_white_16_18.png" alt="" id="login_dangtin"></i>
                             </a>
                         </div>

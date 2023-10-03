@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Choxe</title>
+<<<<<<< HEAD:GiaoDien/trangchitiet/ctOto1.php
     <link rel="stylesheet" href="../CSS/Home.css">
+=======
+    <link rel="stylesheet" href="/CSS/Home.css">
+>>>>>>> dbb9f6f068d3b222f88b6b5c6d9105547953d532:GiaoDien/trangchitiet/ctOto1.html
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -484,7 +488,7 @@
                             </div>
                         </div>
                         <div class="but2">
-                            <a target="_blank" href="" id="dangtin">
+                            <a target="_blank" href="../đăngtin.html" id="dangtin">
                                 Đăng Tin <img src="img/add_listing_white_16_18.png" alt="" id="login_dangtin"></i>
                             </a>
                         </div>
