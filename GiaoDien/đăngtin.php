@@ -980,6 +980,7 @@
                     type="submit" class="nut1">Lưu tin</button>
             </div>
         </div>
+        </form>
         <?php
             include('./config/control.php');//Chèn trang control vào bài
             $get_data=new data();//Gọi đến class data
@@ -1036,7 +1037,6 @@
        //     }
        //     }
               ?>
-        </form>
 
         </div>
 
