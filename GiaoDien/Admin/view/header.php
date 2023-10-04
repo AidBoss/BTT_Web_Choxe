@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="../CSS/Home.css">
 <link rel="stylesheet" href="../CSS/cssAdmin.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!-- bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -13,7 +14,8 @@
 <div class="select_option_admin">
    <nav class="navbar navbar-expand-lg ">
       <a class="navbar-brand">ADMIN</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -21,6 +23,7 @@
             <a class="nav-item nav-link " href="index.php?act=qltk">Quản Lý tài khoản User </a>
             <a class="nav-item nav-link" href="index.php?act=qlsp">Quản lý danh sách sản phẩm</a>
             <a class="nav-item nav-link" href="index.php?act=qlbd">Quản lý bài đăng</a>
+            <a class="nav-item nav-link" href="index.php?act=logout">đăng xuất</a>
          </div>
       </div>
    </nav>
