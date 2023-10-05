@@ -555,114 +555,100 @@
             </div>
         </div>
 
-        <!-- đây là nội dung phần thân đăng tin -->
+        <!-- đây là nội dung phần thân  -->
 
         <div style="width:80%;background-color:#fff;height:auto; margin-left:11%;
         margin-top: 2%;border-radius:10px 10px;border: 1px solid #e2dfdf; margin-bottom:2%;">
-        <form method="post" enctype="multipart/form-data">
+        <form  method="post" enctype="multipart/form-data">
         <div style="margin-bottom:2%;">
-            <div>
-                <label class="dropdown" style="width: 50%;margin-left:25%;margin-top:2%;">
-                    <label class="form-label" id="lb_bl" for="form2Example2">khu vực bán xe*
-                    </label>
-                    <div class="dd-button bt_bl" style="width: 100%;">
-                        <p>Chọn tỉnh thành phố </p>
-                    </div>
-
-                    <input type="checkbox" class="dd-input" id="test">
-
-                    <div class="dd-menu" style="width: 100%;">
-                        <div style="margin-left:13px;margin-top:10px;height: 220px;">
-                            <!-- <div style="height:35px;"> -->
-                            <form class="sbox2" action="/search" method="get">
-                                <div class="input-group mb-4 " style="width:97%">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i
-                                                class="fa-solid fa-magnifying-glass"></i></span>
-                                    </div>
-                                    <input type="text" class="form-control"
-                                        placeholder="Username">
-                                </div>
-                            </form>
-                            <!-- </div> -->
-                            <div>
-                                <select class="flatform" size="6" name="txtbanxe">
-                                    <option value="An Giang">An Giang
-                                    <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
-                                    <option value="Bắc Giang">Bắc Giang
-                                    <option value="Bắc Kạn">Bắc Kạn
-                                    <option value="Bạc Liêu">Bạc Liêu
-                                    <option value="Bắc Ninh">Bắc Ninh
-                                    <option value="Bến Tre">Bến Tre
-                                    <option value="Bình Định">Bình Định
-                                    <option value="Bình Dương">Bình Dương
-                                    <option value="Bình Phước">Bình Phước
-                                    <option value="Bình Thuận">Bình Thuận
-                                    <option value="Bình Thuận">Bình Thuận
-                                    <option value="Cà Mau">Cà Mau
-                                    <option value="Cao Bằng">Cao Bằng
-                                    <option value="Đắk Lắk">Đắk Lắk
-                                    <option value="Đắk Nông">Đắk Nông
-                                    <option value="Điện Biên">Điện Biên
-                                    <option value="Đồng Nai">Đồng Nai
-                                    <option value="Đồng Tháp">Đồng Tháp
-                                    <option value="Đồng Tháp">Đồng Tháp
-                                    <option value="Gia Lai">Gia Lai
-                                    <option value="Hà Giang">Hà Giang
-                                    <option value="Hà Nam">Hà Nam
-                                    <option value="Hà Tĩnh">Hà Tĩnh
-                                    <option value="Hải Dương">Hải Dương
-                                    <option value="Hậu Giang">Hậu Giang
-                                    <option value="Hòa Bình">Hòa Bình
-                                    <option value="Hưng Yên">Hưng Yên
-                                    <option value="Khánh Hòa">Khánh Hòa
-                                    <option value="Kiên Giang">Kiên Giang
-                                    <option value="Kon Tum">Kon Tum
-                                    <option value="Lai Châu">Lai Châu
-                                    <option value="Lâm Đồng">Lâm Đồng
-                                    <option value="Lạng Sơn">Lạng Sơn
-                                    <option value="Lào Cai">Lào Cai
-                                    <option value="Long An">Long An
-                                    <option value="Nam Định">Nam Định
-                                    <option value="Nghệ An">Nghệ An
-                                    <option value="Ninh Bình">Ninh Bình
-                                    <option value="Ninh Thuận">Ninh Thuận
-                                    <option value="Phú Thọ">Phú Thọ
-                                    <option value="Quảng Bình">Quảng Bình
-                                    <option value="Quảng Bình">Quảng Bình
-                                    <option value="Quảng Ngãi">Quảng Ngãi
-                                    <option value="Quảng Ninh">Quảng Ninh
-                                    <option value="Quảng Trị">Quảng Trị
-                                    <option value="Sóc Trăng">Sóc Trăng
-                                    <option value="Sơn La">Sơn La
-                                    <option value="Tây Ninh">Tây Ninh
-                                    <option value="Thái Bình">Thái Bình
-                                    <option value="Thái Nguyên">Thái Nguyên
-                                    <option value="Thanh Hóa">Thanh Hóa
-                                    <option value="Thừa Thiên Huế">Thừa Thiên Huế
-                                    <option value="Tiền Giang">Tiền Giang
-                                    <option value="Trà Vinh">Trà Vinh
-                                    <option value="Tuyên Quang">Tuyên Quang
-                                    <option value="Vĩnh Long">Vĩnh Long
-                                    <option value="Vĩnh Phúc">Vĩnh Phúc
-                                    <option value="Yên Bái">Yên Bái
-                                    <option value="Phú Yên">Phú Yên
-                                    <option value="Tp.Cần Thơ">Tp.Cần Thơ
-                                    <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
-                                    <option value="Tp.Hải Phòng">Tp.Hải Phòng
-                                    <option value="Tp.Hà Nội">Tp.Hà Nội
-                                    <option value="TP  HCM">TP HCM
-                                </select>
-                            </div>
+            <div style="width:50%;margin-top:2%;margin-left:25%;">
+                <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                    <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Khu vực bán xe</label>
+                    <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtbanxe">
+                            <option value="">Chọn tỉnh thành phố</option>
+                            <option value="An Giang">An Giang
+                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                            <option value="Bắc Giang">Bắc Giang
+                            <option value="Bắc Kạn">Bắc Kạn
+                            <option value="Bạc Liêu">Bạc Liêu
+                            <option value="Bắc Ninh">Bắc Ninh
+                            <option value="Bến Tre">Bến Tre
+                            <option value="Bình Định">Bình Định
+                            <option value="Bình Dương">Bình Dương
+                            <option value="Bình Phước">Bình Phước
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Cà Mau">Cà Mau
+                            <option value="Cao Bằng">Cao Bằng
+                            <option value="Đắk Lắk">Đắk Lắk
+                            <option value="Đắk Nông">Đắk Nông
+                            <option value="Điện Biên">Điện Biên
+                            <option value="Đồng Nai">Đồng Nai
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Gia Lai">Gia Lai
+                            <option value="Hà Giang">Hà Giang
+                            <option value="Hà Nam">Hà Nam
+                            <option value="Hà Tĩnh">Hà Tĩnh
+                            <option value="Hải Dương">Hải Dương
+                            <option value="Hậu Giang">Hậu Giang
+                            <option value="Hòa Bình">Hòa Bình
+                            <option value="Hưng Yên">Hưng Yên
+                            <option value="Khánh Hòa">Khánh Hòa
+                            <option value="Kiên Giang">Kiên Giang
+                            <option value="Kon Tum">Kon Tum
+                            <option value="Lai Châu">Lai Châu
+                            <option value="Lâm Đồng">Lâm Đồng
+                            <option value="Lạng Sơn">Lạng Sơn
+                            <option value="Lào Cai">Lào Cai
+                            <option value="Long An">Long An
+                            <option value="Nam Định">Nam Định
+                            <option value="Nghệ An">Nghệ An
+                            <option value="Ninh Bình">Ninh Bình
+                            <option value="Ninh Thuận">Ninh Thuận
+                            <option value="Phú Thọ">Phú Thọ
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Ngãi">Quảng Ngãi
+                            <option value="Quảng Ninh">Quảng Ninh
+                            <option value="Quảng Trị">Quảng Trị
+                            <option value="Sóc Trăng">Sóc Trăng
+                            <option value="Sơn La">Sơn La
+                            <option value="Tây Ninh">Tây Ninh
+                            <option value="Thái Bình">Thái Bình
+                            <option value="Thái Nguyên">Thái Nguyên
+                            <option value="Thanh Hóa">Thanh Hóa
+                            <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                            <option value="Tiền Giang">Tiền Giang
+                            <option value="Trà Vinh">Trà Vinh
+                            <option value="Tuyên Quang">Tuyên Quang
+                            <option value="Vĩnh Long">Vĩnh Long
+                            <option value="Vĩnh Phúc">Vĩnh Phúc
+                            <option value="Yên Bái">Yên Bái
+                            <option value="Phú Yên">Phú Yên
+                            <option value="Tp.Cần Thơ">Tp.Cần Thơ
+                            <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
+                            <option value="Tp.Hải Phòng">Tp.Hải Phòng
+                            <option value="Tp.Hà Nội">Tp.Hà Nội
+                            <option value="TP  HCM">TP HCM
+                    </select>
+                </div>
+            </div>
+            <div style="width:50%;margin-left:25%; margin-top: 1%;height:70px;">
+                <label for="" style="color: #A5A5A5;">tình trạng</label>
+                <div class="radio_tile_group">
+                    <div class="input_container">
+                        <input type="radio" name="txttinhtrang">
+                        <div class="radio_tile">
+                            <label for="">xe cũ</label>
                         </div>
                     </div>
-                </label>
-            </div>
-            <div style="width:50%;margin-left:25%;">
-                <p>Tình trạng</p>
-                <div class="tt_xe_bl">
-                    <button name="txttinhtrang">xe cũ</button>
-                    <button name="txttinhtrang">xe mới</button>
+                    <div class="input_container">
+                        <input type="radio" name="txttinhtrang">
+                        <div class="radio_tile">
+                            <label for="">xe mới</label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -689,62 +675,58 @@
                 </span> -->
                 <input type="file" style="margin-left:25%;margin-top:25px;" name="txtfile">
             </div>
-            <label class="dropdown" style="width:50%;margin-left:25%;margin-top:2%;">
-                <label class="form-label" id="lb_bl" for="form2Example2">Hãng Xe
-                </label>
-                <div class="dd-button bt_bl" style="width: 100%;">
+            
+            <div style="width:50%;margin-top:2%;margin-left:25%;">
+                <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                    <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Hãng xe</label>
+                    <select style="width: 100%; margin-top:-2px;" class="nut2" name="txthangxe">
+                        <option value=""></option>
+                        <option value="" class="chọn">Toyota</option>
+                        <option value="" class="chọn">Hyundai</option>
+                        <option value="" class="chọn">KIA</option>
+                        <option value="" class="chọn">VinFast</option>
+                        <option value="" class="chọn">Misubishi</option>
+                        <option value="" class="chọn">3</option>
+                        <option value="" class="chọn">8</option>
+                        <option value="" class="chọn">6</option>
+                        
+                    </select>
                 </div>
-
-                <input type="checkbox" class="dd-input" id="test">
-
-                <div class="dd-menu" style="width: 100%;">
-                    <div style="margin-left:13px;margin-top:10px;height: 385px;">
-                        <!-- <div style="height:35px;"> -->
-                        <form class="sbox2" action="/search" method="get">
-                            <div class="input-group mb-4 " style="width:97%">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i
-                                            class="fa-solid fa-magnifying-glass"></i></span>
-                                </div>
-                                <input type="text" class="form-control"
-                                    placeholder="Username" name="txthangxe">
-                            </div>
-                        </form>
-                        <!-- </div> -->
-                        <div>
-                            <!-- <select class="flatform" size="6"> -->
-                            <ul class="ndtabmenu">
-                                
-                                <li>
-                                   
-                                    <span>Toyota</span>
-                                </li>
-                                <li>
-                                   
-                                    <span>Hyundai</span>
-                                </li>
-                                <li>
-                                   
-                                    <span>KIA</span>
-                                </li>
-                                <li>
-                                    <span>VinFast</span>
-                                </li>
-                                <li>
-                                    
-                                    <span>Misubishi</span>
-                                </li>
-                            </ul>
-                            <!-- </select> -->
-                        </div>
-                    </div>
+            </div>
+            <div style="width:50%;margin-top:1%;margin-left:25%;">
+                <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                    <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">  Dòng xe</label>
+                    <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtdongxe">
+                        <option value=""></option>
+                        <option value="" class="chọn">Toyota</option>
+                        <option value="" class="chọn">Hyundai</option>
+                        <option value="" class="chọn">KIA</option>
+                        <option value="" class="chọn">VinFast</option>
+                        <option value="" class="chọn">Misubishi</option>
+                        <option value="" class="chọn">3</option>
+                        <option value="" class="chọn">8</option>
+                        <option value="" class="chọn">6</option>
+                        
+                    </select>
                 </div>
-            </label>
-            <label class="dropdown" style="width:50%;margin-left:25%;">
-                <label class="form-label" id="lb_bl" for="form2Example2">Dòng xe
-                </label>
-                <div class="dd-button bt_bl" style="width: 100%;">
+            </div>
+            <div style="width:50%;margin-top:1%;margin-left:25%;">
+                <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                    <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Năm sản xuất</label>
+                    <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtnamsanxuat">
+                        <option value=""></option>
+                        <option value="" class="chọn">Toyota</option>
+                        <option value="" class="chọn">Hyundai</option>
+                        <option value="" class="chọn">KIA</option>
+                        <option value="" class="chọn">VinFast</option>
+                        <option value="" class="chọn">Misubishi</option>
+                        <option value="" class="chọn">3</option>
+                        <option value="" class="chọn">8</option>
+                        <option value="" class="chọn">6</option>
+                        
+                    </select>
                 </div>
+            </div>
 
                 <input type="checkbox" class="dd-input" id="test">
 
@@ -839,10 +821,80 @@
                         </div>
                     </div>
                 </div>
+>>>>>>> dbb9f6f068d3b222f88b6b5c6d9105547953d532
             </label>
 
 
             <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:40px;border-radius:3px ;">
+<<<<<<< HEAD
+               <label for="" style="margin-left:2px;color: #A5A5A5;font-size:12px;height:5px;">Phiên bản *</label>
+               <input type="text" class="nut2">
+            </div>
+            <div
+               style="margin-left:25%;width:50%;background-color: white;height:40px;border: 1px solid #5e5e5f;border-radius:4px;margin-top:1%;">
+               <label style="margin-left:1%;height:5px;font-size:12px;color: #A5A5A5">Số km đã đi(ODO) *</label>
+               <input type="text" class="nut2">
+            </div>
+            <div style="width:50%;margin-left:25%;margin-top:10px;">
+               <p>Hộp số</p>
+               <div class="tt_xe_bl ">
+                  <button id="hs_bl">Số sàn</button>
+                  <button id="hs_bl">Tự động</button>
+                  <button id="hs_bl">Bán tự động</button>
+               </div>
+            </div>
+            <div style="width:50%;margin-left:25%;margin-top:10px;">
+               <p>Kiểu dẫn động</p>
+               <div class="nl_xe_bl" style="flex-grow: 1;">
+                  <button class="nl_bt">FWD</button>
+                  <button class="nl_bt">RWD</button>
+                  <button class="nl_bt">AWD</button>
+                  <button class="nl_bt">4WD</button>
+               </div>
+            </div>
+            <div style="width:50%;margin-left:25%;margin-top:10px;">
+               <p>Nhiên Liệu</p>
+               <div class="nl_xe_bl">
+                  <button class="nl_bt">Xăng</button>
+                  <button class="nl_bt">Dầu</button>
+                  <button class="nl_bt">Điện</button>
+                  <button class="nl_bt">Hybrid</button>
+               </div>
+            </div>
+            <div
+               style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:40px;border-radius:3px;margin-top:2%;">
+               <label for="" style="margin-left:2px;color: #A5A5A5;font-size:12px;height:5px;">Giá bán*</label>
+               <input type="text" class="nut2">
+            </div>
+            <div style="margin-left:25%;margin-top:1%;">
+               <P style="color: #A5A5A5;">Tiêu đề của tin *</P>
+               <div style="width:67%;height:110px;background-color:#F5F5F6;border-radius:5px 5px;">
+                  <div>
+                     <p style="margin-left:30px;margin-right:30px;color: #A5A5A5;">
+                        Tiêu đề tin cần bao gồm các thông tin quan trọng nhất để nâng cao hiệu quả tìm kiếm:
+                        hãng xe, dòng
+                        xe,
+                        phiên bản, năm sản xuất, số tự động / số sàn, số km đã đi, ... và các đặc tính nổi bật
+                        khác.</p>
+                     <p style="margin-left: 30px;color: #A5A5A5;">
+                        Ví dụ: <b style="color: rgb(82, 81, 81);">Toyota Fortuner 2.8V 4x4 AT 2019, máy dầu, số
+                           tự động, đã đi 80 ngàn km, nhập khẩu, màu
+                           đen</b>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div
+               style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:75px;border-radius:3px;margin-top:2%;">
+               <label style="margin-left:12px;color: #A5A5A5;font-size:12px;height:10px;">Tiêu đề của tin *</label>
+               <textarea style="width: 100%; height:50px;border: none;" class="nut2"></textarea>
+            </div>
+            <div
+               style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:150px;border-radius:4px;margin-top:2%;">
+               <label for="" style="margin-left:12px;color: #A5A5A5;font-size:12px;height:5px;">Mô tả chi tiết
+                  *</label>
+               <textarea name="" id="" style="width: 100%; height:130px;border: none;" class="nut2" placeholder="  Nhập mô tả chi tiết về xe đăng bán
+=======
                 <label for="" style="margin-left:2px;color: #A5A5A5;font-size:12px;height:5px;">Phiên bản *</label>
                 <input type="text" class="nut2" name="txtphienban">
             </div>
@@ -928,6 +980,15 @@
                         <option value="" class="chọn">Van/Minivan</option>
                         <option value="" class="chọn">Coupe</option>
                         <option value="" class="chọn">Mui Trần</option>
+<<<<<<< HEAD
+                     </select>
+                  </div>
+               </div>
+               <div style="width:50%;margin-top:2%;margin-left:25%;">
+                  <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
+                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Số chỗ</label>
+                     <select style="width: 100%; margin-top:-2px;" class="nut2">
+=======
                     </select>
                 </div>
             </div>
@@ -935,6 +996,7 @@
                 <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Số chỗ</label>
                     <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtsocho">
+>>>>>>> dbb9f6f068d3b222f88b6b5c6d9105547953d532
                         <option value="">Chọn số chỗ</option>
                         <option value="" class="chọn">2</option>
                         <option value="" class="chọn">4</option>
@@ -981,7 +1043,7 @@
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tỉnh/Thành phố*</label>
                         <select style="border: none;" class="nut2" name="txttinhtp">
                             <option value="" style="font-size:14px;">Chọn Tỉnh/Thành phố</option>
-                            <option value="">Hà Nội</option>
+                            <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
@@ -1021,20 +1083,20 @@
             </div>
             <div style="width:50%;margin-left:25%;margin-top:2%;">
                 <button style="background-color: #F05626;border: 1px solid #F05626;color:#fff;"
-                type="button" class="nut1" name="txtsub">Tiếp tục</button>
+                type="submit" class="nut1" name="txtsub">Tiếp tục</button>
             </div>
             <div  style="width:50%;margin-left:25%;margin-top:2%;">
                 <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;"
-                    type="button" class="nut1">Lưu tin</button>
+                    type="submit" class="nut1">Lưu tin</button>
             </div>
         </div>
         </form>
         <?php
-            include('control.php');//Chèn trang control vào bài
+            include('./config/control.php');//Chèn trang control vào bài
             $get_data=new data();//Gọi đến class data
             if(isset($_POST['txtsub']))// Thực thị sau khi nhấn nút submit
             {
-            if(empty($_POST['txtname'])||empty($_POST['txtnumber'])||empty($_POST['txtprice'])) {
+            if(empty($_POST['txtbanxe'])||empty($_POST['txtdongxe'])||empty($_POST['txthangxe'])) {
                echo"<script>alert('bạn chưa nhập đủ thông tin!')</script>";
             }
             else{
@@ -1085,6 +1147,7 @@
        //     }
        //     }
               ?>
+
         </div>
 
 

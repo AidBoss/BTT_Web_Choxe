@@ -1,8 +1,9 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<?php
+ob_start();
+?>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="../fonts/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
-   rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/Home.css">
 <div class="header">
    <div class="header_content">
@@ -31,14 +32,12 @@
             <!-- <i class="fa-solid fa-bars "></i> -->
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg fa-bars " data-toggle="modal"
-               data-target="#modelId_list" style="background-color: #fff;border: none;">
+            <button type="button" class="btn btn-primary btn-lg fa-bars " data-toggle="modal" data-target="#modelId_list" style="background-color: #fff;border: none;">
                <i class="fa-solid fa-bars "></i>
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="modelId_list" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-               aria-hidden="true">
+            <div class="modal fade" id="modelId_list" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                <div class="modal-dialog" role="document">
                   <div class="modal-content " style=" width: 600px; ">
                      <div class="modal-header">
@@ -67,8 +66,7 @@
                                     <form class="sbox2" action="/search" method="get">
                                        <div class="input-group mb-4 " style="width:97%">
                                           <div class="input-group-prepend">
-                                             <span class="input-group-text"><i
-                                                   class="fa-solid fa-magnifying-glass"></i></span>
+                                             <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
                                           </div>
                                           <input type="text" class="form-control" placeholder="Username">
                                        </div>
@@ -165,8 +163,7 @@
                                     <form class="sbox2" action="/search" method="get">
                                        <div class="input-group mb-4 " style="width:97%">
                                           <div class="input-group-prepend">
-                                             <span class="input-group-text"><i
-                                                   class="fa-solid fa-magnifying-glass"></i></span>
+                                             <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
                                           </div>
                                           <input type="text" class="form-control" placeholder="Username">
                                        </div>
@@ -183,34 +180,28 @@
                                                    </p>
                                                 </div>
                                                 <div style="width:50%; float: right; margin-top:15px;">
-                                                   <img src="../img/Annotation 2023-07-05 213208.png" alt=""
-                                                      style="margin-left:120px;">
+                                                   <img src="../img/Annotation 2023-07-05 213208.png" alt="" style="margin-left:120px;">
                                                 </div>
                                              </div>
                                           </li>
                                           <li>
-                                             <span><img src="img/Toyota.png" alt=""
-                                                   style="width:24px; height:24px;"></span>
+                                             <span><img src="img/Toyota.png" alt="" style="width:24px; height:24px;"></span>
                                              <span>Toyota</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/Hyndy.png" alt=""
-                                                   style="width:24px; height:24px;"></img></span>
+                                             <span><img src="img/Hyndy.png" alt="" style="width:24px; height:24px;"></img></span>
                                              <span>Hyundai</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/Kia.png" alt=""
-                                                   style="width:24px; height:24px;"></img></span>
+                                             <span><img src="img/Kia.png" alt="" style="width:24px; height:24px;"></img></span>
                                              <span>KIA</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/vinfast.png" alt=""
-                                                   style="width:24px; height:24px;"></span>
+                                             <span><img src="img/vinfast.png" alt="" style="width:24px; height:24px;"></span>
                                              <span>VinFast</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/mitsubishi.png" alt=""
-                                                   style="width:24px; height:24px;"></img></span>
+                                             <span><img src="img/mitsubishi.png" alt="" style="width:24px; height:24px;"></img></span>
                                              <span>Misubishi</span>
                                           </li>
                                        </ul>
@@ -332,11 +323,9 @@
                         </div>
                      </div>
                      <div class="modal_footer">
-                        <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;" type="button"
-                           class="btn btn-light">Bỏ chọn tất
+                        <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;" type="button" class="btn btn-light">Bỏ chọn tất
                            cả</button>
-                        <button style="background-color: #F05626;border: 1px solid #F05626;" type="button"
-                           class="btn btn-primary">Xem kết quả</button>
+                        <button style="background-color: #F05626;border: 1px solid #F05626;" type="button" class="btn btn-primary">Xem kết quả</button>
                      </div>
                   </div>
                </div>
@@ -345,14 +334,12 @@
          <div class="buttom_login">
             <div class="but">
                <!-- Button trigger modal -->
-               <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId"
-                  style="background-color: #f05626;border: none;font-size: 16px;">
+               <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId" style="background-color: #f05626;border: none;font-size: 16px;">
                   <i class="fa-regular fa-user" id="login_header"></i>Đăng Nhập
                </button>
 
                <!-- Modal -->
-               <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-                  aria-hidden="true">
+               <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                      <div class="modal-content">
                         <div class="modal-header">
@@ -384,75 +371,28 @@
                                     tài khoản Chợ xe</p>
                               </div>
                               <div class="login_modal">
-                                 <!-- Email input -->
-                                 <div class="form-outline mb-4">
-                                    <label class="form-label" id="lb_tkmk" for="form2Example2">Số
-                                       điện
-                                       thoại</label>
-                                    <input type="text" id="ip_tkmk" class="form-control" />
-                                 </div>
-
-                                 <!-- Password input -->
-                                 <div class="form-outline mb-4">
-                                    <label class="form-label" id="lb_tkmk" for="form2Example2">mật
-                                       khẩu</label>
-                                    <input type="password" id="ip_tkmk" class="form-control" />
-                                 </div>
+                                 <?php include('login.php') ?>
                               </div>
                               <div class="register_modal">
-                                 <!-- Email input -->
-                                 <div class="form-outline mb-4">
-                                    <label class="form-label" id="lb_tkmk" for="form2Example2">Họ
-                                       tên</label>
-                                    <input type="text" id="ip_tkmk" class="form-control" />
-                                 </div>
-
-                                 <!-- Password input -->
-                                 <div class="form-outline mb-4">
-                                    <label class="form-label" id="lb_tkmk" for="form2Example2">Số
-                                       điện thoại</label>
-                                    <input type="text" id="ip_tkmk" class="form-control" />
-                                 </div>
-                                 <!-- Email input -->
-                                 <div class="form-outline mb-4">
-                                    <label class="form-label" id="lb_tkmk" for="form2Example2">Email</label>
-                                    <input type="email" id="ip_tkmk" class="form-control" />
-                                 </div>
-
-                                 <!-- Password input -->
-                                 <div class="form-outline mb-4">
-                                    <label class="form-label" id="lb_tkmk" for="form2Example2">Mật
-                                       khẩu</label>
-                                    <input type="password" id="ip_tkmk" class="form-control" />
-                                 </div>
+                                 <?php include('sign.php') ?>
                               </div>
                               <!-- 2 column grid layout for inline styling -->
                               <div class="row mb-4">
                                  <div class="col d-flex justify-content-center">
-
                                     <div class="form-check">
-                                       <input class="form-check-input" type="checkbox" value="" id="form2Example31"
-                                          checked />
+                                       <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
                                        <label class="form-check-label" for="form2Example31">
                                           Lưu mật khẩu </label>
                                     </div>
                                  </div>
-
                                  <div class="col">
                                     <!-- Simple link -->
                                     <a href="#!" style="color: #f05626;">Quên mật khẩu ?</a>
                                  </div>
                               </div>
-
-                              <!-- Submit button -->
-                              <button type="button" style="background-color: #f05626; border: none;"
-                                 class="btn btn-primary btn-block mb-4">Đăng
-                                 Nhập</button>
-
                               <!-- Register buttons -->
                               <div class="text-center ">
-                                 <p>Bạn Chưa có tài khoản? <a onclick="eventclickshow()" id="change_login" href="#!"
-                                       style="color: #f05626;">Đăng
+                                 <p>Bạn Chưa có tài khoản? <a onclick="eventclickshow()" id="change_login" href="#!" style="color: #f05626;">Đăng
                                        ký</a>
                                  </p>
                               </div>

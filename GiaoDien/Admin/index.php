@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION['userName'])) {
+   header('location:../models/login.php');
+};
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,6 +26,13 @@
             break;
          case 'qlbd':
             include("view/listNews.php");
+            break;
+         case 'logout':
+            session_start();
+            if (isset($_SESSION['userName'])) {
+               unset($_SESSION['userName']);
+               header('location:../models/login.php');
+            }
             break;
          default:
             include('view/listAcc.php');

@@ -1,8 +1,8 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "choxe");
-
+$con = new mysqli("localhost", "root", "", "choxe");
 // Check connection
-if ($mysqli->connect_errno) {
-   echo "Lỗi kết nối database : " . $mysqli->connect_error;
+if ($con->connect_errno) {
+   echo "Lỗi kết nối database : " . $con->connect_error;
    exit();
 }
+$run = mysqli_query($con, 'SET NAMES "UTF8"');
