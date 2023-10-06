@@ -439,15 +439,15 @@
                     </div>
                     <!-- </div> -->
                     <div style="width:50%;margin-left:25%;margin-top:2%;">
-                        <button style="background-color: #F05626;border: 1px solid #F05626;color:#fff;" type="submit" class="nut1" name="txtsub">Tiếp tục</button>
+                        <button style="background-color: #F05626;border: 1px solid #F05626;color:#fff;" type="submit" class="nut1" >Tiếp tục</button>
                     </div>
                     <div style="width:50%;margin-left:25%;margin-top:2%;">
-                        <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;" type="submit" class="nut1">Lưu tin</button>
+                        <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;" type="submit" class="nut1" name="txtsub">Lưu tin</button>
                     </div>
                 </div>
             </form>
             <?php
-            include('./config/control.php'); //Chèn trang control vào bài
+            include('./config/control_pt.php'); //Chèn trang control vào bài
             $get_data = new data(); //Gọi đến class data
             if (isset($_POST['txtsub'])) // Thực thị sau khi nhấn nút submit
             {
@@ -508,7 +508,7 @@
         <div class="footer">
             <div style="height:238px; width:400px;" class="contenfooter">
                 <div>
-                    <img src="/img/logo_white_117_32.png" alt="" style="width:117px; height:32px; margin-top:20px;"></img>
+                    <img src="img/logo_white_117_32.png" alt="" style="width:117px; height:32px; margin-top:20px;"></img>
                 </div>
                 <div style="width:400px; height:42px; color:white; margin-top:40px;">
                     ©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số
@@ -522,7 +522,7 @@
                     <i class="fa-solid fa-envelope" style="color:white; margin-left:60px; font-size:14px;"><a href="" class="email">cskh@choxe.vn</a></i>
                 </div>
                 <div>
-                    <img src="/img/logo-bct.png" alt="" style="height:45px;width:122px; margin-top:50px;"></img>
+                    <img src="img/logo-bct.png" alt="" style="height:45px;width:122px; margin-top:50px;"></img>
                 </div>
             </div>
             <div style="margin-left:565px; width:180px; height:220px; margin-top:-140px;">
@@ -536,13 +536,13 @@
                 </div> -->
             <div class="footer-content-right">
                 <div class="footer-content-right-1">
-                    <a href=""><img src="/img/hotline2.png"></a>
+                    <a href=""><img src="img/hotline2.png"></a>
                     <div class="footer-content-right-1_1">
                         <a href=""><b>Hotline: 091.144.2883</b></a>
                     </div>
                 </div>
                 <div class="footer-content-right-2">
-                    <a href=""><img src="/img/danhchomoigioi.png"></a>
+                    <a href=""><img src="img/danhchomoigioi.png"></a>
                     <div class="footer-content-right-2_1">
                         <a href=""><b>Dành cho salon, Môi giới</b></a>
                     </div>

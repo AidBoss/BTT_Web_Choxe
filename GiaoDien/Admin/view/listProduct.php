@@ -15,18 +15,28 @@
             </tr>
          </thead>
          <tbody>
+         <?php
+               include('./config/control_pt.php');
+               $get_data=new data();
+               $select_all=$get_data->se_all('dangtin');
+               foreach ($select_all as $se_product)
+               {
+               ?>
             <tr>
-               <th scope="row">1</th>
-               <td>Hyundai Starex</td>
-               <td>Phạm Anh Huy</td>
-               <td>500.000.000 VNĐ</td>
+               <td scope="row"><?php echo $se_product['id']?></td>
+               <td><?php echo $se_product['hangxe']?></td>
+               <td><?php echo $se_product['tinhtrang']?></td>
+               <td><?php echo $se_product['giaban']?></td>
                <td>
-                  <img src="../img/Oto_1/2a.jpg" style="height:200px; width: 300px; object-fit: cover">
+                  <img src="../img/<?php echo $se_product['anh']?>" style="height:200px; width: 300px; object-fit: cover">
                </td>
                <td><button type="button" class="btn btn-warning">Edit</button></td>
                <td><button type="button" class="btn btn-danger">Del</button></td>
             </tr>
-            <tr>
+            <?php }?>
+
+
+            <!-- <tr>
                <th scope="row">2</th>
                <td>Mitsubishi Triton</td>
                <td>Đỗ Văn Tuấn</td>
@@ -47,13 +57,9 @@
                </td>
                <td><button type="button" class="btn btn-warning">Edit</button></td>
                <td><button type="button" class="btn btn-danger">Del</button></td>
-            </tr>
+            </tr> -->
          </tbody>
-         <tbody>
-            <tr>
-               <th>
-            </tr>
-         </tbody>
+         
       </table>
    </form>
 </div>
