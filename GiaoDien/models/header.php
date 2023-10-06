@@ -1,9 +1,11 @@
 <?php
 ob_start();
 ?>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="../fonts/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+   rel="stylesheet">
 <link rel="stylesheet" href="../CSS/Home.css">
 <div class="header">
    <div class="header_content">
@@ -32,12 +34,14 @@ ob_start();
             <!-- <i class="fa-solid fa-bars "></i> -->
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg fa-bars " data-toggle="modal" data-target="#modelId_list" style="background-color: #fff;border: none;">
+            <button type="button" class="btn btn-primary btn-lg fa-bars " data-toggle="modal"
+               data-target="#modelId_list" style="background-color: #fff;border: none;">
                <i class="fa-solid fa-bars "></i>
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="modelId_list" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal fade" id="modelId_list" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+               aria-hidden="true">
                <div class="modal-dialog" role="document">
                   <div class="modal-content " style=" width: 600px; ">
                      <div class="modal-header">
@@ -66,7 +70,8 @@ ob_start();
                                     <form class="sbox2" action="/search" method="get">
                                        <div class="input-group mb-4 " style="width:97%">
                                           <div class="input-group-prepend">
-                                             <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                             <span class="input-group-text"><i
+                                                   class="fa-solid fa-magnifying-glass"></i></span>
                                           </div>
                                           <input type="text" class="form-control" placeholder="Username">
                                        </div>
@@ -163,7 +168,8 @@ ob_start();
                                     <form class="sbox2" action="/search" method="get">
                                        <div class="input-group mb-4 " style="width:97%">
                                           <div class="input-group-prepend">
-                                             <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                             <span class="input-group-text"><i
+                                                   class="fa-solid fa-magnifying-glass"></i></span>
                                           </div>
                                           <input type="text" class="form-control" placeholder="Username">
                                        </div>
@@ -180,28 +186,34 @@ ob_start();
                                                    </p>
                                                 </div>
                                                 <div style="width:50%; float: right; margin-top:15px;">
-                                                   <img src="../img/Annotation 2023-07-05 213208.png" alt="" style="margin-left:120px;">
+                                                   <img src="../img/Annotation 2023-07-05 213208.png" alt=""
+                                                      style="margin-left:120px;">
                                                 </div>
                                              </div>
                                           </li>
                                           <li>
-                                             <span><img src="img/Toyota.png" alt="" style="width:24px; height:24px;"></span>
+                                             <span><img src="img/Toyota.png" alt=""
+                                                   style="width:24px; height:24px;"></span>
                                              <span>Toyota</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/Hyndy.png" alt="" style="width:24px; height:24px;"></img></span>
+                                             <span><img src="img/Hyndy.png" alt=""
+                                                   style="width:24px; height:24px;"></img></span>
                                              <span>Hyundai</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/Kia.png" alt="" style="width:24px; height:24px;"></img></span>
+                                             <span><img src="img/Kia.png" alt=""
+                                                   style="width:24px; height:24px;"></img></span>
                                              <span>KIA</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/vinfast.png" alt="" style="width:24px; height:24px;"></span>
+                                             <span><img src="img/vinfast.png" alt=""
+                                                   style="width:24px; height:24px;"></span>
                                              <span>VinFast</span>
                                           </li>
                                           <li>
-                                             <span><img src="img/mitsubishi.png" alt="" style="width:24px; height:24px;"></img></span>
+                                             <span><img src="img/mitsubishi.png" alt=""
+                                                   style="width:24px; height:24px;"></img></span>
                                              <span>Misubishi</span>
                                           </li>
                                        </ul>
@@ -315,9 +327,11 @@ ob_start();
                         </div>
                      </div>
                      <div class="modal_footer">
-                        <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;" type="button" class="btn btn-light">Bỏ chọn tất
+                        <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;" type="button"
+                           class="btn btn-light">Bỏ chọn tất
                            cả</button>
-                        <button style="background-color: #F05626;border: 1px solid #F05626;" type="button" class="btn btn-primary">Xem kết quả</button>
+                        <button style="background-color: #F05626;border: 1px solid #F05626;" type="button"
+                           class="btn btn-primary">Xem kết quả</button>
                      </div>
                   </div>
                </div>
@@ -326,15 +340,14 @@ ob_start();
          <div class="buttom_login">
             <div class="but">
                <!-- Button trigger modal -->
-               <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId" style="background-color: #f05626;border: none;font-size: 16px;">
-                  <i class="fa-regular fa-user" id="login_header"></i>Đăng Nhập
+               <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId"
+                  style="background-color: #f05626;border: none;font-size: 16px;">
+                  <a href="login.php"><i class="fa-regular fa-user" id="login_header"></i>Đăng Nhập</a>
                </button>
-
                <!-- Modal -->
-
             </div>
             <div class="but2">
-               <a target="_blank" href="" id="dangtin">
+               <a target="_blank" href="login.php" id="dangtin">
                   Đăng Tin <img src="img/add_listing_white_16_18.png" alt="" id="login_dangtin"></i>
                </a>
             </div>

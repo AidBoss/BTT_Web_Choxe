@@ -15,7 +15,8 @@ if (isset($_SESSION['userName'])) {
          khẩu</label>
       <input type="password" id="ip_tkmk" name="txtPass" required="" class="form-control" />
    </div>
-   <button type="submit" name="sub" style="background-color: #f05626; border: none;" class="btn btn-primary btn-block mb-4">Đăng
+   <button type="submit" name="sub" style="background-color: #f05626; border: none;"
+      class="btn btn-primary btn-block mb-4">Đăng
       Nhập</button>
    <div class="row mb-4">
       <div class="col d-flex justify-content-center">
@@ -30,7 +31,8 @@ if (isset($_SESSION['userName'])) {
       </div>
    </div>
    <div class="text-center ">
-      <p>Bạn Chưa có tài khoản? <a onclick="eventclickshow()" id="change_login" href="sign.php" style="color: #f05626;">Đăng
+      <p>Bạn Chưa có tài khoản? <a onclick="eventclickshow()" id="change_login" href="sign.php"
+            style="color: #f05626;">Đăng
             ký</a>
       </p>
    </div>
