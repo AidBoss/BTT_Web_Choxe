@@ -896,8 +896,7 @@
                         <option value="14" class="chọn">14</option>
                         <option value="3" class="chọn">3</option>
                         <option value="8" class="chọn">8</option>
-                        <option value="6" class="chọn">6</option>
-                        
+                        <option value="6" class="chọn">6</option>   
                     </select>
                 </div>
             </div>
