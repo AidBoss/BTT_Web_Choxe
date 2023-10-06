@@ -638,13 +638,13 @@
                 <label for="" style="color: #A5A5A5;">tình trạng</label>
                 <div class="radio_tile_group">
                     <div class="input_container">
-                        <input type="radio" name="txttinhtrang">
+                        <input type="radio" name="txttinhtrang" value="xe cũ">
                         <div class="radio_tile">
                             <label for="">xe cũ</label>
                         </div>
                     </div>
                     <div class="input_container">
-                        <input type="radio" name="txttinhtrang">
+                        <input type="radio" name="txttinhtrang" value="xe mới">
                         <div class="radio_tile">
                             <label for="">xe mới</label>
                         </div>
@@ -681,11 +681,11 @@
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Hãng xe</label>
                     <select style="width: 100%; margin-top:-2px;" class="nut2" name="txthangxe">
                         <option value=""></option>
-                        <option value="" class="chọn">Toyota</option>
-                        <option value="" class="chọn">Hyundai</option>
-                        <option value="" class="chọn">KIA</option>
-                        <option value="" class="chọn">VinFast</option>
-                        <option value="" class="chọn">Misubishi</option>
+                        <option value="Toyota" class="chọn">Toyota</option>
+                        <option value="Hyundai" class="chọn">Hyundai</option>
+                        <option value="KIA" class="chọn">KIA</option>
+                        <option value="VinFast" class="chọn">VinFast</option>
+                        <option value="Misubishi" class="chọn">Misubishi</option>
                         <option value="" class="chọn">3</option>
                         <option value="" class="chọn">8</option>
                         <option value="" class="chọn">6</option>
@@ -698,11 +698,11 @@
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">  Dòng xe</label>
                     <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtdongxe">
                         <option value=""></option>
-                        <option value="" class="chọn">Toyota</option>
-                        <option value="" class="chọn">Hyundai</option>
-                        <option value="" class="chọn">KIA</option>
-                        <option value="" class="chọn">VinFast</option>
-                        <option value="" class="chọn">Misubishi</option>
+                        <option value="Toyota" class="chọn">Toyota</option>
+                        <option value="Hyundai" class="chọn">Hyundai</option>
+                        <option value="KIA" class="chọn">KIA</option>
+                        <option value="VinFast" class="chọn">VinFast</option>
+                        <option value="Misubishi" class="chọn">Misubishi</option>
                         <option value="" class="chọn">3</option>
                         <option value="" class="chọn">8</option>
                         <option value="" class="chọn">6</option>
@@ -715,14 +715,14 @@
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Năm sản xuất</label>
                     <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtnamsanxuat">
                         <option value=""></option>
-                        <option value="" class="chọn">Toyota</option>
-                        <option value="" class="chọn">Hyundai</option>
-                        <option value="" class="chọn">KIA</option>
-                        <option value="" class="chọn">VinFast</option>
-                        <option value="" class="chọn">Misubishi</option>
-                        <option value="" class="chọn">3</option>
-                        <option value="" class="chọn">8</option>
-                        <option value="" class="chọn">6</option>
+                        <option value="2000" class="chọn">2000</option>
+                        <option value="2001" class="chọn">2001</option>
+                        <option value="2002" class="chọn">2002</option>
+                        <option value="2003" class="chọn">2003</option>
+                        <option value="2009" class="chọn">2009</option>
+                        <option value="2010" class="chọn">2010</option>
+                        <option value="sau 2020" class="chọn">sau 2020</option>
+                        <option value="trước 2020" class="chọn">trước 2020</option>
                         
                     </select>
                 </div>
@@ -749,19 +749,19 @@
                 <label for="" style="color: #A5A5A5;height:9px;">Hộp số</label>
                 <div class="radio_tile_group">
                     <div class="input_container2">
-                        <input type="radio" name="txthopso">
+                        <input type="radio" name="hopso" value="số sàn">
                         <div class="radio_tile">
                             <label for="">Số sàn</label>
                         </div>
                     </div>
                     <div class="input_container2">
-                        <input type="radio" name="txthopso">
+                        <input type="radio" name="hopso" value="số tự động">
                         <div class="radio_tile">
                             <label for="">Số tự động</label>
                         </div>
                     </div>
                     <div class="input_container2">
-                        <input type="radio" name="txthopso">
+                        <input type="radio" name="hopso" value="bán tự động">
                         <div class="radio_tile">
                             <label for="">Bán tự động</label>
                         </div>
@@ -773,25 +773,25 @@
                 <label for="" style="color: #A5A5A5;height:9px;">Kiểu dẫn động</label>
                 <div class="radio_tile_group">
                     <div class="input_container3">
-                        <input type="radio" name="txtkieudandong">
+                        <input type="radio" name="kieudandong" value="fwd">
                         <div class="radio_tile">
                             <label for="">FWD</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="txtkieudandong">
+                        <input type="radio" name="kieudandong" value="rwd">
                         <div class="radio_tile">
                             <label for="">RWD</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="txtkieudandong">
+                        <input type="radio" name="kieudandong" value="awd">
                         <div class="radio_tile">
                             <label for="">AWD</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="txtkieudandong">
+                        <input type="radio" name="kieudandong" value="4wd">
                         <div class="radio_tile">
                             <label for="">4WD</label>
                         </div>
@@ -803,25 +803,25 @@
                 <label for="" style="color: #A5A5A5;height:9px;">Nhiên liệu</label>
                 <div class="radio_tile_group">
                     <div class="input_container3">
-                        <input type="radio" name="txtnhienlieu">
+                        <input type="radio" name="nhienlieu" value="xăng">
                         <div class="radio_tile">
                             <label for="">Xăng</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="txtnhienlieu">
+                        <input type="radio" name="nhienlieu" value="dầu">
                         <div class="radio_tile">
                             <label for="">Dầu</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="txtnhienlieu">
+                        <input type="radio" name="nhienlieu" value="điện">
                         <div class="radio_tile">
                             <label for="">Điện</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="txtnhienlieu">
+                        <input type="radio" name="nhienlieu" value="hybird">
                         <div class="radio_tile">
                             <label for="">Hybird</label>
                         </div>
@@ -860,26 +860,27 @@
                 · Tình trạng giấy tờ"></textarea>
             </div>
 
-            <div style="margin-left:25%;margin-top:4%;width:50%;height:50px;" id="btnShow">
+            <div style="margin-left:25%;margin-top:4%;width:50%;height:50px;" id="btnShow" >
                 <span style="margin-left:30%;font-size:16px; color: #F05626; cursor: pointer;" onclick="toggleShow()" >Hiển thị tùy chọn nâng cao &#8744;</span>
                 <!-- <span  onclick="toggleShow()" style="cursor: pointer;"> &#8744; </span> -->
+                <!--id="btnShow"    onclick="toggleShow()"-->
             </div>
-            <!--  -->
-            <div id="btnHide" style="display: none;" >
+            
+            <!-- <div id="btnHide" style="display: none;" > -->
             <div style="width:50%;margin-top:2%;margin-left:25%;">
                 <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:7px;">Kiểu dáng</label>
                     <select style="width: 100%;margin-top:-2px;" class="nut2" name="txtkieudang">
-                        <option value="">chọn phiên kiểu dáng</option>
-                        <option value="" class="chọn">Sedan</option>
-                        <option value="" class="chọn">Hatchback</option>
-                        <option value="" class="chọn">SUV</option>
-                        <option value="" class="chọn">Bán tải</option>
-                        <option value="" class="chọn">Xe tải</option>
-                        <option value="" class="chọn">MPV</option>
-                        <option value="" class="chọn">Van/Minivan</option>
-                        <option value="" class="chọn">Coupe</option>
-                        <option value="" class="chọn">Mui Trần</option>
+                        <option value="chọn phiên kiểu dáng">chọn phiên kiểu dáng</option>
+                        <option value="Sedan" class="chọn">Sedan</option>
+                        <option value="Hatchback" class="chọn">Hatchback</option>
+                        <option value="SUV" class="chọn">SUV</option>
+                        <option value="Bán tải" class="chọn">Bán tải</option>
+                        <option value="Xe tải" class="chọn">Xe tải</option>
+                        <option value="MPV" class="chọn">MPV</option>
+                        <option value="Van/Minivan" class="chọn">Van/Minivan</option>
+                        <option value="Coupe" class="chọn">Coupe</option>
+                        <option value="Mui Trần" class="chọn">Mui Trần</option>
                     </select>
                 </div>
             </div>
@@ -888,14 +889,14 @@
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Số chỗ</label>
                     <select style="width: 100%; margin-top:-2px;" class="nut2" name=txtsocho>
                         <option value="">Chọn số chỗ</option>
-                        <option value="" class="chọn">2</option>
-                        <option value="" class="chọn">4</option>
-                        <option value="" class="chọn">9</option>
-                        <option value="" class="chọn">7</option>
-                        <option value="" class="chọn">14</option>
-                        <option value="" class="chọn">3</option>
-                        <option value="" class="chọn">8</option>
-                        <option value="" class="chọn">6</option>
+                        <option value="2" class="chọn">2</option>
+                        <option value="4" class="chọn">4</option>
+                        <option value="9" class="chọn">9</option>
+                        <option value="7" class="chọn">7</option>
+                        <option value="14" class="chọn">14</option>
+                        <option value="3" class="chọn">3</option>
+                        <option value="8" class="chọn">8</option>
+                        <option value="6" class="chọn">6</option>
                         
                     </select>
                 </div>
@@ -905,21 +906,22 @@
                     <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Xuất xứ</label>
                     <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtxuatxu">
                         <option value="">Chọn xuất xứ</option>
-                        <option value="" class="chọn">Nhập khẩu </option>
-                        <option value="" class="chọn">Lắp ráp trong nước</option>
+                        <option value="Nhập khẩu" class="chọn">Nhập khẩu </option>
+                        <option value="Lắp ráp trong nước" class="chọn">Lắp ráp trong nước</option>
                     </select>
                 </div>
             </div>
-            </div>
+            <!-- </div> -->
 
             <div style="margin-left:25%;margin-top:2%;width:50%;" >
                 <p style=" color: #A5A5A5;height:10px;">Thông tin người bán </p>
-                <div style="border: 1px solid #e2dfdf;width:100%;height:80px;border-radius:6px;"  id="tnShow">
+                <div style="border: 1px solid #e2dfdf;width:100%;height:80px;border-radius:6px;" id="tnShow">
                     <button style="border: none;background-color:#fff;margin-top:30px;margin-left:30%;font-size:16px;color: #F05626; cursor: pointer;" 
                      onclick="nutShow()">Thêm thông tin liên hệ mới <span>&#43;</span></button>
                 </div>
+                <!-- id="tnShow"     onclick="nutShow()"-->
             </div>
-            <div id="tnHide" style="display: none;">
+            <!-- <div id="tnHide" style="display: none;"> -->
                 <div style="width:50%;margin-left:25%;height:auto;margin-top:2%;">
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tên liên hệ*</label>
@@ -933,27 +935,27 @@
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tỉnh/Thành phố*</label>
                         <select style="border: none;" class="nut2" name="txttinhtp">
                             <option value="" style="font-size:14px;">Chọn Tỉnh/Thành phố</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+                            <option value="Hạ Long">Hạ Long</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Nha Trang">Nha Trang</option>
+                            <option value="Sapa">Sapa</option>
+                            <option value="Bắc Giang">Bắc Giang </option>
+                            <option value="Ninh Bình">Ninh Bình</option>
+                            <option value="Thái Nguyên">Thái Nguyên</option>
                         </select>
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Quận/huyện*</label>
                         <select style="border: none;" class="nut2" name="txtquanhuyen">
-                            <option value="" style="font-size:14px;">Chọn Quận/huyện</option>
+                            <option value="Chọn Quận/huyện" style="font-size:14px;">Chọn Quận/huyện</option>
                         </select>
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                         <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Phương/xã*</label>
                         <select style="border: none;" class="nut2" name="txtphuongxa">
-                            <option value="" style="font-size:14px;">Chọn Phương/xã</option>
+                            <option value="Chọn Phương/xã" style="font-size:14px;">Chọn Phương/xã</option>
                         </select>
                     </div>
                     <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
@@ -970,7 +972,7 @@
                         type="button" class="nut3">Thêm mới</button>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
             <div style="width:50%;margin-left:25%;margin-top:2%;">
                 <button style="background-color: #F05626;border: 1px solid #F05626;color:#fff;"
                 type="submit" class="nut1" name="txtsub">Tiếp tục</button>
@@ -983,13 +985,10 @@
         </form>
         <?php
             include('./config/control.php');//Chèn trang control vào bài
-            $get_data=new data();//Gọi đến class data
+            $get_data=new data ();//Gọi đến class data
             if(isset($_POST['txtsub']))// Thực thị sau khi nhấn nút submit
             {
-            if(empty($_POST['txtbanxe'])||empty($_POST['txtdongxe'])||empty($_POST['txthangxe'])) {
-               echo"<script>alert('bạn chưa nhập đủ thông tin!')</script>";
-            }
-            else{
+                
             //else{
               //  if($_POST['txtpassword']!=$_POST['txtrepassword']) {
                   //  echo"<script>alert('mật khẩu không trùng khớp')</script>";
@@ -1003,7 +1002,7 @@
                           //  }
                    // }
                     move_uploaded_file($_FILES['txtfile']['tmp_name'],'/img '.$_FILES['txtfile']['name']);
-                    $contact=$get_data->dangtin_tt(
+                    $insert=$get_data->dangtin_tt(
                                                 $_POST['txtbanxe'],
                                                 $_POST['txttinhtrang'],
                                                 $_FILES['txtfile']['name'],
@@ -1028,11 +1027,11 @@
                                                 $_POST['txtphuongxa'],
                                                 $_POST['txtdiachi']);
                     if($insert) echo "<script>alert('thêm mới sản phẩm thành công')
-                    window.location='product.php';
+                    window.location='đăngtin.php';
                     </script>";
                     //else echo"<script>alert('thêm mới không thành công')</script>";
                 }
-              }
+            //   }
            // }
        //     }
        //     }
