@@ -210,7 +210,6 @@ ob_start();
                                  </div>
                               </div>
                            </label>
-
                            <div class="form-group" style="width: 100%;">
                               <!-- <label class="form-label" id="lb_bl3" for="form2Example2">Dòng xe
                                                 </label> -->
@@ -221,17 +220,14 @@ ob_start();
                                  <option></option>
                               </select>
                            </div>
-
                            <!-- ---------Khoảng Giá---------- -->
                            <div class="boc_than_bl">
                               <p>Khoảng Giá</p>
                               <div class="khgia_home">
                                  <p><b>Từ 0 đến <span id="demo2"></span></b><b>&nbsp;triệu</b></p>
                                  <input type="range" min="0" max="900" value="0" class="slider2" id="myRange2">
-
                               </div>
                            </div>
-
                            <!-- ---------Tình trạng---------- -->
                            <div class="boc_than_bl">
                               <p>Tình trạng</p>
@@ -240,7 +236,6 @@ ob_start();
                                  <button>xe mới</button>
                               </div>
                            </div>
-
                            <!-- ---------Năm sản xuất---------- -->
                            <div class="boc_than_bl">
                               <p>Năm sản xuất</p>
@@ -248,10 +243,8 @@ ob_start();
                                  <p><b>Từ năm 2000 đến <span id="namsx"></span></b><b>&nbsp;năm</b>
                                  </p>
                                  <input type="range" min="2000" max="2023" value="0" class="sonam" id="myRange2">
-
                               </div>
                            </div>
-
                            <!-- ---------Hộp số---------- -->
                            <div class="boc_than_bl">
                               <p>Hộp số</p>
@@ -261,7 +254,6 @@ ob_start();
                                  <button id="hs_bl">Bán tự động</button>
                               </div>
                            </div>
-
                            <!-- ----------Nguyên liệu--------- -->
                            <div class="boc_than_bl">
                               <p>Nhiên Liệu</p>
@@ -339,68 +331,7 @@ ob_start();
                </button>
 
                <!-- Modal -->
-               <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                     <div class="modal-content">
-                        <div class="modal-header">
-                           <h5 class="modal-title">Đăng Nhập</h5>
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
-                        </div>
 
-                        <!-- form dang ky dang nhap -->
-                        <div class="modal-body">
-                           <form>
-                              <div class="form-outline mb-4" id="icons_modal">
-                                 <button>
-                                    <i class="fa-brands fa-facebook" style="color: #225fc9;"></i>
-                                    Đăng nhập bằng facebook
-                                 </button>
-                              </div>
-                              <div class="form-outline mb-4" id="icons_modal">
-                                 <button>
-                                    <i class="fa-brands fa-google"></i> Đăng nhập bằng google
-                                 </button>
-                              </div>
-
-                              <!-- Password input -->
-                              <div class="form-outline mb-4">
-                                 <p class="form-label" for="form2Example2" style="color: #B3B6C1;">
-                                    hoặc đăng nhập bằng
-                                    tài khoản Chợ xe</p>
-                              </div>
-                              <div class="login_modal">
-                                 <?php include('login.php') ?>
-                              </div>
-                              <div class="register_modal">
-                                 <?php include('sign.php') ?>
-                              </div>
-                              <!-- 2 column grid layout for inline styling -->
-                              <div class="row mb-4">
-                                 <div class="col d-flex justify-content-center">
-                                    <div class="form-check">
-                                       <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                                       <label class="form-check-label" for="form2Example31">
-                                          Lưu mật khẩu </label>
-                                    </div>
-                                 </div>
-                                 <div class="col">
-                                    <!-- Simple link -->
-                                    <a href="#!" style="color: #f05626;">Quên mật khẩu ?</a>
-                                 </div>
-                              </div>
-                              <!-- Register buttons -->
-                              <div class="text-center ">
-                                 <p>Bạn Chưa có tài khoản? <a onclick="eventclickshow()" id="change_login" href="#!" style="color: #f05626;">Đăng
-                                       ký</a>
-                                 </p>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
             </div>
             <div class="but2">
                <a target="_blank" href="" id="dangtin">
