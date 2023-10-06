@@ -749,19 +749,19 @@
                 <label for="" style="color: #A5A5A5;height:9px;">Hộp số</label>
                 <div class="radio_tile_group">
                     <div class="input_container2">
-                        <input type="radio" name="hopso" value="số sàn">
+                        <input type="radio"  value="số sàn" name="txthopso">
                         <div class="radio_tile">
                             <label for="">Số sàn</label>
                         </div>
                     </div>
                     <div class="input_container2">
-                        <input type="radio" name="hopso" value="số tự động">
+                        <input type="radio"  value="số tự động" name="txthopso"> 
                         <div class="radio_tile">
                             <label for="">Số tự động</label>
                         </div>
                     </div>
                     <div class="input_container2">
-                        <input type="radio" name="hopso" value="bán tự động">
+                        <input type="radio" value="bán tự động" name="txthopso">
                         <div class="radio_tile">
                             <label for="">Bán tự động</label>
                         </div>
@@ -773,25 +773,25 @@
                 <label for="" style="color: #A5A5A5;height:9px;">Kiểu dẫn động</label>
                 <div class="radio_tile_group">
                     <div class="input_container3">
-                        <input type="radio" name="kieudandong" value="fwd">
+                        <input type="radio"  value="fwd" name="txtkieudandong">
                         <div class="radio_tile">
                             <label for="">FWD</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="kieudandong" value="rwd">
+                        <input type="radio" value="rwd" name="txtkieudandong">
                         <div class="radio_tile">
                             <label for="">RWD</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="kieudandong" value="awd">
+                        <input type="radio"  value="awd" name="txtkieudandong">
                         <div class="radio_tile">
                             <label for="">AWD</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="kieudandong" value="4wd">
+                        <input type="radio"  value="4wd" name="txtkieudandong">
                         <div class="radio_tile">
                             <label for="">4WD</label>
                         </div>
@@ -803,25 +803,25 @@
                 <label for="" style="color: #A5A5A5;height:9px;">Nhiên liệu</label>
                 <div class="radio_tile_group">
                     <div class="input_container3">
-                        <input type="radio" name="nhienlieu" value="xăng">
+                        <input type="radio" value="xăng" name="txtnhienlieu">
                         <div class="radio_tile">
                             <label for="">Xăng</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="nhienlieu" value="dầu">
+                        <input type="radio"  value="dầu" name="txtnhienlieu">
                         <div class="radio_tile">
                             <label for="">Dầu</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="nhienlieu" value="điện">
+                        <input type="radio"  value="điện" name="txtnhienlieu">
                         <div class="radio_tile">
                             <label for="">Điện</label>
                         </div>
                     </div>
                     <div class="input_container3">
-                        <input type="radio" name="nhienlieu" value="hybird">
+                        <input type="radio" value="hybird" name="txtnhienlieu">
                         <div class="radio_tile">
                             <label for="">Hybird</label>
                         </div>
