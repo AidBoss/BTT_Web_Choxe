@@ -149,9 +149,20 @@
                                 <option value="KIA" class="chọn">KIA</option>
                                 <option value="VinFast" class="chọn">VinFast</option>
                                 <option value="Misubishi" class="chọn">Misubishi</option>
-                                <option value="" class="chọn">3</option>
-                                <option value="" class="chọn">8</option>
-                                <option value="" class="chọn">6</option>
+                                <option value="BMW" class="chọn">BMW</option>
+                                <option value="Mercedes-Benz" class="chọn">Mercedes-Benz</option>
+                                <option value="Audi" class="chọn">Audi</option>
+                                <option value="Honda" class="chọn">Honda</option>
+                                <option value="Ford" class="chọn">Ford</option>
+                                <option value="Porsche" class="chọn">Porsche</option>
+                                <option value="Land Rover" class="chọn">Land Rover</option>
+                                <option value="Lexus" class="chọn">Lexus</option>
+                                <option value="Mazda" class="chọn">Mazda</option>
+                                <option value="Tesla" class="chọn">Tesla</option>
+                                <option value="Rolls-Royce" class="chọn">Rolls-Royce</option>
+                                <option value="Lamborghini" class="chọn">Lamborghini</option>
+                                <option value="Ferrari" class="chọn">Ferrari</option>
+                                <option value="Bentley" class="chọn">Bentley</option>
 
                             </select>
                         </div>
@@ -166,9 +177,20 @@
                                 <option value="KIA" class="chọn">KIA</option>
                                 <option value="VinFast" class="chọn">VinFast</option>
                                 <option value="Misubishi" class="chọn">Misubishi</option>
-                                <option value="" class="chọn">3</option>
-                                <option value="" class="chọn">8</option>
-                                <option value="" class="chọn">6</option>
+                                <option value="BMW" class="chọn">BMW</option>
+                                <option value="Mercedes-Benz" class="chọn">Mercedes-Benz</option>
+                                <option value="Audi" class="chọn">Audi</option>
+                                <option value="Honda" class="chọn">Honda</option>
+                                <option value="Ford" class="chọn">Ford</option>
+                                <option value="Porsche" class="chọn">Porsche</option>
+                                <option value="Land Rover" class="chọn">Land Rover</option>
+                                <option value="Lexus" class="chọn">Lexus</option>
+                                <option value="Mazda" class="chọn">Mazda</option>
+                                <option value="Tesla" class="chọn">Tesla</option>
+                                <option value="Rolls-Royce" class="chọn">Rolls-Royce</option>
+                                <option value="Lamborghini" class="chọn">Lamborghini</option>
+                                <option value="Ferrari" class="chọn">Ferrari</option>
+                                <option value="Bentley" class="chọn">Bentley</option>
 
                             </select>
                         </div>
