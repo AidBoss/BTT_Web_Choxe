@@ -18,4 +18,11 @@ class data
         $run=mysqli_query($conn,$sql);
         return $run;
     }
+    function delete_all($table,$id)
+    {
+        global $conn;
+        $sql="delete from $table where id=$id ";
+        $run=mysqli_query($conn,$sql);
+        return $run;
+    }
 }

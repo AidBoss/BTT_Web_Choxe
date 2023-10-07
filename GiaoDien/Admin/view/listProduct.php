@@ -16,7 +16,7 @@
          </thead>
          <tbody>
          <?php
-               include('./config/control_pt.php');
+               include('../config/control_pt.php');
                $get_data=new data();
                $select_all=$get_data->se_all('dangtin');
                foreach ($select_all as $se_product)
@@ -31,6 +31,9 @@
                   <img src="../img/<?php echo $se_product['anh']?>" style="height:200px; width: 300px; object-fit: cover">
                </td>
                <td><button type="button" class="btn btn-warning">Edit</button></td>
+               <!-- <td><button type="button" class="btn btn-danger"><a href="delete_all.php?del_product=<?php echo $se_product['id']?>"
+                                                onClick="return(confirm('bạn có chắc chắn muốn xóa'))">
+                                            <span class="glyphicon glyphicon-remove"></span></a></button></td> -->
                <td><button type="button" class="btn btn-danger">Del</button></td>
             </tr>
             <?php }?>
