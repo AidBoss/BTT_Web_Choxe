@@ -32,7 +32,8 @@ ob_start();
             <div class="row mb-4">
                <div class="col d-flex">
                   <div class="form-check">
-                     <input class="form-check-input" name="btnLuu" type="checkbox" value="" id="form2Example31" checked />
+                     <input class="form-check-input" name="btnLuu" type="checkbox" value="" id="form2Example31"
+                        checked />
                      <label class="form-check-label" for="form2Example31">
                         Lưu mật khẩu
                      </label>
@@ -44,7 +45,7 @@ ob_start();
                </button>
             </div>
             <div class="col center">
-               <a href="#!">Quên mật khẩu?</a>
+               <a href="forgotPass.php">Quên mật khẩu?</a>
             </div>
          </div>
          <div class="text-center">
