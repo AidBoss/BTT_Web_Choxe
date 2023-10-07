@@ -5,38 +5,59 @@ if (isset($_SESSION['userName'])) {
    unset($_SESSION['userName']);
 }
 ?>
-<form action="login.php" method="post">
-   <div class="form-outline mb-4">
-      <label class="form-label" id="lb_tkmk" for="form2Example2"> Tên tài khoản</label>
-      <input type="text" id="ip_tkmk" name="txtUserName" class="form-control" required="" />
-   </div>
-   <div class="form-outline mb-4">
-      <label class="form-label" id="lb_tkmk" for="form2Example2">mật
-         khẩu</label>
-      <input type="password" id="ip_tkmk" name="txtPass" required="" class="form-control" />
-   </div>
-   <button type="submit" name="sub" style="background-color: #f05626; border: none;"
-      class="btn btn-primary btn-block mb-4">Đăng
-      Nhập</button>
-   <div class="row mb-4">
-      <div class="col d-flex justify-content-center">
-         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-            <label class="form-check-label" for="form2Example31">
-               Lưu mật khẩu </label>
+<link rel="stylesheet" href="../CSS/login-signin.css">
+<div class=login-padding>
+   <form action="login.php" method="post" class="login-table">
+      <div class="UP">
+         <div class="sign-in-page">
+            Trang Đăng Nhập
          </div>
       </div>
-      <div class="col">
-         <a href="#!" style="color: #f05626;">Quên mật khẩu ?</a>
+      <div class="DOWN">
+         <div class="uName-pWord">
+            <div class="form-outline mb-4">
+               <label class="form-label user-name" id="lb_tkmk" for="form2Example2"> 
+                  Tên tài khoản
+               </label>
+               <input type="text" id="ip_tkmk" name="txtUserName" class="form-control" required="" />
+            </div>
+            <div class="form-outline mb-4">
+               <label class="form-label" id="lb_tkmk" for="form2Example2">
+                  Mật khẩu
+               </label>
+               <input type="password" id="ip_tkmk" name="txtPass" required="" class="form-control" />
+            </div>
+         </div>
+         <div class="rPassword-lButton">
+            <div class="row mb-4">
+               <div class="col d-flex">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                     <label class="form-check-label" for="form2Example31">
+                        Lưu mật khẩu 
+                     </label>
+                  </div>
+               </div>
+            </div>
+            <div class="login-flex">
+               <button type="submit" name="sub"
+                  class="btn btn-primary btn-block mb-4 login-button">Đăng Nhập
+               </button>
+            </div>
+            <div class="col center">
+               <a href="#!">Quên mật khẩu?</a>
+            </div>
+         </div>
+         <div class="text-center">
+            <p>Bạn chưa có tài khoản? 
+               <a onclick="eventclickshow()" id="change_login" href="sign.php">
+                  Đăng ký ngay!
+               </a>
+            </p>
+         </div>
       </div>
-   </div>
-   <div class="text-center ">
-      <p>Bạn Chưa có tài khoản? <a onclick="eventclickshow()" id="change_login" href="sign.php"
-            style="color: #f05626;">Đăng
-            ký</a>
-      </p>
-   </div>
-</form>
+   </form>
+</div>
 <?php
 if (isset($_POST['sub'])) {
    session_start();
