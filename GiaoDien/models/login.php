@@ -1,12 +1,12 @@
 <?php
 include('../config/control.php');
 ob_start();
-if (isset($_SESSION['userName'])) {
-   unset($_SESSION['userName']);
-}
+// if (!isset($_SESSION['userName'])) {
+//    unset($_SESSION['userName']);
+// }
 ?>
-<link rel="stylesheet" href="../CSS/login-signin.css">
-<div class=login-padding>
+<link rel="stylesheet" href="../CSS/ls_style.css">
+<div class=login_padding>
    <form action="login.php" method="post" class="login-table">
       <div class="UP">
          <div class="sign-in-page">
@@ -16,7 +16,7 @@ if (isset($_SESSION['userName'])) {
       <div class="DOWN">
          <div class="uName-pWord">
             <div class="form-outline mb-4">
-               <label class="form-label user-name" id="lb_tkmk" for="form2Example2"> 
+               <label class="form-label user-name" id="lb_tkmk" for="form2Example2">
                   Tên tài khoản
                </label>
                <input type="text" id="ip_tkmk" name="txtUserName" class="form-control" required="" />
@@ -32,16 +32,15 @@ if (isset($_SESSION['userName'])) {
             <div class="row mb-4">
                <div class="col d-flex">
                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                     <input class="form-check-input" name="btnLuu" type="checkbox" value="" id="form2Example31" checked />
                      <label class="form-check-label" for="form2Example31">
-                        Lưu mật khẩu 
+                        Lưu mật khẩu
                      </label>
                   </div>
                </div>
             </div>
             <div class="login-flex">
-               <button type="submit" name="sub"
-                  class="btn btn-primary btn-block mb-4 login-button">Đăng Nhập
+               <button type="submit" name="sub" class="btn btn-primary btn-block mb-4 login-button">Đăng Nhập
                </button>
             </div>
             <div class="col center">
@@ -49,7 +48,7 @@ if (isset($_SESSION['userName'])) {
             </div>
          </div>
          <div class="text-center">
-            <p>Bạn chưa có tài khoản? 
+            <p>Bạn chưa có tài khoản?
                <a onclick="eventclickshow()" id="change_login" href="sign.php">
                   Đăng ký ngay!
                </a>
@@ -65,17 +64,21 @@ if (isset($_POST['sub'])) {
    $pass = $_POST['txtPass'];
    $tk = $getdata->login($_POST['txtUserName'], $pass);
    $check = mysqli_num_rows($tk);
+   $lv = mysqli_fetch_array($tk)[4];
    if ($check > 0) {
       $_SESSION['userName'] = $_POST['txtUserName'];
-      if ($level == '1') {
-         setcookie("success", "Đăng nhập thành công!", time() + 1, "/", "", 0);
+      if (strtolower($_POST['btnLuu']) === 'on') {
+         setcookie($_POST['txtUserName'], $_POST['txtPass'], time() + (86400 * 30), "/");
+      } else {
+         setcookie($_POST['txtUserName'], "", time() + (86400 * 30), "/");
+      }
+      // $lv = $getdata->checkLevel($level);
+      if ($lv == 1) {
          header('location:../Admin/index.php');
       } else {
          header('location:../User/ttnd.php');
       }
    } else {
-      setcookie("error", "Đăng nhập không thành công!", time() + 1, "/", "", 0);
-      echo '<script>alert("Thông tin tài khoản không chính xác.");</script>';
    }
 }
 ?>

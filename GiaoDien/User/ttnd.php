@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION['userName'])) {
+   header('location:../models/login.php');
+};
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,8 +62,8 @@
                         salon</a></li>
                   <li class="list-group-item"><a id="link_users" href="change_pass.php"><i style="font-size:22px" class="fa-solid fa-lock"></i>ㅤĐổi mật khẩu
                      </a></li>
-                  <li class="list-group-item disabled"><i style="font-size:22px" class="fa-solid fa-arrow-right-from-bracket"></i>ㅤĐăng
-                     xuất</li>
+                  <li class="list-group-item "><a id="link_users" href="../Admin/index.php?act=logout"><i style="font-size:22px" class="fa-solid fa-arrow-right-from-bracket"></i>ㅤĐăng
+                        xuất</a></li>
                   <!-- <li class="list-group-item">Vestibulum at eros</li>  -->
                </ul>
             </div>

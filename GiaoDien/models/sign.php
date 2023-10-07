@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="../CSS/login-signin.css">
-<div class=login-padding>
+<link rel="stylesheet" href="../CSS/ls_style.css">
+<div class=login_padding>
    <form action="sign.php" method="post" class="login-table">
       <div class="UP">
          <div class="sign-in-page">
@@ -26,7 +26,7 @@
                </label>
                <input type="email" id="ip_tkmk" name="txtEmail" class="form-control2" />
             </div>
-            <div class="form-outline mb-4">  
+            <div class="form-outline mb-4">
                <label class="form-label" id="lb_tkmk" for="form2Example2">
                   Mật khẩu
                </label>
@@ -39,7 +39,7 @@
             </button>
          </div>
          <div class="text-center">
-            <p>Bạn đã có tài khoản? 
+            <p>Bạn đã có tài khoản?
                <a href="login.php">
                   Đăng nhập ngay!
                </a>

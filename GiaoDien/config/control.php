@@ -25,4 +25,11 @@ class data
         $run = mysqli_query($conn, $sql);
         return $run;
     }
+    function checkLevel($level)
+    {
+        global $conn;
+        $sql = "SELECT* FROM accounts WHERE level = '$level'";
+        $run = mysqli_query($conn, $sql);
+        return $run;
+    }
 }
