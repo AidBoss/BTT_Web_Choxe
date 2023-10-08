@@ -5,6 +5,6 @@ if(isset($_GET['del_product']))
 {
     $delete=$getdata->delete_all('dangtin',$_GET['del_product']);
 if($delete) echo"<script>alert('bạn đã xóa thành công !') 
-window.location='list_product.php'</script>";
+window.location='../Admin/view/listProduct.php'</script>";
 else echo"<script>alert('bạn không xóa được')</script>";
 }

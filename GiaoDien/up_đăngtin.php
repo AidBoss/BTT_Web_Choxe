@@ -32,13 +32,20 @@
 
         <div style="width:80%;background-color:#fff;height:auto; margin-left:11%;
         margin-top: 2%;border-radius:10px 10px;border: 1px solid #e2dfdf; margin-bottom:2%;">
+        <?php
+        include('./config/control_pt.php');
+                        $get_data=new data();
+                        if (isset($_GET['id'])) {
+                        $select_id=$get_data->se_all_id('dangtin',$_GET['id']);
+                        foreach($select_id as $se_pro)
+                        ?>
             <form method="post" enctype="multipart/form-data">
                 <div style="margin-bottom:2%;">
                     <div style="width:50%;margin-top:2%;margin-left:25%;">
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Khu vực bán xe</label>
                             <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtbanxe">
-                                <option value="">Chọn tỉnh thành phố</option>
+                                <option value="<?php echo $se_pro['banxe']?>">Chọn tỉnh thành phố</option>
                                 <option value="An Giang">An Giang
                                 <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
                                 <option value="Bắc Giang">Bắc Giang
@@ -111,13 +118,15 @@
                         <label for="" style="color: #A5A5A5;">tình trạng</label>
                         <div class="radio_tile_group">
                             <div class="input_container">
-                                <input type="radio" name="txttinhtrang" value="xe cũ">
+                                <input type="radio" name="txttinhtrang" value="xe cũ"  <?php if($se_pro['tinhtrang']=='xe cũ')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">xe cũ</label>
                                 </div>
                             </div>
                             <div class="input_container">
-                                <input type="radio" name="txttinhtrang" value="xe mới">
+                                <input type="radio" name="txttinhtrang" value="xe mới" <?php if($se_pro['tinhtrang']=='xe mới')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">xe mới</label>
                                 </div>
@@ -148,13 +157,14 @@
                     <i class="icon-add-photo"></i>
                 </span> -->
                         <input type="file" style="margin-left:25%;margin-top:25px;" name="txtfile">
+                            <img src="./img/dangtin/<?php echo $se_pro['anh']?>">
                     </div>
 
                     <div style="width:50%;margin-top:2%;margin-left:25%;">
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Hãng xe</label>
                             <select style="width: 100%; margin-top:-2px;" class="nut2" name="txthangxe">
-                                <option value=""></option>
+                                <option value="<?php echo $se_pro['hangxe']?>"></option>
                                 <option value="Toyota" class="chọn">Toyota</option>
                                 <option value="Hyundai" class="chọn">Hyundai</option>
                                 <option value="KIA" class="chọn">KIA</option>
@@ -182,7 +192,7 @@
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;"> Dòng xe</label>
                             <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtdongxe">
-                                <option value=""></option>
+                                <option value="<?php echo $se_pro['dongxe']?>"></option>
                                 <option value="Toyota" class="chọn">Toyota</option>
                                 <option value="Hyundai" class="chọn">Hyundai</option>
                                 <option value="KIA" class="chọn">KIA</option>
@@ -210,7 +220,7 @@
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Năm sản xuất</label>
                             <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtnamsanxuat">
-                                <option value=""></option>
+                                <option value="<?php echo $se_pro['namsanxuat']?>"></option>
                                 <option value="2000" class="chọn">2000</option>
                                 <option value="2001" class="chọn">2001</option>
                                 <option value="2002" class="chọn">2002</option>
@@ -227,11 +237,11 @@
 
                     <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:40px;border-radius:3px ;margin-top:1%;">
                         <label for="" style="margin-left:2px;color: #A5A5A5;font-size:12px;height:5px;">Phiên bản *</label>
-                        <input type="text" class="nut2" name="txtphienban">
+                        <input type="text" class="nut2" name="txtphienban" value="<?php echo $se_pro['phienban']?>">
                     </div>
                     <div style="margin-left:25%;width:50%;background-color: white;height:40px;border: 1px solid #5e5e5f;border-radius:4px;margin-top:1%;">
                         <label style="margin-left:1%;height:5px;font-size:12px;color: #A5A5A5">Số km đã đi(ODO) *</label>
-                        <input type="text" class="nut2" name="txtsokmdi">
+                        <input type="text" class="nut2" name="txtsokmdi" value="<?php echo $se_pro['sokmdi']?>">
                     </div>
                     <!-- <div  style="width:50%;margin-left:25%;margin-top:10px;">
                 <p>Hộp số</p>
@@ -245,19 +255,22 @@
                         <label for="" style="color: #A5A5A5;height:9px;">Hộp số</label>
                         <div class="radio_tile_group">
                             <div class="input_container2">
-                                <input type="radio" value="số sàn" name="txthopso">
+                                <input type="radio" value="số sàn" name="txthopso" <?php if($se_pro['hopso']=='số sàn')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">Số sàn</label>
                                 </div>
                             </div>
                             <div class="input_container2">
-                                <input type="radio" value="số tự động" name="txthopso">
+                                <input type="radio" value="số tự động" name="txthopso" <?php if($se_pro['hopso']=='số tự động')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">Số tự động</label>
                                 </div>
                             </div>
                             <div class="input_container2">
-                                <input type="radio" value="bán tự động" name="txthopso">
+                                <input type="radio" value="bán tự động" name="txthopso" <?php if($se_pro['hopso']=='bán tự động')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">Bán tự động</label>
                                 </div>
@@ -269,25 +282,29 @@
                         <label for="" style="color: #A5A5A5;height:9px;">Kiểu dẫn động</label>
                         <div class="radio_tile_group">
                             <div class="input_container3">
-                                <input type="radio" value="fwd" name="txtkieudandong">
+                                <input type="radio" value="fwd" name="txtkieudandong" <?php if($se_pro['kieudandong']=='fwd')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">FWD</label>
                                 </div>
                             </div>
                             <div class="input_container3">
-                                <input type="radio" value="rwd" name="txtkieudandong">
+                                <input type="radio" value="rwd" name="txtkieudandong" <?php if($se_pro['kieudandong']=='rwd')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">RWD</label>
                                 </div>
                             </div>
                             <div class="input_container3">
-                                <input type="radio" value="awd" name="txtkieudandong">
+                                <input type="radio" value="awd" name="txtkieudandong" <?php if($se_pro['kieudandong']=='awd')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">AWD</label>
                                 </div>
                             </div>
                             <div class="input_container3">
-                                <input type="radio" value="4wd" name="txtkieudandong">
+                                <input type="radio" value="4wd" name="txtkieudandong" <?php if($se_pro['kieudandong']=='4wd')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">4WD</label>
                                 </div>
@@ -299,25 +316,29 @@
                         <label for="" style="color: #A5A5A5;height:9px;">Nhiên liệu</label>
                         <div class="radio_tile_group">
                             <div class="input_container3">
-                                <input type="radio" value="xăng" name="txtnhienlieu">
+                                <input type="radio" value="xăng" name="txtnhienlieu" <?php if($se_pro['nhienlieu']=='xăng')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">Xăng</label>
                                 </div>
                             </div>
                             <div class="input_container3">
-                                <input type="radio" value="dầu" name="txtnhienlieu">
+                                <input type="radio" value="dầu" name="txtnhienlieu" <?php if($se_pro['nhienlieu']=='dầu')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">Dầu</label>
                                 </div>
                             </div>
                             <div class="input_container3">
-                                <input type="radio" value="điện" name="txtnhienlieu">
+                                <input type="radio" value="điện" name="txtnhienlieu" <?php if($se_pro['nhienlieu']=='điện')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">Điện</label>
                                 </div>
                             </div>
                             <div class="input_container3">
-                                <input type="radio" value="hybird" name="txtnhienlieu">
+                                <input type="radio" value="hybird" name="txtnhienlieu" <?php if($se_pro['nhienlieu']=='hybird')
+                                            echo "checked"?>>
                                 <div class="radio_tile">
                                     <label for="">Hybird</label>
                                 </div>
@@ -326,7 +347,7 @@
                     </div>
                     <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:40px;border-radius:3px;margin-top:2%;">
                         <label for="" style="margin-left:2px;color: #A5A5A5;font-size:12px;height:5px;">Giá bán*</label>
-                        <input type="text" class="nut2" name="txtgiaban">
+                        <input type="text" class="nut2" name="txtgiaban" value="<?php echo $se_pro['giaban']?>">
                     </div>
                     <div style="margin-left:25%;margin-top:1%;">
                         <P style="color: #A5A5A5;">Tiêu đề của tin *</P>
@@ -348,12 +369,12 @@
                     </div>
                     <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:75px;border-radius:3px;margin-top:2%;">
                         <label style="margin-left:12px;color: #A5A5A5;font-size:12px;height:10px;">Tiêu đề của tin *</label>
-                        <textarea style="width: 100%; height:50px;border: none;" class="nut2" name="txttieude"></textarea>
+                        <textarea style="width: 100%; height:50px;border: none;" class="nut2" name="txttieude" <?php echo $se_pro['tieude']?>></textarea>
                     </div>
                     <div style="margin-left:25%; border:1px solid #5e5e5f;width:50%;height:150px;border-radius:4px;margin-top:2%;">
                         <label for="" style="margin-left:12px;color: #A5A5A5;font-size:12px;height:5px;">Mô tả chi tiết
                             *</label>
-                        <textarea name="txtmota" id="" style="width: 100%; height:130px;border: none;" class="nut2" placeholder="  Nhập mô tả chi tiết về xe đăng bán
+                        <textarea name="txtmota" <?php echo $se_pro['mota']?> id="" style="width: 100%; height:130px;border: none;" class="nut2" placeholder="  Nhập mô tả chi tiết về xe đăng bán
                 · Tình trạng chiếc xe
                 · Thời gian sử dụng xe
                 · Bảo trì xe: bao lâu/lần ở đâu
@@ -371,7 +392,7 @@
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:7px;">Kiểu dáng</label>
                             <select style="width: 100%;margin-top:-2px;" class="nut2" name="txtkieudang">
-                                <option value="chọn phiên kiểu dáng">chọn phiên kiểu dáng</option>
+                                <option value="<?php echo $se_pro['kieudang']?>">chọn phiên kiểu dáng</option>
                                 <option value="Sedan" class="chọn">Sedan</option>
                                 <option value="Hatchback" class="chọn">Hatchback</option>
                                 <option value="SUV" class="chọn">SUV</option>
@@ -388,7 +409,7 @@
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Số chỗ</label>
                             <select style="width: 100%; margin-top:-2px;" class="nut2" name=txtsocho>
-                                <option value="">Chọn số chỗ</option>
+                                <option value="<?php echo $se_pro['socho']?>">Chọn số chỗ</option>
                                 <option value="2" class="chọn">2</option>
                                 <option value="4" class="chọn">4</option>
                                 <option value="9" class="chọn">9</option>
@@ -404,7 +425,7 @@
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Xuất xứ</label>
                             <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtxuatxu">
-                                <option value="">Chọn xuất xứ</option>
+                                <option value="<?php echo $se_pro['xuatxu']?>">Chọn xuất xứ</option>
                                 <option value="Nhập khẩu" class="chọn">Nhập khẩu </option>
                                 <option value="Lắp ráp trong nước" class="chọn">Lắp ráp trong nước</option>
                             </select>
@@ -423,18 +444,18 @@
                     <div style="width:50%;margin-left:25%;height:auto;margin-top:2%;">
                         <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                             <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tên liên hệ*</label>
-                            <input type="text" class="nut2" name="txttenlienhe">
+                            <input type="text" class="nut2" name="txttenlienhe" value="<?php echo $se_pro['tenlienhe']?>">
                         </div>
                         <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                             <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Số điện thoại liên
                                 hệ*</label>
-                            <input type="text" class="nut2" name="txtsdt">
+                            <input type="text" class="nut2" name="txtsdt" value="<?php echo $se_pro['sdt']?>">
                         </div>
                         <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                             <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Tỉnh/Thành
                                 phố*</label>
                             <select style="border: none;" class="nut2" name="txttinhtp">
-                                <option value="" style="font-size:14px;">Chọn Tỉnh/Thành phố</option>
+                                <option value="<?php echo $se_pro['tinhtp']?>" style="font-size:14px;">Chọn Tỉnh/Thành phố</option>
                                 <option value="Hà Nội">Hà Nội</option>
                                 <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
                                 <option value="Hạ Long">Hạ Long</option>
@@ -449,20 +470,20 @@
                         <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                             <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Quận/huyện*</label>
                             <select style="border: none;" class="nut2" name="txtquanhuyen">
-                                <option value="Chọn Quận/huyện" style="font-size:14px;">Chọn Quận/huyện</option>
+                                <option value="<?php echo $se_pro['quanhuyen']?>" style="font-size:14px;">Chọn Quận/huyện</option>
                             </select>
                         </div>
                         <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                             <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Phương/xã*</label>
                             <select style="border: none;" class="nut2" name="txtphuongxa">
-                                <option value="Chọn Phương/xã" style="font-size:14px;">Chọn Phương/xã</option>
+                                <option value="<?php echo $se_pro['phuongxa']?>" style="font-size:14px;">Chọn Phương/xã</option>
                             </select>
                         </div>
                         <div style=" border:1px solid #5e5e5f;width:90%;height:40px;border-radius:3px;margin-top:2%;margin-left:4%">
                             <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Địa chỉ*</label>
-                            <input type="text" class="nut2" name="txtdiachi">
+                            <input type="text" class="nut2" name="txtdiachi" value="<?php echo $se_pro['diachi']?>">
                         </div>
-                        <div style="margin-top:2%;margin-left:4%">
+                        <div style="margin-top:2%;margin-left:4%"></div>
                             <input type="checkbox"> Đặt làm mặc định
                         </div>
                         <div style="margin-left:4%;margin-top:2%;">
@@ -480,11 +501,9 @@
                 </div>
             </form>
             <?php
-            include('./config/control_pt.php'); //Chèn trang control vào bài
-            $get_data = new data(); //Gọi đến class data
+            
             if (isset($_POST['txtsub'])) // Thực thị sau khi nhấn nút submit
             {
-
                 //else{
                 //  if($_POST['txtpassword']!=$_POST['txtrepassword']) {
                 //  echo"<script>alert('mật khẩu không trùng khớp')</script>";
@@ -497,8 +516,11 @@
                 //  return;
                 //  }
                 // }
-                move_uploaded_file($_FILES['txtfile']['tmp_name'], './img/dangtin ' . $_FILES['txtfile']['name']);
-                $insert = $get_data->dangtin_tt(
+                if(empty($_FILES['txtfile']['name'])) $anh=$se_pro['anh'];//lấy ảnh cũ
+                else $anh=$_FILES['txtfile']['name'];
+
+                move_uploaded_file($_FILES['txtfile']['tmp_name'], '/img/dangtin ' . $_FILES['txtfile']['name']);
+                $update = $get_data->up_dangtin(
                     $_POST['txtbanxe'],
                     $_POST['txttinhtrang'],
                     $_FILES['txtfile']['name'],
@@ -522,8 +544,8 @@
                     $_POST['txtquanhuyen'],
                     $_POST['txtphuongxa'],
                     $_POST['txtdiachi']
-                );
-                if ($insert) echo "<script>alert('thêm mới sản phẩm thành công')
+                    $_GET['id']);
+                if ($update) echo "<script>alert('thêm mới sản phẩm thành công')
                     window.location='đăngtin.php';
                     </script>";
                 //else echo"<script>alert('thêm mới không thành công')</script>";
@@ -531,7 +553,7 @@
             //   }
             // }
             //     }
-            //     }
+                }
             ?>
 
         </div>

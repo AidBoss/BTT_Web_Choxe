@@ -25,4 +25,19 @@ class data
         $run=mysqli_query($conn,$sql);
         return $run;
     }
+    function se_all_id($table,$id)
+    {
+        global $conn;
+        $sql="select * from $table where id=$id";
+        $run=mysqli_query($conn,$sql);
+        return $run;
+    }
+    function up_dangtin($banxe, $tinhtrang, $anh, $hangxe, $dongxe, $namsanxuat, $phienban, $sokmdi, $hopso, $kieudandong, $nhienlieu, $giaban, $tieude, $mota, $kieudang, $socho, $xuatxu, $tenlienhe, $sdt, $tinhtp, $quanhuyen, $phuongxa, $diachi,$id)
+    {
+        global $conn;
+        $sql="update dangtin set banxe='$banxe',tinhtrang='$tinhtrang',anh='$anh',hangxe='$hangxe',dongxe='$dongxe',namsanxuat='$namsanxuat',phienban='$phienban',sokmdi='$sokmdi',hopso='$hopso',kieudandong='$kieudandong',nhienlieu='$nhienlieu',giaban='$giaban',tieude='$tieude',mota='$mota',kieudang='$kieudang',socho='$socho',xuatxu='$xuatxu',tenlienhe='$tenlienhe',sdt='$sdt',tinhtp='$tinhtp',quanhuyen='$quanhuyen',phuongxa='$phuongxa',diachi='$diachi' where id=$id";
+    //echo $sql;
+    $run=mysqli_query($conn,$sql);
+    return $run;
+    }
 }

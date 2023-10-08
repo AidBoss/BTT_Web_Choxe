@@ -28,13 +28,14 @@
                <td><?php echo $se_product['tinhtrang']?></td>
                <td><?php echo $se_product['giaban']?></td>
                <td>
-                  <img src="../img/<?php echo $se_product['anh']?>" style="height:200px; width: 300px; object-fit: cover">
+                  <img src="../img/dantin/<?php echo $se_product['anh']?>" style="height:200px; width: 300px; object-fit: cover">
                </td>
-               <td><button type="button" class="btn btn-warning">Edit</button></td>
-               <!-- <td><button type="button" class="btn btn-danger"><a href="delete_all.php?del_product=<?php echo $se_product['id']?>"
+               <td><button type="button" class="btn btn-warning"> <a href="/up_đăngtin.php?id=<?php echo $se_product['id']?>">
+                                                <span>Edit</span></a></button></td>
+              
+               <td><button type="button" class="btn btn-danger"><a href="../config/delete_all.php?del_product=<?php echo $se_product['id']?>"
                                                 onClick="return(confirm('bạn có chắc chắn muốn xóa'))">
-                                            <span class="glyphicon glyphicon-remove"></span></a></button></td> -->
-               <td><button type="button" class="btn btn-danger">Del</button></td>
+                                            <span>Del</span></a></button></td>
             </tr>
             <?php }?>
 
