@@ -147,7 +147,7 @@
                         <!-- <span>
                     <i class="icon-add-photo"></i>
                 </span> -->
-                        <input type="file" style="margin-left:25%;margin-top:25px;" name="txtfile">
+                        <input type="file" style="margin-left:25%;margin-top:25px;" name="txtfile" multiple="true">
                     </div>
 
                     <div style="width:50%;margin-top:2%;margin-left:25%;">
@@ -497,7 +497,7 @@
                 //  return;
                 //  }
                 // }
-                move_uploaded_file($_FILES['txtfile']['tmp_name'], './img/dangtin ' . $_FILES['txtfile']['name']);
+                move_uploaded_file($_FILES['txtfile']['tmp_name'], 'img/dangtin/ ' . $_FILES['txtfile']['name']);
                 $insert = $get_data->dangtin_tt(
                     $_POST['txtbanxe'],
                     $_POST['txttinhtrang'],

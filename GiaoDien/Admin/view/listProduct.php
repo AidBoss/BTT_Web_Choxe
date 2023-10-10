@@ -28,7 +28,7 @@
                <td><?php echo $se_product['tinhtrang']?></td>
                <td><?php echo $se_product['giaban']?></td>
                <td>
-                  <img src="../img/dantin/<?php echo $se_product['anh']?>" style="height:200px; width: 300px; object-fit: cover">
+                  <img src="../img/dangtin/ <?php echo $se_product['anh']?>" style="height:200px; width: 300px; object-fit: cover">
                </td>
                <td><button type="button" class="btn btn-warning"> <a href="/up_đăngtin.php?id=<?php echo $se_product['id']?>">
                                                 <span>Edit</span></a></button></td>
