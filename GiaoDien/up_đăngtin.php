@@ -29,24 +29,25 @@
 
 
         <!-- đây là nội dung phần thân  -->
-
-        <div style="width:80%;background-color:#fff;height:auto; margin-left:11%;
-        margin-top: 2%;border-radius:10px 10px;border: 1px solid #e2dfdf; margin-bottom:2%;">
         <?php
-        include('./config/control_pt.php');
+                        include('./config/control_pt.php');
                         $get_data=new data();
-                        if (isset($_GET['id'])) {
+                        if (isset($_GET['id']))
+                         {
                         $select_id=$get_data->se_all_id('dangtin',$_GET['id']);
                         foreach($select_id as $se_pro)
                         ?>
+        <div style="width:80%;background-color:#fff;height:auto; margin-left:11%;
+        margin-top: 2%;border-radius:10px 10px;border: 1px solid #e2dfdf; margin-bottom:2%;">
+
             <form method="post" enctype="multipart/form-data">
                 <div style="margin-bottom:2%;">
                     <div style="width:50%;margin-top:2%;margin-left:25%;">
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Khu vực bán xe</label>
                             <select style="width: 100%; margin-top:-2px;" class="nut2" name="txtbanxe">
-                                <option value="<?php echo $se_pro['banxe']?>">Chọn tỉnh thành phố</option>
-                                <option value="An Giang">An Giang
+                                <option value="">Chọn tỉnh thành phố</option>
+                                <option value="<?php echo $se_pro['banxe']?>">An Giang
                                 <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
                                 <option value="Bắc Giang">Bắc Giang
                                 <option value="Bắc Kạn">Bắc Kạn
@@ -157,7 +158,7 @@
                     <i class="icon-add-photo"></i>
                 </span> -->
                         <input type="file" style="margin-left:25%;margin-top:25px;" name="txtfile">
-                            <img src="./img/dangtin/<?php echo $se_pro['anh']?>">
+                            <!-- <img src="/img/dangtin/<?php echo $se_pro['anh']?>" style="width:100px;height:200px;"> -->
                     </div>
 
                     <div style="width:50%;margin-top:2%;margin-left:25%;">
@@ -250,7 +251,7 @@
                     <button id="hs_bl">Tự động</button>
                     <button id="hs_bl">Bán tự động</button>
                 </div>
-            </div> -->
+                 </div> -->
                     <div style="width:50%;margin-left:25%; margin-top: 1%;height:70px;">
                         <label for="" style="color: #A5A5A5;height:9px;">Hộp số</label>
                         <div class="radio_tile_group">
@@ -483,10 +484,10 @@
                             <label for="" style="margin-left:2%;color: #A5A5A5;font-size:12px;height:5px;">Địa chỉ*</label>
                             <input type="text" class="nut2" name="txtdiachi" value="<?php echo $se_pro['diachi']?>">
                         </div>
-                        <div style="margin-top:2%;margin-left:4%"></div>
+                        <div style="margin-top:2%;margin-left:26%"></div>
                             <input type="checkbox"> Đặt làm mặc định
                         </div>
-                        <div style="margin-left:4%;margin-top:2%;">
+                        <div style="width:50%;margin-left:26%;margin-top:2%;">
                             <button style="background-color:#fff;color: #F05626;border: 1px solid #F05626;" type="button" class="nut3">Hủy bỏ</button>
                             <button style="background-color: #F05626;border: 1px solid #F05626;color:#fff;margin-left:4%;" type="button" class="nut3">Thêm mới</button>
                         </div>
@@ -519,7 +520,7 @@
                 if(empty($_FILES['txtfile']['name'])) $anh=$se_pro['anh'];//lấy ảnh cũ
                 else $anh=$_FILES['txtfile']['name'];
 
-                move_uploaded_file($_FILES['txtfile']['tmp_name'], '/img/dangtin ' . $_FILES['txtfile']['name']);
+                move_uploaded_file($_FILES['txtfile']['tmp_name'], 'img/dangtin/ ' . $_FILES['txtfile']['name']);
                 $update = $get_data->up_dangtin(
                     $_POST['txtbanxe'],
                     $_POST['txttinhtrang'],
@@ -543,10 +544,10 @@
                     $_POST['txttinhtp'],
                     $_POST['txtquanhuyen'],
                     $_POST['txtphuongxa'],
-                    $_POST['txtdiachi']
+                    $_POST['txtdiachi'],    
                     $_GET['id']);
-                if ($update) echo "<script>alert('thêm mới sản phẩm thành công')
-                    window.location='đăngtin.php';
+                if ($update) echo "<script>alert('sửa tin đăng thành công')
+                    window.location='./Admin/index.php?act=qlsp';
                     </script>";
                 //else echo"<script>alert('thêm mới không thành công')</script>";
             }

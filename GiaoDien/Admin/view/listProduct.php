@@ -30,7 +30,7 @@
                <td>
                   <img src="../img/dangtin/ <?php echo $se_product['anh']?>" style="height:200px; width: 300px; object-fit: cover">
                </td>
-               <td><button type="button" class="btn btn-warning"> <a href="/up_đăngtin.php?id=<?php echo $se_product['id']?>">
+               <td><button type="button" class="btn btn-warning"> <a href="../up_đăngtin.php?id=<?php echo $se_product['id']?>">
                                                 <span>Edit</span></a></button></td>
               
                <td><button type="button" class="btn btn-danger"><a href="../config/delete_all.php?del_product=<?php echo $se_product['id']?>"
