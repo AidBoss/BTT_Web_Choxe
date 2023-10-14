@@ -24,6 +24,7 @@
             <a class="nav-item nav-link" href="index.php?act=qlsp">Quản lý danh sách sản phẩm</a>
             <a class="nav-item nav-link" href="index.php?act=qlbd">Quản lý bài đăng</a>
             <a class="nav-item nav-link" href="index.php?act=logout">đăng xuất</a>
+            <a class="nav-item nav-link" href="../models/change_pass.php?act=change-password">Đổi mật khẩu</a>
          </div>
       </div>
    </nav>
