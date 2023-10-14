@@ -14,15 +14,25 @@
             </tr>
          </thead>
          <tbody>
+         <?php
+               include('../config/control.php');
+               $get_data=new data();
+               $select_all=$get_data->se_acc('accounts');
+               foreach ($select_all as $se_acc)
+               {
+               ?>
             <tr>
-               <th scope="row">1</th>
-               <td>Ank</td>
-               <td>0128676234</td>
-               <td>Ahihi@gmail.com</td>
-               <td>akdev22</td>
+               <th scope="row"><?php echo $se_acc['id']?></th>
+               <td><?php echo $se_acc['name_acc']?></td>
+               <td><?php echo $se_acc['phone']?></td>
+               <td><?php echo $se_acc['email_acc']?></td>
+               <td><?php echo $se_acc['pass_acc']?></td>
                <td><button type="button" class="btn btn-warning">Edit</button></td>
-               <td><button type="button" class="btn btn-danger">Del</button></td>
+               <td><button type="button" class="btn btn-danger"><a href="../config/delete_acc.php?del_acc=<?php echo $se_acc['id']?>"
+                                                onClick="return(confirm('bạn có chắc chắn muốn xóa'))">
+                                            <span>Del</span></a></button></td>
             </tr>
+            <?php }?>
          </tbody>
       </table>
    </form>

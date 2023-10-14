@@ -831,28 +831,32 @@
                                 </select>
                             </div>
                         </div>
+                        
                         <div class="row">
-                            <div class="col-sm-3">
+                        <?php
+                            include('./config/control_pt.php');
+                            $get_data= new data();
+                            $select_pro=$get_data->se_all('dangtin');
+                            foreach ($select_pro as $se_pro)
+                            { ?>
+                            <div class="col-sm-3" style="margin-top:1%;">
                                 <div class="card" id="txt_logo" style="width: 18rem;">
                                     <a target="_blank" href="trangchitiet/ctOto1.html"><img class="card-img-top"
-                                            src="img/oto1.jpg" alt="Card image cap"></a>
+                                            src="./img/dangtin/ <?php echo $se_pro['anh']?>" alt="Card image cap"></a>
                                     <div class="card-body">
                                         <a target="_blank" id="tx_link" href="trangchitiet/ctOto1.html">
-                                            <h5 class="card-title">Hyundai Starex Hyundai Starex H-1 2.5 MT 6 chỗ máy
-                                                dầu
-                                                2015,
-                                                Số sàn, đã đi 80.000 km</h5>
+                                            <h5 class="card-title"><?php echo $se_pro['tieude']?></h5>
                                         </a>
-                                        <p id="tx_link" class="card-text">2015-Số sàn-80.000 km</p>
-                                        <h5 id="tx_link" class="card-title">500 Triệu</h5>
-                                        <p id="tx_link" class="card-text">Hà Nội • 7 giờ trước</p>
-                                    </div>
+                                        <p id="tx_link" class="card-text"><?php echo $se_pro['namsanxuat']?>  <?php echo $se_pro['hopso']?>  <?php echo $se_pro['sokmdi']?>km</p>
+                                        <h5 id="tx_link" class="card-title"><?php echo $se_pro['giaban']?> Triệu</h5>
+                                        <p id="tx_link" class="card-text"><?php echo $se_pro['banxe']?> • 7 giờ trước</p>
+                                    </div>      
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <!-- <div class="col-sm-3">
                                 <div class="card" style="width: 18rem;">
                                     <a target="_blank" id="tx_link" href="trangchitiet/ctOto2.html"><img
-                                            class="card-img-top" src="img/oto2.jpg" alt="Card image cap"></a>
+                                            class="card-img-top" src="./img/dangtin/ <?php echo $se_pro['anh']?>" alt="Card image cap"></a>
                                     <div class="card-body">
                                         <a target="_blank" id="tx_link" href="trangchitiet/ctOto2.html">
                                             <h5 class="card-title">Mitsubishi Triton GLS 2017, Tự động, đã đi 40.000 km
@@ -893,7 +897,8 @@
                                         <p id="tx_link" class="card-text">Hà Nội • 7 giờ trước</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+                            <?php }?>
                         </div>
                         <div class="row">
                             <div class="col-sm-3">

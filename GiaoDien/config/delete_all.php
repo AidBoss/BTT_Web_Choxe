@@ -8,3 +8,4 @@ if($delete) echo"<script>alert('bạn đã xóa thành công !')
 window.location='../Admin/index.php?act=qlsp'</script>";
 else echo"<script>alert('bạn không xóa được')</script>";
 }
+?>

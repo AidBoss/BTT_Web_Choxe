@@ -32,4 +32,18 @@ class data
         $run = mysqli_query($conn, $sql);
         return $run;
     }
+    function se_acc($table)
+    {
+        global $conn;
+        $sql="select * from $table";
+        $run=mysqli_query($conn,$sql);
+        return $run;
+    }
+    function delete_acc($table,$id)
+    {
+        global $conn;
+        $sql="delete from $table where id=$id ";
+        $run=mysqli_query($conn,$sql);
+        return $run;
+    }
 }
