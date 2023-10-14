@@ -161,9 +161,9 @@
                            
                     </div>
                     <div style="margin-left:25%; width: 50%; margin-top:2%;height:220px;">
-                         <img src="img/dangtin/<?php echo $se_pro['anh']?>" style="width:300px;height:200px;">
+                         <img src="./img/dangtin/ <?php echo $se_pro['anh']?>" style="width:300px;height:200px;">
                     </div>
-
+                            
                     <div style="width:50%;margin-top:2%;margin-left:25%;">
                         <div style="border:1px solid #5e5e5f;width:100%;height:40px;border-radius:4px;">
                             <label style="height:7px;color: #A5A5A5;font-size:12px;margin-left:10px;">Hãng xe</label>

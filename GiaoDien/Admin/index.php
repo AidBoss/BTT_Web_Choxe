@@ -41,7 +41,7 @@ if (!isset($_SESSION['userName'])) {
    } else {
       // include("home.php");
    }
-   include("view/footer.php");
+   // include("view/footer.php");
    ?>
 </body>
 

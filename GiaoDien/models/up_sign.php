@@ -1,5 +1,13 @@
 <link rel="stylesheet" href="../CSS/ls_style.css">
 <div class=login_padding>
+<?php
+                        include('../config/control.php');
+                        $get_data=new data();
+                        if (isset($_GET['id']))
+                         {
+                        $select_id=$get_data->se_acc_id('accounts',$_GET['id']);
+                        foreach($select_id as $se_acc)
+                        ?>
    <form action="sign.php" method="post" class="login-table">
       <div class="UP">
          <div class="sign-in-page">
@@ -12,25 +20,25 @@
                <label class="form-label" id="lb_tkmk" for="form2Example2">
                   Tài khoản
                </label>
-               <input type="text" id="ip_tkmk" name="txtName" class="form-control2" />
+               <input type="text" id="ip_tkmk" name="txtName" class="form-control2" value="<?php echo $se_acc['name_acc']?>"/>
             </div>
             <div class="form-outline mb-4">
                <label class="form-label" id="lb_tkmk" for="form2Example2">
                   Số điện thoại
                </label>
-               <input type="text" id="ip_tkmk" name="txtPhone" class="form-control2" />
+               <input type="text" id="ip_tkmk" name="txtPhone" class="form-control2" value="<?php echo $se_acc['phone']?>"/>
             </div>
             <div class="form-outline mb-4">
                <label class="form-label" id="lb_tkmk" for="form2Example2">
                   Email
                </label>
-               <input type="email" id="ip_tkmk" name="txtEmail" class="form-control2" />
+               <input type="email" id="ip_tkmk" name="txtEmail" class="form-control2" value="<?php echo $se_acc['email_acc']?>"/>
             </div>
             <div class="form-outline mb-4">
                <label class="form-label" id="lb_tkmk" for="form2Example2">
                   Mật khẩu
                </label>
-               <input type="password" id="ip_tkmk" name="txtPass" class="form-control2" />
+               <input type="password" id="ip_tkmk" name="txtPass" class="form-control2" value="<?php echo $se_acc['pass_acc']?>"/>
             </div>
          </div>
          <div class="login-flex">
@@ -52,21 +60,19 @@
 <?php
 include('../config/control.php');
 if (isset($_POST['btnOke'])) {
-   $getdata = new data();
-   $lk = $getdata->checkAccName($_POST['txtName']);
-   $check = mysqli_num_rows($lk);
-   if ($check == 0) {
-      $register = $getdata->signIn(
+  
+   
+      $register = $getdata->up_acc(
          $_POST['txtName'],
          $_POST['txtPhone'],
          $_POST['txtEmail'],
          $_POST['txtPass'],
+         $_GET['id'],
          $level = '0',
       );
       echo '<script>alert("Bạn đã đăng ký thành công.");</script>';
       header('location:login.php');
-   } else {
-      echo '<script>alert("Tài khoản đã tồn tại.");</script>';
-   }
+   } 
 }
+                         
 ?>

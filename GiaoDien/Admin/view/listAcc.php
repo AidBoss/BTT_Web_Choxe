@@ -21,13 +21,14 @@
                foreach ($select_all as $se_acc)
                {
                ?>
-            <tr>
+            <tr></tr>
                <th scope="row"><?php echo $se_acc['id']?></th>
                <td><?php echo $se_acc['name_acc']?></td>
                <td><?php echo $se_acc['phone']?></td>
                <td><?php echo $se_acc['email_acc']?></td>
                <td><?php echo $se_acc['pass_acc']?></td>
-               <td><button type="button" class="btn btn-warning">Edit</button></td>
+               <td><button type="button" class="btn btn-warning"><a href="../models/up_sign.php?id=<?php echo $se_acc['id']?>">
+                                                <span>Edit</span></a></button></td>
                <td><button type="button" class="btn btn-danger"><a href="../config/delete_acc.php?del_acc=<?php echo $se_acc['id']?>"
                                                 onClick="return(confirm('bạn có chắc chắn muốn xóa'))">
                                             <span>Del</span></a></button></td>

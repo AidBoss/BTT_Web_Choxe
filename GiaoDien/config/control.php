@@ -46,4 +46,19 @@ class data
         $run=mysqli_query($conn,$sql);
         return $run;
     }
+    function se_acc_id($table,$id)
+    {
+        global $conn;
+        $sql="select * from $table where id=$id";
+        $run=mysqli_query($conn,$sql);
+        return $run;
+    }
+    function up_acc($name, $phone, $email, $pass,$id)
+    {
+        global $conn;
+        $sql="update dangtin set name_acc='$name',phone='$phone',email_acc='$email',pass_acc='$pass' where id=$id";
+    //echo $sql;
+    $run=mysqli_query($conn,$sql);
+    return $run;
+    }
 }

@@ -532,13 +532,21 @@
 
                             <!-- slide chứa các hình ảnh của xe -->
 
+                            <?php
+                        include('../config/control_pt.php');
+                        $get_data=new data();
+                        if (isset($_GET['id']))
+                         {
+                        $select_id=$get_data->select_id('dangtin',$_GET['id']);
+                        foreach($select_id as $se_pro)
+                        ?>
                             <div class="slider_car">
                                 <div class="slider_top">
                                     <div class="control"><i id="prev" onclick="prev()"
                                             class="fa-solid fa-circle-chevron-left" style="font-size: 40px;"></i>
                                     </div>
                                     <div class="img_mid">
-                                        <img src="../img/Oto_1/oto1.jpg" alt="" class="img-feature">
+                                        <img src="../img/dangtin/ <?php echo $se_pro['anh']?>" alt="" class="img-feature" >
                                     </div>
                                     <div class="control"><i id="next" onclick="next()"
                                             class="fa-solid fa-circle-chevron-right" style="font-size: 40px;"></i>
@@ -560,15 +568,15 @@
                                 <div class="info_text_car">
                                     <div class="listing_meta">
                                         <span class="location"> <img src="../img/icons_ctsp/lc (1).png" alt="">
-                                            Hà
-                                            Nội</span>
+                                        <?php echo $se_pro['banxe']?></span>
                                         <span class="location"><img src="../img/icons_ctsp/lc (2).png" alt="">
                                             28/06/2023</span>
                                     </div>
-                                    <h4 class="mota_title">Hyundai Starex Hyundai Starex H-1 2.5 MT 6 chỗ máy dầu
-                                        2015, Số sàn, đã đi 80.000 km</h4>
+                                    <h4 class="mota_title">
+                                        <?php echo $se_pro['hangxe']?> <?php echo $se_pro['dongxe']?> <?php echo $se_pro['socho']?> chỗ  máy<?php echo $se_pro['nhienlieu']?>
+                                        <?php echo $se_pro['namsanxuat']?> <?php echo $se_pro['hopso']?> đã đi <?php echo $se_pro['sokmdi']?>km</h4>
                                     <div class="giaca">
-                                        <p>510 Triệu</p>
+                                        <p><?php echo $se_pro['giaban']?> Triệu</p>
                                         <button type="button" class="btn btn-outline-secondary">Lưu Tin <i
                                                 class="fa-regular fa-heart"></i></button>
                                     </div>
@@ -576,9 +584,7 @@
                                     <!-- mô tả xe   -->
                                     <div class="mota">
                                         <p class="mota_title">Mô tả</p>
-                                        <p>Bán xe starex Hyundai tải van đời 2015,6 chỗ,tải 670kg,xe chính chủ đi từ
-                                            mới.không đâm va hay ngập nước,máy zin nguyên bản,nội thất nỉ,điều hoà
-                                            mát rét,vừa khám lưu hành.Lh 0928888699 xem xe
+                                        <p><?php echo $se_pro['mota']?>
                                         </p>
                                         <p class="mota_title">Chi Tiết</p>
                                     </div>
@@ -586,60 +592,61 @@
                                         <thead>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/1.png" alt=""> Hãng xe</td>
-                                                <td>Hyundai</td>
+                                                <td><?php echo $se_pro['hangxe']?></td>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/2.png" alt=""> Dòng xe</td>
-                                                <td>Starex</td>
+                                                <td><?php echo $se_pro['dongxe']?></td>
                                             </tr>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/3.png" alt=""> Năm sản xuất
                                                 </td>
-                                                <td>2015</td>
+                                                <td><?php echo $se_pro['namsanxuat']?></td>
                                             </tr>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/4.png" alt=""> Số km đã
                                                     đi</td>
-                                                <td>80000</td>
+                                                <td><?php echo $se_pro['sokmdi']?></td>
                                             </tr>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/5.png" alt=""> Nhiên liệu
                                                 </td>
-                                                <td>Dầu</td>
+                                                <td><?php echo $se_pro['nhienlieu']?></td>
                                             </tr>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/6.png" alt=""> Xuất xứ
                                                 </td>
-                                                <td>Nhập khẩu
+                                                <td><?php echo $se_pro['xuatxu']?>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/7.png" alt=""> Kiểu dáng
                                                 </td>
-                                                <td>Van/Minivan</td>
+                                                <td><?php echo $se_pro['kieudang']?></td>
                                             </tr>
                                             <tr>
                                                 <td><img src="../img/icons_ctsp/8.png" alt=""> Số chỗ
                                                 </td>
-                                                <td>7</td>
+                                                <td><?php echo $se_pro['socho']?></td>
                                             </tr>
                                         </tbody>
                                     </table>
 
                                 </div>
                             </div>
+                            
                         </div>
                         <div class=" col-sm-3">
                             <div class="card card-body card_ctsp">
                                 <h4 class="card-title">Liên Hệ</h4>
-                                <p class="card-text">Đỗ Văn Bắc</p>
-                                <p><img src="../img/phone_14_14.png" alt=""> 0928***699</p>
-                                <p><img src="../img/location_12_13.png" alt=""> Hà Nội</p>
+                                <p class="card-text"><?php echo $se_pro['tenlienhe']?></p>
+                                <p><img src="../img/phone_14_14.png" alt=""><?php echo $se_pro['sdt']?></p>
+                                <p><img src="../img/location_12_13.png" alt=""><?php echo $se_pro['tinhtp']?></p>
                                 <a href="#" id="bt_right1" class="btn btn-danger"><img
                                         src="../img/phone_white_14_14.png" alt="">
-                                    0928***699</a>
+                                        <?php echo $se_pro['sdt']?></a>
                                 <br>
                                 <a href="#" id="bt_right2" class="btn  btn-light1"><img src="../img/audit_16_16.png"
                                         alt="">
@@ -647,30 +654,36 @@
                                     Audit</a>
                             </div>
                         </div>
+                        <?php }?>
                     </div>
                 </div>
             </div>
             <div class="more_cars">
                 <h5 id="title_h5">Tin Đăng mới nhất</h5>
                 <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top list_item" src="../img/Oto_1/3a.jpg" alt="Card image cap">
-                            <div class="card-body list_item">
-                                <h5 class="card-title">Hyundai Starex 2003, xe 1 chủ dùng từ đầu gia hấp dẫn</h5>
-                                <p class="card-text">2003 •Số sàn• 18.000 km</p>
-                                <h5 class="card-title">120 Triệu</h5>
-                                <p class="card-text">Hà Nội • 15/6/2023</p>
+                <?php
+                            // include('/config/control_pt.php');
+                            $get_data= new data();
+                            $select_pro=$get_data->se_all('dangtin');
+                            foreach ($select_pro as $se_pro)
+                            { ?>
+                <div class="col-sm-3" style="margin-top:1%;">
+                                <div class="card" id="txt_logo" style="width: 18rem;">
+                                    <a target="_blank" href="trangchitiet/ctOto1.php?id=<?php echo $se_pro['id']?>"><img class="card-img-top"
+                                            src="../img/dangtin/ <?php echo $se_pro['anh']?>" alt="Card image cap"></a>
+                                    <div class="card-body">
+                                        <a target="_blank" id="tx_link" href="trangchitiet/ctOto1.html">
+                                            <h5 class="card-title"><?php echo $se_pro['tieude']?></h5>
+                                        </a>
+                                        <p id="tx_link" class="card-text"><?php echo $se_pro['namsanxuat']?>  <?php echo $se_pro['hopso']?>  <?php echo $se_pro['sokmdi']?>km</p>
+                                        <h5 id="tx_link" class="card-title"><?php echo $se_pro['giaban']?> Triệu</h5>
+                                        <p id="tx_link" class="card-text"><?php echo $se_pro['banxe']?> • 7 giờ trước</p>
+                                    </div>      
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                    </div>
-                    <div class="col-sm-3">
-                    </div>
-                    <div class="col-sm-3">
-                    </div>
+                            <?php }?>
                 </div>
+                
                 <div class="row">
                     <a href="#" id="next_page">
                         <p>Xem Thêm <img src="../img/chevrons-right_20_20.png" alt=""></p>

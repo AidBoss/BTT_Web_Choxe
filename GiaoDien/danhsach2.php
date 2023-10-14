@@ -841,7 +841,7 @@
                             { ?>
                             <div class="col-sm-3" style="margin-top:1%;">
                                 <div class="card" id="txt_logo" style="width: 18rem;">
-                                    <a target="_blank" href="trangchitiet/ctOto1.html"><img class="card-img-top"
+                                    <a target="_blank" href="trangchitiet/ctOto1.php?id=<?php echo $se_pro['id']?>"><img class="card-img-top"
                                             src="./img/dangtin/ <?php echo $se_pro['anh']?>" alt="Card image cap"></a>
                                     <div class="card-body">
                                         <a target="_blank" id="tx_link" href="trangchitiet/ctOto1.html">
